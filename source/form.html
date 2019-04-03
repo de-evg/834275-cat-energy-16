@@ -6,7 +6,7 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo-link" href="#">
+    <a class="page-header__logo-link" href="index.html">
       <img class="page-header__logo-image"  src="#" width="191" height="38" alt="Логотип магазина Cat energy">
     </a>
     <button class="burger-menu" aria-label="Главное меню"></button>
@@ -20,8 +20,9 @@
   </header>
   <main class="page-main">
     <h1 class="page-main__title">Подбор программы</h1>
-    <form >
-      <fieldset class="page-main__about-cat cat">
+    <form class="page-main__program-form program-form" action="echo.htmlacademy.ru" method="post">
+      <p class="program-form__description">Заполните анкету и мы подберем  программу питания для вашего кота</p>
+      <fieldset class="program-form__about-cat cat">
         <legend class="cat__title visually-hidden">Данные о Вашем коте</legend>
         <div class="cat__information">
           <label>Имя:*
@@ -35,7 +36,20 @@
           </label>
         </div>
       </fieldset>
-      <fieldset class="page-main__client-contacts client-contacts">
+      <fieldset class="program-form__purpose purpose">
+        <legend class="purpose__title visually-hidden">Цель</legend>
+
+        <input class="purpose__radio" id="purpose__slim" type="radio" name="purpose-radio" value="slim">
+        <label class="purpose__radio-label" for="purpose__slim">Похудение</label>
+
+        <input class="purpose__radio" id="purpose__muscle" type="radio" name="purpose-radio" value="muscle">
+        <label class="purpose__radio-label" for="purpose__muscle">Набор массы</label>
+
+        <input class="purpose__radio" id="purpose__advice" type="radio" name="purpose-radio" value="advice">
+        <label class="purpose__radio-label" for="purpose__advice">Не знаю (Нужен ваш совет)</label>
+      </fieldset>
+
+      <fieldset class="program-form-contacts client-contacts">
         <legend class="client-contacts__title">Контактные данные (владельца кота)</legend>
         <div class="client-contacts__information">
           <label>E-mail:*
@@ -46,40 +60,55 @@
           </label>
         </div>
       </fieldset>
-      <fieldset class="page-main__comment comment">
+      <fieldset class="program-form__comment comment">
         <label class="visually-hidden" for="user-comment">Комментарий
           <textarea class="comment__text" id="user-comment" rows="6" cols="35" placeholder="РАССКАЖИ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
         </label>
-        </fieldset>
-        <fieldset></fieldset>
-      </form>
+      </fieldset>
+      <fieldset class="program-form__optionally optionally">
+        <legend class="optionally__title">Дополнительно</legend>
 
+        <input class="optionally__checkbox" id="sugar-substitute" type="checkbox" name="sugar-substitute">
+        <label class="optionally__checkbox-label" for="sugar-substitute" >Сахарозаменитель</label>
 
+        <input class="optionally__checkbox" id="water" type="checkbox" name="water">
+        <label class="optionally__checkbox-label" for="water" >Питьевая вода</label>
 
-      <section class="contacts">
-        <h2 class="contacts__title visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper">
-          <p class="contacts__slogan">приглашаем  к сотрудничеству  дилеров!</p>
-          <p class="contacts__content">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
-        </div>
-        <div>
-          <img class="contacts__map" src="#" width="1345" height="645" alt="Магазин находится по адресу: ул. Большая Конюшенная, д. 19/8  г.Санкт-Петербург">
-        </div>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <a class="page-footer__site-title-link" href="index.html">
-        <img class="page-footer__site-title" src="#" width="128" height="24" alt="Магазин Cat energy">
-      </a>
-      <div class="page-footer__social social">
-        <a class="social__link" href="#" aria-label="Мы в Vkontakte"><span class="social__icon">VK</span></a>
-        <a class="social__link" href="#" aria-label="Мы в Instagram"><span class="social__icon">INST</span></a>
-        <a class="social__link" href="#" aria-label="Мы в Facebook"><span class="social__icon">FB</span></a>
+        <input class="optionally__checkbox" id="milk" type="checkbox" name="milk">
+        <label class="optionally__checkbox-label" for="milk" >Молоко</label>
+
+        <input class="optionally__checkbox" id="vitamins" type="checkbox" name="sugar-substitute">
+        <label class="optionally__checkbox-label" for="vitamins" >Сахарозаменитель</label>
+      </fieldset>
+      <button class="program-form__button-submit button" type="submit">Отправить заявку</button>
+      <p class="program-form__text">* — Обязательные поля</p>
+    </form>
+
+    <section class="contacts">
+      <h2 class="contacts__title visually-hidden">Контакты</h2>
+      <div class="contacts__wrapper">
+        <p class="contacts__slogan">приглашаем  к сотрудничеству  дилеров!</p>
+        <p class="contacts__content">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
       </div>
-      <div class="page-footer__copyright">
-        <a class="copyright__company" href="#">HTML Academy</a>
-        <a class="copyright__logo" href="#"><img class="copyright__logo-icon" src="#" width="27" height="34" alt="Логотип HTML Academy"></a>
+      <div>
+        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCuL4L9i" width="1345" height="645"></iframe>
       </div>
-    </footer>
-  </body>
-  </html>
+    </section>
+
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__site-title-link" href="index.html">
+      <img class="page-footer__site-title" src="#" width="128" height="24" alt="Магазин Cat energy">
+    </a>
+    <div class="page-footer__social social">
+      <a class="social__link" href="#" aria-label="Мы в Vkontakte"><span class="social__icon">VK</span></a>
+      <a class="social__link" href="#" aria-label="Мы в Instagram"><span class="social__icon">INST</span></a>
+      <a class="social__link" href="#" aria-label="Мы в Facebook"><span class="social__icon">FB</span></a>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <a class="copyright__company" href="#">HTML Academy</a>
+      <a class="copyright__logo" href="#"><img class="copyright__logo-icon" src="#" width="27" height="34" alt="Логотип HTML Academy"></a>
+    </div>
+  </footer>
+</body>
+</html>
