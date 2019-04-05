@@ -1,0 +1,16 @@
+.promo {
+  background: linear-gradient(to bottom, #65a93c 0, #65a93c 305px, #ffffff 305px, #ffffff 100%);
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-size: 320px 305px;
+  background-repeat: no-repeat;
+
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 480px;
+
+
+  font-family: "Oswald Regular", Arial, sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
