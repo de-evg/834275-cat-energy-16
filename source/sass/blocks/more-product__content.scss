@@ -1,0 +1,28 @@
+.more-product__content {
+  position: relative;
+
+  padding-top: 80px;
+  padding-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 30px;
+    background-color: #d3d3d3;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 26px;
+  }
+}

@@ -1,10 +1,10 @@
 .page-header__wrapper {
   box-sizing: border-box;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
-  padding: 0 20px;
+  border-bottom: 1px solid #e6e6e6;
 
   font-family: "Oswald Medium", "Arial", sans-serif;
   text-transform: uppercase;
-
-  background-color: #ffffff;
 }
