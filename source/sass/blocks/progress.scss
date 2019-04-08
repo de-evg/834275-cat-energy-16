@@ -1,17 +1,38 @@
 .progress__value {
+  position: relative;
+
   margin: 0;
+  padding-top: 16px;
+  padding-bottom: 22px;
+  width: 122px;
+  flex-basis: 122px;
+
+
+  border: $borderGrayTypeThree;
+  border-radius: 2px;
 
   font-family: $oswaldRegular;
   font-size: $mediumFontSize;
   list-style: 24px;
   text-transform: uppercase;
   color: $basicFontColor;
+  text-align: center;
 }
 
 .progress__type {
+  position: absolute;
+  padding: 0 8px;
+
+  width: 70px;
+  left: 32%;
+  transform: translate(-25%, 65%);
+  bottom: 0;
+
   font-family: "Arial", sans-serif;
   font-size: $tinyFontSize;
   line-height: 12px;
   text-transform: none;
   color: $thirdFontColor;
+
+  background-color: $bgColorSecondary;
 }
