@@ -1,0 +1,16 @@
+.main-menu__list {
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  list-style: none;
+  text-align: center;
+}
+
+.main-menu__link {
+  display: block;
+  word-wrap: break-word;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: $borderGrayTypeOne;
+  color: $basicFontColor;
+}

@@ -5,14 +5,14 @@
   padding-left: 30px;
   padding-right: 30px;
 
-  font-family: "Oswald Regular", "Arial", sans-serif;
-  font-size: 14px;
+  font-family: $oswaldRegular;
+  font-size: $smallFontSize;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  color: #ffffff;
+  color: $fourthFontColor;
 
-  background-color: #68b738;
+  background-color: $bgColorBasic;
 }

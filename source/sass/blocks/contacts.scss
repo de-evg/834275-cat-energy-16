@@ -1,9 +1,34 @@
 .contacts {
-  font-family: "Oswald Regular", "Arial", sans-serif;
-  font-size: 14px;
+  font-family: $oswaldRegular;
+  font-size: $smallFontSize;
   line-height: 20px;
 
   &--background-gray {
     background-color: #f2f2f2;
   }
+}
+
+.contacts__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contacts__slogan {
+  margin: 0;
+  text-transform: uppercase;
+  color: $basicFontColor;
+}
+
+.contacts__content {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  color: $thirdFontColor;
+}
+
+.contacts__map {
+  width: 320px;
+  height: 362px;
+  border: none;
+
+  vertical-align: top;
 }

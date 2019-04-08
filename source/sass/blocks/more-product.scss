@@ -26,3 +26,24 @@
     top: 26px;
   }
 }
+
+.more-product__description {
+  margin: 0;
+
+  font-family: $oswaldRegular;
+  font-size: $basicFontSize;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $basicFontColor;
+}
+
+.more-product__text {
+  margin: 0;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $thirdFontColor;
+}

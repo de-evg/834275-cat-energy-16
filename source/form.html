@@ -22,20 +22,20 @@
     </nav>
   </header>
   <main class="page-main site-grid__wrapper">
-    <h1 class="page-main__title">Подбор программы</h1>
+    <h1 class="page-main__title page-main__title--no-border">Подбор программы</h1>
     <form class="page-main__program-form program-form" action="echo.htmlacademy.ru" method="post">
       <p class="program-form__description">Заполните анкету и мы подберем  программу питания для вашего кота</p>
-      <fieldset class="program-form__about-cat cat">
-        <legend class="cat__title visually-hidden">Данные о Вашем коте</legend>
-        <div class="cat__information">
-          <label>Имя:*
-            <input class="cat__name" type="text" name="name" placeholder="БАРСИК">
+      <fieldset class="program-form__about-cat about-cat">
+        <legend class="about-cat__title visually-hidden">Данные о Вашем коте</legend>
+        <div class="about-cat__information">
+          <label class="about-cat__name" for="about-cat__name">Имя:*
+            <input class="about-cat__input" id="about-cat__name" type="text" name="name" placeholder="БАРСИК">
           </label>
-          <label class="cat__weight">Вес (кг):*
-            <input type="text" name="weight" placeholder="7">
+          <label class="about-cat__weight" for="about-cat__weight">Вес (кг):*
+            <input class="about-cat__input" id="about-cat__weight" type="text" name="weight" placeholder="7">
           </label>
-          <label class="cat__age">Возраст (лет):
-            <input type="text" name="age" placeholder="7">
+          <label class="about-cat__age" for="about-cat__age">Возраст (лет):
+            <input class="about-cat__input" id="about-cat__age" type="text" name="age" placeholder="7">
           </label>
         </div>
       </fieldset>
@@ -64,8 +64,8 @@
         </div>
       </fieldset>
       <fieldset class="program-form__comment comment">
-        <label class="visually-hidden" for="user-comment">Комментарий
-          <textarea class="comment__text" id="user-comment" rows="6" cols="35" placeholder="РАССКАЖИ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
+        <label class="comment__title" for="user-comment">Комментарий
+          <textarea class="comment__text" id="user-comment" rows="6" cols="32" placeholder="РАССКАЖИ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
         </label>
       </fieldset>
       <fieldset class="program-form__optionally optionally">

@@ -1,0 +1,30 @@
+.extra-products {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.extra-products__title {
+  display: block;
+
+  font-family: $oswaldRegular;
+  font-size: $mediumFontSize;
+  font-weight: 400;
+  line-height: $mediumLineHeight;
+  color: $basicFontColor;
+
+  vertical-align: middle;
+
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 28px;
+
+  border-bottom: $borderGrayTypeThree;
+}
+
+.extra-product__table {
+  margin-bottom: 10px;
+}
+
+.extra-product__button {
+  display: inline-block;
+}

@@ -3,6 +3,27 @@
   margin: 0 auto;
   font-family: "Oswald Medium", "Arial", sans-serif;
   text-transform: uppercase;
-  width: $small-width;
+  width: $smallDeviceWidth;
   background-color: #ffffff;
+}
+
+.page-header__wrapper {
+  box-sizing: border-box;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid #e6e6e6;
+
+  font-family: "Oswald Medium", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.page-header__logo-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.page-header__logo-image {
+  word-wrap: break-word;
+  width: 191px;
 }

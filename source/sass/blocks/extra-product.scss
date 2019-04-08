@@ -1,0 +1,17 @@
+.extra-product {
+  padding-top: 14px;
+  padding-bottom: 17px;
+
+  border-bottom: $borderGrayTypeThree;
+}
+
+.extra-product__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-family: $oswaldRegular;
+  font-size: $mediumFontSize;
+  font-weight: 400;
+  color: $secondaryFontColor;
+  text-transform: uppercase;
+}

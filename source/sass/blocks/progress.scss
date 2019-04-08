@@ -1,5 +1,17 @@
-.progress {
-  font-family: "Oswald Regular", "Arial", sans-serif;
-  font-size: 24px;
+.progress__value {
+  margin: 0;
+
+  font-family: $oswaldRegular;
+  font-size: $mediumFontSize;
   list-style: 24px;
+  text-transform: uppercase;
+  color: $basicFontColor;
+}
+
+.progress__type {
+  font-family: "Arial", sans-serif;
+  font-size: $tinyFontSize;
+  line-height: 12px;
+  text-transform: none;
+  color: $thirdFontColor;
 }

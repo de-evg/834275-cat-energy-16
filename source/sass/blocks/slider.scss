@@ -1,7 +1,13 @@
-.categories-button {
+.slider__button {
+  margin: 0;
+  padding: 0;
+
   font-family: $oswaldRegular;
   font-size: $basicFontSize;
-  line-height: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   color: $basicFontColor;
+
+  border: none;
+  background-color: transparent;
 }

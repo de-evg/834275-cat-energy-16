@@ -1,3 +1,34 @@
-$small-width: 320px;
-$medium-width: 768px;
-$large-width: 1440px;
+//Device width
+$smallDeviceWidth: 320px;
+$mediumDeviceWidth: 768px;
+$largeDeviceWidth: 1440px;
+
+//Border
+$borderGrayTypeOne: 1px solid #e6e6e6;
+$borderGrayTypeTwo: 1px solid #ededed;
+$borderGrayTypeThree: 1px solid #cdcdcd;
+$borderGrayTypeFour: 1px solid #d9d9d9;
+
+//Fonts
+$oswaldRegular: "Oswald Regular", "Arial", sans-serif;
+$oswaldMedium: "Oswald Medium", "Arial", sans-serif;
+
+$basicFontSize: 16px;
+$tinyFontSize: 12px;
+$smallFontSize: 14px;
+$mediumFontSize: 24px;
+$largeFontSize: 36px;
+
+$basicFontColor: #111111;
+$secondaryFontColor: #222222;
+$thirdFontColor: #444444;
+$fourthFontColor: #ffffff;
+
+$basicLineHeight: 16px;
+$smallLineHeight: 14px;
+$mediumLineHeight: 24px;
+$largeLineHeight: 60px;
+
+//Button
+$bgColorBasic: #68b738;
+$bgColorSecondary: #f2f2f2;

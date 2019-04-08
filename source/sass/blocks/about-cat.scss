@@ -1,0 +1,24 @@
+.about-cat {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 23px;
+
+  border: none;
+  border-bottom: $borderGrayTypeTwo;
+}
+
+.about-cat__information {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 280px;
+  width: 280px;
+}
+
+.about-cat__name {
+  display: block;
+  width: 280px;
+}
+
+.about-cat__input {
+  margin-left: auto;
+}
