@@ -8,3 +8,11 @@
   line-height: 16px;
   color: $thirdFontColor;
 }
+
+@media (min-width: 768px) {
+  .copyright {
+    padding-top: 0;
+
+    border-top: none;
+  }
+}

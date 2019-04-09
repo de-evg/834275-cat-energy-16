@@ -4,3 +4,12 @@
   line-height: $basicLineHeight;
   color: $thirdFontColor;
 }
+
+.table-properties__property {
+  height: 5px;
+}
+
+.table-properties__value {
+  text-align: right;
+  height: 5px;
+}

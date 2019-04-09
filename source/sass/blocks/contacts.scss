@@ -40,3 +40,31 @@
 
   vertical-align: top;
 }
+
+@media (min-width: 768px) {
+  .contacts__wrapper {
+    justify-content: space-between;
+  }
+
+  .contacts__slogan {
+    padding-left: 40px;
+    font-size: $lowFontSize;
+    line-height: 25px;
+    flex-basis: 140px;
+    width: 140px;
+  }
+
+  .contacts__content {
+    padding-right: 40px;
+    font-size: $basicFontSize;
+    line-height: 20px;
+    text-align: right;
+
+    flex-basis: 160px;
+    width: 160px;
+  }
+
+  .contacts__map {
+    width: 768px;
+  }
+}

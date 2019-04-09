@@ -5,3 +5,10 @@
   text-transform: uppercase;
   color: $basicFontColor;
 }
+
+@media (min-width: 768px) {
+  .categories-button {
+    font-size: $lowFontSize;
+    line-height: $lowLineHeight;
+  }
+}

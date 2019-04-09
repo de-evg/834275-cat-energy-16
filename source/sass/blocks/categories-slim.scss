@@ -21,3 +21,25 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: 768px) {
+  .categories-slim--image {
+    &::before {
+      left: 395px;
+      top: 50px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 420px;
+      top: 35px;
+      width: 140px;
+      height: 194px;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}

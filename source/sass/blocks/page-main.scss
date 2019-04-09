@@ -7,9 +7,8 @@
 
 .page-main__title {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 28px;
   padding-right: 20px;
 
   border-bottom: $borderGrayTypeOne;
@@ -22,5 +21,21 @@
 
   &--no-border {
     border-bottom: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-main {
+    width: $mediumDeviceWidth;
+  }
+
+  .page-main__promo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page-main__advatages {
+    border-bottom: $borderGrayTypeOne;
   }
 }

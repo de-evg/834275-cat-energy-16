@@ -1,26 +1,46 @@
 .product {
-  padding-bottom: 24px;
+  padding-bottom: 23px;
 
   border-bottom: 1px solid #ededed;
 }
 
+.product__content {
+  display: flex;
+}
+
+.product__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .product__title {
   margin: 0;
+  margin-bottom: 10px;
+  padding-top: 22px;
+  padding-right: 50px;
 
   font-family: $oswaldRegular;
   font-size: $basicFontSize;
+  font-weight: 400;
   line-height: 20px;
   color: $basicFontColor;
+  text-transform: uppercase;
+}
+
+.product__table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
 .product__button {
   display: inline-block;
 
   font-size: $basicFontSize;
-  line-height: 20px;
+  line-height: 19px;
 
   &--gray {
     background-color: #f2f2f2;
-    color: $fourthFontColor;
+    color: $thirdFontColor;
   }
 }

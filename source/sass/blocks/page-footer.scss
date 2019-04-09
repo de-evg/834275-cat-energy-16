@@ -30,3 +30,28 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media (min-width: 768px) {
+  .page-footer {
+    width: 768px;
+
+    padding-top: 55px;
+    padding-bottom: 55px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__site-title-link {
+    margin-bottom: 0;
+  }
+
+  .page-footer__social {
+    margin-bottom: 0;
+  }
+}

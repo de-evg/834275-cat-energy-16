@@ -28,3 +28,20 @@
   word-wrap: break-word;
   width: 191px;
 }
+
+@media (min-width: 768px) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    width: $mediumDeviceWidth;
+    min-width: 100px;
+    padding: 0 30px;
+  }
+
+  .page-header__wrapper {
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+  }
+}
