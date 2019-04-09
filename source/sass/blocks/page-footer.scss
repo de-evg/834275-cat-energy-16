@@ -1,0 +1,32 @@
+.page-footer {
+  box-sizing: border-box;
+  width: 320px;
+  padding-top: 37px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  text-align: center;
+
+  background-color: #f2f2f2;
+}
+
+.page-footer__site-title-link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 32px;
+}
+
+.page-footer__social {
+  margin-bottom: 18px;
+  padding-left: 73px;
+  padding-right: 82px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,23 @@
+.categories-pro--image {
+  &::before {
+    position: absolute;
+    content: "";
+    left: 2px;
+    top: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: -7px;
+    top: 16px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+  }
+}

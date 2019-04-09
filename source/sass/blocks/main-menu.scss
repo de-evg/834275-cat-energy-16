@@ -1,0 +1,20 @@
+.main-menu__list {
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  list-style: none;
+  text-align: center;
+}
+
+.main-menu__link {
+  display: block;
+  word-wrap: break-word;
+
+  padding-top: 22px;
+  padding-bottom: 23px;
+  border-bottom: $borderGrayTypeOne;
+
+  font-size: 20px;
+  line-height: 20px;
+  color: $basicFontColor;
+}

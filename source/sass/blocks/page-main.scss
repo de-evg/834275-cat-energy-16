@@ -1,0 +1,26 @@
+.page-main {
+  box-sizing: border-box;
+  font-family: $oswaldMedium;
+  width: $smallDeviceWidth;
+  background-color: #ffffff;
+}
+
+.page-main__title {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  border-bottom: $borderGrayTypeOne;
+
+  font-family: $oswaldRegular;
+  font-size: $largeFontSize;
+  line-height: $largeLineHeight;
+  text-align: center;
+  color: $basicFontColor;
+
+  &--no-border {
+    border-bottom: none;
+  }
+}

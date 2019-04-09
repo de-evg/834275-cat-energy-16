@@ -1,0 +1,36 @@
+.slider__image {
+  margin-bottom: 30px;
+}
+
+.slider__buttons {
+  padding-bottom: 6px;
+  padding-left: 63px;
+  padding-right: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__button {
+  margin: 0;
+  padding: 0;
+
+  font-family: $oswaldRegular;
+  font-size: $basicFontSize;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basicFontColor;
+
+  border: none;
+  background-color: transparent;
+}
+
+.slider__toggle {
+  width: 82px;
+  height: 12px;
+  flex-basis: 82px;
+
+  border: $borderGrayTypeThree;
+  border-radius: 10px;
+
+  background-color: #ffffff;
+}

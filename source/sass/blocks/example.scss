@@ -1,0 +1,52 @@
+.example {
+  padding-top: 15px;
+  padding-bottom: 30px;
+
+  background-color: #f2f2f2;
+}
+
+.example__wrapper {
+  margin-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 23px;
+
+  font-family: $oswaldRegular;
+  font-weight: 400;
+  font-size: $largeFontSize;
+  line-height: 60px;
+  color: $basicFontColor;
+}
+
+.example__about {
+  margin: 0;
+  margin-bottom: 25px;
+  padding-right: 5px;
+
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $thirdFontColor;
+}
+
+.example__progress {
+  margin-bottom: 34px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__expenses {
+  margin: 0;
+
+  font-family: $oswaldRegular;
+  font-size: $smallFontSize;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $basicFontColor;
+}
