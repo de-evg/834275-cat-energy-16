@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   min-width: 320px;
 }
 
@@ -11,5 +11,11 @@ a {
 @media (min-width: 768px) {
   body {
     min-width: 768px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    min-width: 1440px;
   }
 }

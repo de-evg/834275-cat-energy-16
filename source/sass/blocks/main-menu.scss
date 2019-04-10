@@ -31,16 +31,17 @@
   }
 
   .main-menu__link {
+    font-family: $oswaldRegular;
     border-bottom: none;
     font-size: 18px;
     line-height: 24px;
   }
 
-  .main-menu__link--current {
+  .main-menu__item--current {
     position: relative;
   }
 
-  .main-menu__link--current::before {
+  .main-menu__item--current::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -48,5 +49,23 @@
     bottom: 12px;
     left: 0;
     background-color: #68b738;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-menu__link {
+    color: #ffffff;
+  }
+
+  .main-menu__link--no-promo {
+    color: $basicFontColor;
+  }
+
+  .main-menu__item--current::before {
+    background-color: #ffffff;
+  }
+
+  .main-menu__item--no-promo.main-menu__item--current::before {
+    background-color:  #68b738;
   }
 }

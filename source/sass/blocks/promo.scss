@@ -78,3 +78,23 @@
     line-height: $lowLineHeight;
   }
 }
+
+@media (min-width: 1440px) {
+  .promo {
+    padding-left: 190px;
+    padding-right: 110px;
+    padding-top: 0;
+    min-height: 0;
+  }
+
+  .promo__title {
+    padding-right: 720px;
+    margin-top: -500px;
+  }
+
+  .promo__image {
+    position: relative;
+    bottom: 75px;
+    left: 460px;
+  }
+}

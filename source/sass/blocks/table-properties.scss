@@ -13,3 +13,19 @@
   text-align: right;
   height: 5px;
 }
+
+@media (min-width: 768px) {
+  .table-properties {
+    margin-bottom: 33px;
+    font-size: $basicFontSize;
+  }
+
+  .table-properties__property {
+    text-align: left;
+    height: 26px;
+  }
+
+  .table-properties__row {
+    border-bottom: $borderGrayTypeThree;
+  }
+}

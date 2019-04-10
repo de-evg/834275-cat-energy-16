@@ -43,3 +43,25 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .categories-slim--image {
+    &::before {
+      left: 0;
+      top: 0;
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 15px;
+      top: -5px;
+      width: 70px;
+      height: 97px;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}

@@ -25,19 +25,19 @@
 @media (min-width: 768px) {
   .categories-pro--image {
     &::before {
-      left: 395px;
-      top: 50px;
-      width: 200px;
-      height: 200px;
+      left: 0;
+      top: 0;
+      width: 100px;
+      height: 100px;
     }
 
     &::after {
       position: absolute;
       content: "";
-      left: 360px;
-      top: 90px;
-      width: 468px;
-      height: 112px;
+      left: -20px;
+      top: 25px;
+      width: 134px;
+      height: 56px;
       background-image: url("../img/icon-cat-pro.svg");
       background-repeat: no-repeat;
     }

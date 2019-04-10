@@ -11,3 +11,17 @@
     padding-right: 30px;
   }
 }
+
+@media (min-width: 1440px) {
+  .categories {
+    padding-top: 80px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .categories__item {
+    box-sizing: border-box;
+    flex-basis: 570px;
+    width: 570px;
+  }
+}
