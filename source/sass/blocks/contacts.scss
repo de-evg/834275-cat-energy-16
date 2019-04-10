@@ -9,14 +9,11 @@
 }
 
 .contacts__wrapper {
+  width: calc($smallDeviceWidth - 40px);
   padding-top: 28px;
   padding-bottom: 26px;
-  padding-left: 20px;
-  padding-right: 20px;
 
   display: flex;
-  justify-content: flex-start;
-  flex-basis: 140px;
 }
 
 .contacts__slogan {
@@ -34,7 +31,7 @@
 }
 
 .contacts__map {
-  width: 320px;
+  width: 100%;
   height: 362px;
   border: none;
 
@@ -62,9 +59,5 @@
 
     flex-basis: 160px;
     width: 160px;
-  }
-
-  .contacts__map {
-    width: 768px;
   }
 }
