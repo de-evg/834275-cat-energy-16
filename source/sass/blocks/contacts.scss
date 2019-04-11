@@ -42,7 +42,7 @@
 }
 
 @media (min-width: 768px) {
-  .contacts {
+  .contacts--bg-gray {
     background-color: $bgColorTypeOne;
   }
 
@@ -74,6 +74,10 @@
 }
 
 @media (min-width: 1440px) {
+  .contacts {
+    background-color: #ffffff;
+  }
+
   .contacts__wrapper {
     padding-left: 110px;
     padding-right: 110px;

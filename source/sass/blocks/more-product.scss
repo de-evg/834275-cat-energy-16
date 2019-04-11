@@ -88,3 +88,21 @@
     padding-right: 40px;
   }
 }
+
+@media (min-width: 1440px) {
+  .more-product__content {
+    width: 169px;
+  }
+
+
+  .more-product__description {
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .more-product__text {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

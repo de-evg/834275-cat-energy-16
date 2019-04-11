@@ -46,8 +46,9 @@
     border-bottom: none;
     text-align: left;
     padding-left: 30px;
+    padding-right: 30px;
     padding-top: 30px;
-    padding-bottom: 80px;
+    padding-bottom: 25px;
   }
 
   .page-main__promo {
@@ -71,7 +72,7 @@
   }
 
   .page-main__product {
-    margin-bottom: 55px;
+    margin-top: 55px;
 
     flex-basis: 324px;
     width: 324px;
@@ -105,8 +106,24 @@
     margin: 0 auto;
   }
 
+  .page-main__title {
+    width: $largeDeviceWidth;
+    font-size: $bigFontSize;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
   .page-main__categories {
     display: flex;
     justify-content: space-between;
+  }
+
+  .page-main__products {
+    width: $largeDeviceWidth;
+  }
+
+  .page-main__product {
+    flex-basis: 245px;
+    width: 245px;
   }
 }

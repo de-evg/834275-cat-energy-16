@@ -37,10 +37,9 @@
     border-top: $borderGrayTypeThree;
   }
 
-  .extra-products__title  {
+  .extra-products__title {
     padding-left: 35px;
-    background: linear-gradient(to right, transparent 0, transparent 30px,
-      #ffffff 30px, #ffffff 340px, transparent 340px, transparent 100%);
+    background: linear-gradient(to right, transparent 0, transparent 30px, #ffffff 30px, #ffffff 340px, transparent 340px, transparent 100%);
     border-bottom: none;
   }
 
@@ -57,5 +56,18 @@
 
   .extra-product__button {
     display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .extra-products__inner {
+    display: flex;
+  }
+
+  .extra-product__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

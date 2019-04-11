@@ -36,7 +36,10 @@
 }
 
 .product__button {
+  box-sizing: border-box;
   display: inline-block;
+  min-width: 100px;
+  width: 100%;
 
   font-size: $basicFontSize;
   line-height: 19px;
@@ -67,9 +70,15 @@
     text-align: center;
     font-size: $lowFontSize;
   }
+}
 
-  .product__button {
-    box-sizing: border-box;
-    width: 248px;
+@media (min-width: 1440px) {
+  .product__container {
+    width: 169px;
+  }
+
+  .product__title {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
