@@ -8,8 +8,6 @@
   box-sizing: border-box;
   width: $smallDeviceWidth;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .page-main__wrapper--no-padding {
@@ -93,9 +91,12 @@
   }
 }
 
-
-
 @media (min-width: 1440px) {
+  .page-main__wrapper {
+    min-width: $largeDeviceWidth;
+    margin: 0 auto;
+  }
+
   .page-main__categories {
     display: flex;
     justify-content: space-between;

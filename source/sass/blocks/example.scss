@@ -53,7 +53,21 @@
 
 @media (min-width: 768px) {
   .example {
+    padding-left: 20px;
+    padding-right: 20px;
+
     min-height: 1080px;
     background: linear-gradient(to bottom, #ffffff 0, #ffffff 620px, #f2f2f2 620px, #f2f2f2 100%);
+  }
+
+  .slider__images {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .example {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
