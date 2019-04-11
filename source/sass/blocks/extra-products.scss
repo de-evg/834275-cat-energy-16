@@ -17,13 +17,6 @@
   border-bottom: $borderGrayTypeThree;
 }
 
-.extra-product__table {
-  margin-bottom: 10px;
-}
-
-.extra-product__button {
-  display: inline-block;
-}
 
 @media (min-width: 768px) {
   .extra-products {
@@ -36,14 +29,9 @@
       content: "";
       width: 100%;
       height: 5px;
-      background: green;
-      top: 40px;
+      background: #68b738;
+      top: 43px;
       z-index: -1;
     }
   }
-
-  .extra-products__title  {
-    background: linear-gradient(to right, #ffffff 0, #ffffff 300px, transparent 100px);
-  }
-
 }

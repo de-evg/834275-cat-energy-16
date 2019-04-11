@@ -15,6 +15,7 @@
 }
 
 .page-main__title {
+  box-sizing: border-box;
   margin: 0;
   padding-top: 14px;
   padding-bottom: 28px;
@@ -62,7 +63,7 @@
   .page-main__products {
     box-sizing: border-box;
     margin: 0 auto;
-    width: calc($mediumDeviceWidth - 60px);
+    width: $mediumDeviceWidth;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -87,7 +88,14 @@
 
   .page-main__extra-products {
     box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
     width: 100%;
+  }
+
+  .page-main__extra-product {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 

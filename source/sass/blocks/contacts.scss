@@ -42,9 +42,15 @@
 }
 
 @media (min-width: 768px) {
+  .contacts {
+    background-color: $bgColorTypeOne;
+  }
+
   .contacts__wrapper {
     padding-left: 30px;
     padding-right: 30px;
+
+    width: $mediumDeviceWidth;
     justify-content: space-between;
   }
 
