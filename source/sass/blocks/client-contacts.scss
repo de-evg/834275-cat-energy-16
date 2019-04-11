@@ -1,19 +1,21 @@
-.about-cat {
+.client-contacts {
   margin: 0;
   padding: 0;
+  padding-top: 23px;
   padding-bottom: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.about-cat__inner {
+.client-contacts__inner {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   width: $smallDeviceWidth;
   padding-left: 20px;
   padding-right: 20px;
-}
 
-.about-cat__wrapper {
+.client-contacts__wrapper {
   margin-top: 14px;
 
   flex-basis: 280px;
@@ -22,30 +24,15 @@
   justify-content: space-between;
 }
 
-.about-cat__label {
+.client-contacts__label {
   align-self: center;
 }
 
-.about-cat__input {
+.client-contacts__input {
   box-sizing: border-box;
   border: $borderGrayTypeOne;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.about-cat__input-name {
-  flex-basis: 230px;
-  width: 230px;
-}
-
-.about-cat__input-weight {
-  flex-basis: 204px;
-  width: 204px;
-}
-
-.about-cat__input-age {
-  flex-basis: 172px;
-  width: 172px;
 }
