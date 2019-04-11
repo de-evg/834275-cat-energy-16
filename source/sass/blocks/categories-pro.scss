@@ -1,4 +1,4 @@
-.categories-pro--image {
+.categories-pro__image {
   &::before {
     position: absolute;
     content: "";
@@ -23,7 +23,7 @@
 }
 
 @media (min-width: 768px) {
-  .categories-pro--image {
+  .categories-pro__image {
     &::before {
       left: 0;
       top: 0;

@@ -1,4 +1,4 @@
-.categories-slim--image {
+.categories-slim__image {
   &::before {
     position: absolute;
     content: "";
@@ -23,7 +23,7 @@
 }
 
 @media (min-width: 768px) {
-  .categories-slim--image {
+  .categories-slim__image {
     &::before {
       left: 395px;
       top: 50px;
@@ -45,7 +45,7 @@
 }
 
 @media (min-width: 1440px) {
-  .categories-slim--image {
+  .categories-slim__image {
     &::before {
       left: 0;
       top: 0;
