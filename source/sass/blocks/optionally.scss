@@ -16,6 +16,8 @@
 
 .optionally__title {
   margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .optionally__wrapper {
@@ -26,3 +28,61 @@
   padding-left: 46px;
 }
 
+.optionally__checkbox-label {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 28px;
+    border: 1px solid #cecece;
+    left: 0;
+    top: -6px;
+  }
+}
+
+.optionally__checkbox:checked + .optionally__checkbox-label::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-size: 21px 16px;
+  background-position: 50%;
+}
+
+.optionally__checkbox:disabled + .optionally__checkbox-label,
+.optionally__checkbox:disabled:checked + .optionally__checkbox-label {
+  opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .optionally__inner {
+
+    padding-left: 71px;
+    padding-right: 0;
+    width: $mediumDeviceWidth;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 112px;
+  }
+
+  .optionally__title {
+    padding-left: 71px;
+  }
+
+  .optionally__wrapper {
+    flex-basis: 344px;
+    width: 344px;
+  }
+
+  .optionally__checkbox-label {
+    font-size: $lowFontSize;
+    line-height: $lowLineHeight;
+  }
+
+  .optionally__checkbox-label::before {
+    width: 38px;
+    height: 38px;
+    left: 0;
+    top: -6px;
+  }
+}

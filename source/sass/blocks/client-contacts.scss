@@ -14,11 +14,16 @@
   padding-right: 20px;
 }
 
+.client-contacts__title {
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
 .client-contacts__wrapper {
+  box-sizing: border-box;
   margin-top: 14px;
 
   flex-basis: 280px;
-  width: inherit;
   display: flex;
   justify-content: space-between;
 }
@@ -34,4 +39,27 @@
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .client-contacts__inner {
+    flex-direction: column;
+    width: $mediumDeviceWidth;
+    padding-left: 71px;
+    padding-right: 71px;
+  }
+
+.client-contacts__title {
+  padding-left: 71px;
+
+}
+
+  .client-contacts__wrapper {
+    flex-basis: 52px;
+    height: 52px;
+  }
+
+  .client-contacts__input {
+    width: 550px;
+  }
 }

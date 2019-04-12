@@ -12,7 +12,6 @@
 
 .program-form__item {
   box-sizing: border-box;
-  width: 100%;
   margin-bottom: 20px;
   border: none;
 }
@@ -36,9 +35,28 @@
   text-transform: uppercase;
 }
 
+.program-form__about-cat {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
 .program-form__purpose {
   margin-bottom: 20px;
+  width: 100%;
+}
 
+.program-form__contacts {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.program-form__comment {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.program-form__optionally {
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -53,4 +71,30 @@
   line-height: $basicLineHeight;
   color: $thirdFontColor;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .program-form__description {
+    padding-left: 71px;
+    padding-right: 355px;
+
+    font-size: $lowFontSize;
+    line-height: 30px;
+  }
+
+  .program-form__item--border {
+    border: none;
+  }
+
+  .program-form__button-wrapper {
+    margin: 0 auto;
+    width: $mediumDeviceWidth;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program-form__text {
+    flex-basis: 344px;
+    text-align: left;
+  }
 }

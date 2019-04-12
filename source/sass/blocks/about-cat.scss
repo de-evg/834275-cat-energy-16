@@ -49,3 +49,31 @@
   flex-basis: 172px;
   width: 172px;
 }
+
+@media (min-width: 768px) {
+  .about-cat__inner {
+    width: $mediumDeviceWidth;
+    padding-left: 71px;
+    padding-right: 71px;
+  }
+
+  .about-cat__wrapper {
+    flex-basis: 708px;
+  }
+
+  .about-cat__input-name {
+    flex-basis: 565px;
+    width: 565px;
+  }
+
+  .about-cat__input-weight {
+    flex-basis: 534px;
+    width: 534px;
+  }
+
+  .about-cat__input-age {
+    flex-basis: 495px;
+    width: 495px;
+  }
+
+}
