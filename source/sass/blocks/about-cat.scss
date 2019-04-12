@@ -75,5 +75,36 @@
     flex-basis: 495px;
     width: 495px;
   }
+}
 
+@media (min-width: 1440px) {
+  .about-cat {
+    padding-bottom: 0;
+  }
+
+  .about-cat__wrapper:first-of-type {
+    margin-top: 0;
+  }
+
+  .about-cat__inner {
+    width: 720px;
+    min-height: 196px;
+    padding-left: 110px;
+    padding-right: 0;
+  }
+
+  .about-cat__input-name {
+    flex-basis: 475px;
+    width: 475px;
+  }
+
+  .about-cat__input-weight {
+    flex-basis: 435px;
+    width: 435px;
+  }
+
+  .about-cat__input-age {
+    flex-basis: 495px;
+    width: 495px;
+  }
 }

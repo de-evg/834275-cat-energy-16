@@ -25,11 +25,8 @@
 }
 
 .optionally__checkbox-label {
-  padding-left: 46px;
-}
-
-.optionally__checkbox-label {
   position: relative;
+  padding-left: 46px;
 
   &::before {
     position: absolute;
@@ -84,5 +81,24 @@
     height: 38px;
     left: 0;
     top: -6px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .optionally__inner {
+    padding-left: 110px;
+    padding-right: 110px;
+    width: $largeDeviceWidth;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .optionally__title {
+    padding-left: 110px;
+  }
+
+  .optionally__wrapper {
+    flex-basis: auto;
+    width: auto;
   }
 }

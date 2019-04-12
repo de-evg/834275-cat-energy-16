@@ -49,10 +49,9 @@
     padding-right: 71px;
   }
 
-.client-contacts__title {
-  padding-left: 71px;
-
-}
+  .client-contacts__title {
+    padding-left: 71px;
+  }
 
   .client-contacts__wrapper {
     flex-basis: 52px;
@@ -61,5 +60,19 @@
 
   .client-contacts__input {
     width: 550px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .client-contacts__title {
+    padding-left: 110px;
+  }
+
+  .client-contacts__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    width: $largeDeviceWidth;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

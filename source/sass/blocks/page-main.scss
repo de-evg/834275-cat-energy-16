@@ -55,7 +55,6 @@
 
     font-size: $bigFontSize;
     text-align: left;
-
   }
 
   .page-main__promo {
@@ -109,8 +108,12 @@
 
 @media (min-width: 1440px) {
   .page-main__wrapper {
-    min-width: $largeDeviceWidth;
+    width: $largeDeviceWidth;
     margin: 0 auto;
+  }
+
+  .page-main__wrapper--width-reduce {
+    width: 610px;
   }
 
   .page-main__title {
