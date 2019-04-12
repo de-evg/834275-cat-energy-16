@@ -13,14 +13,44 @@
 .program-form__item {
   box-sizing: border-box;
   width: 100%;
-  border: none;
   margin-bottom: 20px;
   border: none;
-  border-bottom: $borderGrayTypeTwo;
+}
+
+.program-form__item--border {
+  border-bottom: $borderGrayTypeOne;
+}
+
+.program-form__item .program-form__item-title {
+  font-family: $oswaldRegular;
+  font-size: $mediumFontSize;
+  line-height: $mediumLineHeight;
+  color: $basicFontColor;
+}
+
+.program-form__item .program-form__label {
+  font-family: $oswaldRegular;
+  font-size: $basicFontSize;
+  line-height: 18px;
+  color: $basicFontColor;
+  text-transform: uppercase;
 }
 
 .program-form__purpose {
   margin-bottom: 20px;
 
   width: 100%;
+}
+
+.program-form__button-submit {
+  width: $smallDeviceWidth;
+  border: none;
+}
+
+.program-form__text {
+  font-family: "Arial", sans-serif;
+  font-size: $smallFontSize;
+  line-height: $basicLineHeight;
+  color: $thirdFontColor;
+  text-align: center;
 }

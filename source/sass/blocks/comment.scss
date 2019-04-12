@@ -1,0 +1,27 @@
+.comment {
+  margin: 0;
+  padding: 0;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+.comment__inner {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: $smallDeviceWidth;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.comment__title {
+  margin-bottom: 20px;
+}
+
+.comment__text {
+  box-sizing: border-box;
+  padding: 14px 16px;
+  width: 100%;
+  border: none;
+  border: $borderGrayTypeOne;
+}

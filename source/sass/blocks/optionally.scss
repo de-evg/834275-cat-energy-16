@@ -1,0 +1,28 @@
+.optionally {
+  margin: 0;
+  padding: 0;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+.optionally__inner {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: $smallDeviceWidth;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.optionally__title {
+  margin-bottom: 20px;
+}
+
+.optionally__wrapper {
+  margin-bottom: 25px;
+}
+
+.optionally__checkbox-label {
+  padding-left: 46px;
+}
+
