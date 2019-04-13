@@ -1,24 +1,110 @@
 .about-cat {
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0;
+  padding: 0;
   padding-bottom: 23px;
-
-  border: none;
-  border-bottom: $borderGrayTypeTwo;
 }
 
-.about-cat__information {
+.about-cat__inner {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 280px;
-  width: 280px;
+  width: $smallDeviceWidth;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.about-cat__name {
-  display: block;
-  width: 280px;
+.about-cat__wrapper {
+  margin-top: 14px;
+
+  flex-basis: 280px;
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-cat__label {
+  align-self: center;
 }
 
 .about-cat__input {
-  margin-left: auto;
+  box-sizing: border-box;
+  border: $borderGrayTypeOne;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.about-cat__input-name {
+  flex-basis: 230px;
+  width: 230px;
+}
+
+.about-cat__input-weight {
+  flex-basis: 204px;
+  width: 204px;
+}
+
+.about-cat__input-age {
+  flex-basis: 172px;
+  width: 172px;
+}
+
+@media (min-width: 768px) {
+  .about-cat__inner {
+    width: $mediumDeviceWidth;
+    padding-left: 71px;
+    padding-right: 71px;
+  }
+
+  .about-cat__wrapper {
+    flex-basis: 708px;
+  }
+
+  .about-cat__input-name {
+    flex-basis: 565px;
+    width: 565px;
+  }
+
+  .about-cat__input-weight {
+    flex-basis: 534px;
+    width: 534px;
+  }
+
+  .about-cat__input-age {
+    flex-basis: 495px;
+    width: 495px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-cat {
+    padding-bottom: 0;
+  }
+
+  .about-cat__wrapper:first-of-type {
+    margin-top: 0;
+  }
+
+  .about-cat__inner {
+    width: 720px;
+    min-height: 196px;
+    padding-left: 110px;
+    padding-right: 0;
+  }
+
+  .about-cat__input-name {
+    flex-basis: 475px;
+    width: 475px;
+  }
+
+  .about-cat__input-weight {
+    flex-basis: 435px;
+    width: 435px;
+  }
+
+  .about-cat__input-age {
+    flex-basis: 495px;
+    width: 495px;
+  }
 }

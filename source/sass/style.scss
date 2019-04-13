@@ -1,14 +1,15 @@
+@import "../css/normolize.css";
 @import "fonts.scss";
 @import "variables.scss";
 @import "base.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/site-grid";
+@import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/burger-menu.scss";
 @import "blocks/main-menu.scss";
 @import "blocks/page-main.scss";
 @import "blocks/promo.scss";
-@import "blocks/button.scss";
 @import "blocks/categories.scss";
 @import "blocks/categories-item.scss";
 @import "blocks/categories-pro.scss";
@@ -32,3 +33,7 @@
 @import "blocks/slider.scss";
 @import "blocks/program-form.scss";
 @import "blocks/about-cat.scss";
+@import "blocks/purpose.scss";
+@import "blocks/client-contacts.scss";
+@import "blocks/comment.scss";
+@import "blocks/optionally.scss";

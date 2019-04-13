@@ -1,4 +1,4 @@
-.categories-slim--image {
+.categories-slim__image {
   &::before {
     position: absolute;
     content: "";
@@ -19,5 +19,49 @@
     height: 49px;
     background-image: url("../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 768px) {
+  .categories-slim__image {
+    &::before {
+      left: 395px;
+      top: 50px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 420px;
+      top: 35px;
+      width: 140px;
+      height: 194px;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .categories-slim__image {
+    &::before {
+      left: 0;
+      top: 0;
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 15px;
+      top: -5px;
+      width: 70px;
+      height: 97px;
+      background-image: url("../img/icon-cat-slim.svg");
+      background-repeat: no-repeat;
+    }
   }
 }

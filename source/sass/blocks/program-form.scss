@@ -1,5 +1,4 @@
 .program-form__description {
-  margin: 0;
   margin-bottom: 35px;
   padding-left: 20px;
   padding-right: 20px;
@@ -9,4 +8,142 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $basicFontColor;
+}
+
+.program-form__item {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.program-form__item--border {
+  border-bottom: $borderGrayTypeOne;
+}
+
+.program-form__item .program-form__item-title {
+  font-family: $oswaldRegular;
+  font-size: $mediumFontSize;
+  line-height: $mediumLineHeight;
+  color: $basicFontColor;
+}
+
+.program-form__item .program-form__label {
+  font-family: $oswaldRegular;
+  font-size: $basicFontSize;
+  line-height: 18px;
+  color: $basicFontColor;
+  text-transform: uppercase;
+}
+
+.program-form__about-cat {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.program-form__purpose {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.program-form__contacts {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.program-form__comment {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.program-form__optionally {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.program-form__button-submit {
+  width: $smallDeviceWidth;
+  border: none;
+}
+
+.program-form__text {
+  font-family: "Arial", sans-serif;
+  font-size: $smallFontSize;
+  line-height: $basicLineHeight;
+  color: $thirdFontColor;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .program-form__description {
+    padding-left: 71px;
+    padding-right: 355px;
+
+    font-size: $lowFontSize;
+    line-height: 30px;
+  }
+
+  .program-form__item--border {
+    border: none;
+  }
+
+  .program-form__button-wrapper {
+    margin: 0 auto;
+    width: $mediumDeviceWidth;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program-form__button-submit {
+    font-size: $lowFontSize;
+    line-height: $lowLineHeight;
+  }
+
+  .program-form__text {
+    flex-basis: 344px;
+    width: 344px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  .program-form__description {
+    padding-left: 110px;
+    padding-right: 950px;
+  }
+
+  .program-form__container {
+    margin: 0 auto;
+    width: $largeDeviceWidth;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program-form__about-cat {
+    flex-basis: 610px;
+    width: 610px;
+  }
+
+  .program-form__purpose {
+    flex-basis: 610px;
+    width: 610px;
+  }
+
+  .program-form__button-wrapper {
+    margin: 0 auto;
+    width: $largeDeviceWidth;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .program-form__button-submit {
+    font-size: $lowFontSize;
+    line-height: $lowLineHeight;
+  }
+
+  .program-form__text {
+    flex-basis: 570px;
+    width: 570px;
+    text-align: left;
+  }
 }

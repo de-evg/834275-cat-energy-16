@@ -1,0 +1,78 @@
+.client-contacts {
+  margin: 0;
+  padding: 0;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+.client-contacts__inner {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: $smallDeviceWidth;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.client-contacts__title {
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+.client-contacts__wrapper {
+  box-sizing: border-box;
+  margin-top: 14px;
+
+  flex-basis: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-contacts__label {
+  align-self: center;
+}
+
+.client-contacts__input {
+  box-sizing: border-box;
+  border: $borderGrayTypeOne;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .client-contacts__inner {
+    flex-direction: column;
+    width: $mediumDeviceWidth;
+    padding-left: 71px;
+    padding-right: 71px;
+  }
+
+  .client-contacts__title {
+    padding-left: 71px;
+  }
+
+  .client-contacts__wrapper {
+    flex-basis: 52px;
+    height: 52px;
+  }
+
+  .client-contacts__input {
+    width: 550px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .client-contacts__title {
+    padding-left: 110px;
+  }
+
+  .client-contacts__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    width: $largeDeviceWidth;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}

@@ -1,4 +1,4 @@
-.categories-pro--image {
+.categories-pro__image {
   &::before {
     position: absolute;
     content: "";
@@ -19,5 +19,27 @@
     height: 28px;
     background-image: url("../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 768px) {
+  .categories-pro__image {
+    &::before {
+      left: 0;
+      top: 0;
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: -20px;
+      top: 25px;
+      width: 134px;
+      height: 56px;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
+    }
   }
 }

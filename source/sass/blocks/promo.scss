@@ -10,8 +10,8 @@
   min-height: 450px;
 
 
-  font-family: "Oswald Regular", "Arial", sans-serif;
-  color: #ffffff;
+  font-family: $oswaldRegular;
+  color: $fourthFontColor;
   text-align: center;
 }
 
@@ -19,7 +19,7 @@
   margin: 0;
   margin-bottom: 23px;
 
-  font-size: 36px;
+  font-size: $largeFontSize;
   line-height: 36px;
   font-weight: 400;
 }
@@ -28,9 +28,9 @@
   display: inline-block;
   margin-bottom: 30px;
 
-  font-size: 14px;
+  font-size: $smallFontSize;
   font-weight: 600;
-  line-height: 14px;
+  line-height: $smallLineHeight;
   text-transform: uppercase;
 }
 
@@ -41,4 +41,60 @@
 
 .promo__button {
   display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .promo {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    background-image: none;
+    background-color: #ffffff;
+
+    color: $basicFontColor;
+    text-align: left;
+  }
+
+  .promo__title {
+    font-size: $bigFontSize;
+    font-weight: 600;
+    line-height: $largeLineHeight;
+
+    padding-right: 195px;
+  }
+
+  .promo__slogan {
+    font-size: $lowFontSize;
+    line-height: $lowLineHeight;
+  }
+
+  .promo__button {
+    margin-top: -270px;
+    padding-left: 25px;
+    padding-right: 25px;
+    min-width: 195px;
+
+    font-size: $lowFontSize;
+    line-height: $lowLineHeight;
+  }
+}
+
+@media (min-width: 1440px) {
+  .promo {
+    padding-left: 190px;
+    padding-right: 110px;
+    padding-top: 0;
+    min-height: 0;
+  }
+
+  .promo__title {
+    padding-right: 720px;
+    margin-top: -500px;
+  }
+
+  .promo__image {
+    position: relative;
+    bottom: 75px;
+    left: 460px;
+  }
 }

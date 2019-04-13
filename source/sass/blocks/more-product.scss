@@ -29,6 +29,7 @@
 
 .more-product__description {
   margin: 0;
+  margin-bottom: 7px;
 
   font-family: $oswaldRegular;
   font-size: $basicFontSize;
@@ -46,4 +47,62 @@
   line-height: 16px;
   text-align: center;
   color: $thirdFontColor;
+}
+
+@media (min-width: 768px) {
+  .more-product {
+    border: $borderGrayTypeOne;
+  }
+
+  .more-product__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+  }
+
+  .more-product__content {
+    padding-top: 160px;
+
+    &::before {
+      width: 60px;
+      top: 78px;
+    }
+
+    &::after {
+      height: 60px;
+      top: 49px;
+    }
+  }
+
+  .more-product__description {
+    font-size: $lowFontSize;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .more-product__text {
+    font-size: $basicFontSize;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .more-product__content {
+    width: 169px;
+  }
+
+
+  .more-product__description {
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .more-product__text {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
