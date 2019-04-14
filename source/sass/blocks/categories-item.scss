@@ -43,6 +43,7 @@
 
 @media (min-width: 768px) {
   .categories-item {
+    margin-bottom: 31px;
     padding-top: 40px;
     padding-left: 50px;
     padding-right: 280px;
@@ -56,16 +57,17 @@
   }
 
   .categories-item__title {
-    margin-bottom: 0;
+    margin-bottom: 5px;
     padding-left: 0;
+    padding-top: 36px;
 
     font-size: $largeFontSize;
-    line-height: 60px;
+    line-height: 37px;
     color: $basicFontColor;
   }
 
   .categories-item__about {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     font-size: $basicFontSize;
     line-height: $mediumLineHeight;
     border-bottom: none;

@@ -59,6 +59,15 @@
 
   .page-footer__social {
     margin-bottom: 0;
+    padding-left: 99px;
+    width: 124px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__copyright {
+    width: 162px;
   }
 }
 
@@ -84,7 +93,5 @@
     margin-bottom: 0;
   }
 
-  .page-footer__social {
-    margin-bottom: 0;
-  }
+
 }

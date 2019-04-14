@@ -1,9 +1,36 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url("img/pixelGlass/cat-energy-index-mobile.png");
+    }
+    /* Планшет */
+    @media (min-width: 768px) {
+      HTML {
+        /* Планшетный макет */
+        background-image: url("img/pixelGlass/cat-energy-index-tablet.png");
+      }
+    }
+    /* Десктоп */
+    @media (min-width: 1440px) {
+      HTML {
+        /* Десктопный макет */
+        background-image: url("img/pixelGlass/cat-energy-index-desktop.png");
+      }
+    }
+  </style>
+  <link href="pixel-glass/styles.css" rel="stylesheet">
+  <script src="pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
   <title>Cat energy. Функционаьлное питание для котов.</title>
+  <link href="css/normolize.min.css">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="site-grid">
@@ -54,7 +81,7 @@
           <li class="advantages-list__item advantages-list__item--first-item-bg"><span class="advantages-list__first-item-img">Функциональное питание содержит только полезные питательные вещества.</span></li>
           <li class="advantages-list__item advantages-list__item--second-item-bg"><span class="advantages-list__second-item-img">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</span></li>
           <li class="advantages-list__item advantages-list__item--third-item-bg advantages-list__item--no-margin"><span class="advantages-list__third-item-img">Замените один-два приема обычной еды на наше функциональное питание.</span></li>
-          <li class="advantages-list__item advantages-list__item--fourth-item-bg advantages-list__item--no-margin"><span class="advantages-list__fourth-item-img">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</span></li>
+          <li class="advantages-list__item advantages-list__item--fourth-item-bg advantages-list__item--no-margin"><span class="advantages-list__fourth-item-img">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</span></li>
         </ul>
       </section>
     </div>
@@ -64,11 +91,13 @@
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__about">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__progress progress">
-            <p class="progress__value">5 кг <span class="progress__type">снижение  веса</span></p>
-            <p class="progress__value">60 дней <span class="progress__type">затрачено  времени</span></p>
+          <div class="example__progress-wrapper">
+            <div class="example__progress progress">
+              <p class="progress__value">5 кг <span class="progress__type">снижение  веса</span></p>
+              <p class="progress__value">60 дней <span class="progress__type progress__type--large-width">затрачено  времени</span></p>
+            </div>
+            <p class="example__expenses">Затраты на питание: 15 000 руб.</p>
           </div>
-          <p class="example__expenses">Затраты на питание: 15 000 руб.</p>
         </div>
       </div>
       <div class="example__slider slider">
@@ -90,21 +119,23 @@
       <h2 class="contacts__title visually-hidden">Контакты</h2>
       <div class="page-main__wrapper">
         <div class="contacts__wrapper">
-          <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__content">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+          <p class="contacts__slogan">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__content">ул. Большая Конюшенная, д. 19/8<br><br>Санкт-Петербург</p>
         </div>
       </div>
-      <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/-/CCuL4L9i" width="1345" height="645"></iframe>
+      <div class="contacts__map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5703b919d7dfa13d1f6baa09ab5b9e7aab6a17f0cfa657cffe8abed4aefb7455&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+      </div>
     </section>
   </main>
   <footer class="page-footer site-grid__wrapper">
     <div class="page-footer__inner">
-      <a class="page-footer__site-title-link" href="#">
+      <a class="page-footer__site-title-link">
         <img class="page-footer__site-title" src="img/logo-footer.svg" width="128" height="24" alt="Магазин Cat energy">
       </a>
       <div class="page-footer__social social">
         <a class="social__link" href="#" aria-label="Мы в Vkontakte">
-          <span class="social__icon">
+          <span class="social__icon social__icon--vk">
             <svg width="22" height="12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
               <g>
                 <path
@@ -128,7 +159,7 @@
           </span>
         </a>
         <a class="social__link" href="#" aria-label="Мы в Instagram">
-          <span class="social__icon">
+          <span class="social__icon social__icon--inst">
             <svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
               <style type="text/css">
                 .st0 {
@@ -143,7 +174,7 @@
             </svg>
           </span>
         </a>
-        <a class="social__link" href="#" aria-label="Мы в Facebook"><span class="social__icon">
+        <a class="social__link" href="#" aria-label="Мы в Facebook"><span class="social__icon social__icon--fb">
           <svg width="10" height="19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
             <g>
               <path

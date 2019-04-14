@@ -45,7 +45,7 @@
 
 @media (min-width: 768px) {
   .promo {
-    padding-left: 30px;
+    padding-left: 118px;
     padding-right: 30px;
 
     background-image: none;
@@ -56,6 +56,9 @@
   }
 
   .promo__title {
+    margin-bottom: 40px;
+    padding-top: 25px;
+    padding-left: 0;
     font-size: $bigFontSize;
     font-weight: 600;
     line-height: $largeLineHeight;
@@ -64,18 +67,27 @@
   }
 
   .promo__slogan {
+    margin-bottom: 15px;
+    padding-left: 0;
     font-size: $lowFontSize;
     line-height: $lowLineHeight;
   }
 
   .promo__button {
-    margin-top: -270px;
+    margin-top: -576px;
+    margin-bottom: 507px;
+    padding-top: 15px;
+    padding-bottom: 17px;
     padding-left: 25px;
     padding-right: 25px;
     min-width: 195px;
 
     font-size: $lowFontSize;
     line-height: $lowLineHeight;
+  }
+
+  .promo__image {
+    min-height: 610px;
   }
 }
 

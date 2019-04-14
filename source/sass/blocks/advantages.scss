@@ -18,10 +18,16 @@
 
 @media (min-width: 768px) {
   .advantages {
-    padding-top: 50px;
-    padding-bottom: 55px;
+    padding-top: 46px;
+    padding-bottom: 57px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .advantages__title {
+    margin-bottom: 72px;
+    font-size: $bigFontSize;
+    line-height: $largeLineHeight;
   }
 
   .advantages__list {

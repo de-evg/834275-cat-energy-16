@@ -1,4 +1,4 @@
-.slider__image {
+.slider__images {
   margin-bottom: 30px;
 }
 
@@ -33,4 +33,34 @@
   border-radius: 10px;
 
   background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .slider__images {
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 560px;
+  }
+
+  .slider__buttons {
+    height: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .slider__button {
+    font-size: $lowFontSize;
+    line-height: $lowLineHeight;
+  }
+
+  .slider__toggle {
+    flex-grow: 1;
+    align-self: center;
+    max-width: 428px;
+    height: 6px;
+    border: none;
+    background-color: #dcdcdc;
+  }
 }
