@@ -48,7 +48,7 @@
   .categories-slim__image {
     &::before {
       left: 0;
-      top: 0;
+      top: 7px;
       width: 100px;
       height: 100px;
     }
@@ -57,7 +57,7 @@
       position: absolute;
       content: "";
       left: 15px;
-      top: -5px;
+      top: 1px;
       width: 70px;
       height: 97px;
       background-image: url("../img/icon-cat-slim.svg");

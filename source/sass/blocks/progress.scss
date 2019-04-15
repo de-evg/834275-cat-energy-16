@@ -3,7 +3,7 @@
 
   margin: 0;
   padding-top: 16px;
-  padding-bottom: 22px;
+  padding-bottom: 14px;
   flex-basis: 122px;
   width: 122px;
 
@@ -26,7 +26,7 @@
   width: auto;
   left: 50%;
   bottom: 0;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, 65%);
 
 
   font-family: "Arial", sans-serif;
@@ -39,10 +39,6 @@
 }
 
 @media (min-width: 768px) {
-  .progress {
-    margin-bottom: 0;
-  }
-
   .progress__value {
     margin-right: 42px;
     flex-basis: 160px;
@@ -57,10 +53,18 @@
     font-size: $smallFontSize;
     line-height: $smallLineHeight;
 
+    transform: translate(-50%, 50%);
+
     background-color: #ffffff;
   }
 
   .progress__type--large-width {
     width: 142px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .progress__type {
+    background-color: $bgColorTypeOne;
   }
 }

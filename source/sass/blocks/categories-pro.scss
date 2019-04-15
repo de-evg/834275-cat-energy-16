@@ -43,3 +43,25 @@
     }
   }
 }
+
+@media (min-width: 1440px) {
+  .categories-pro__image {
+    &::before {
+      left: 0;
+      top: 7px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: -17px;
+      top: 29px;
+      width: 134px;
+      height: 56px;
+      background-image: url("../img/icon-cat-pro.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}

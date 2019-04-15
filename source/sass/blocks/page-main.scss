@@ -127,6 +127,23 @@
     padding-right: 110px;
   }
 
+  .page-main__example {
+    display: flex;
+    border: none;
+  }
+
+  .page-main__example > .page-main__wrapper {
+    margin: 0;
+    padding-top: 15px;
+    flex-basis: 610px;
+    width: 610px;
+  }
+
+  .page-main__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
   .page-main__categories {
     display: flex;
     justify-content: space-between;

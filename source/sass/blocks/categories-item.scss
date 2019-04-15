@@ -77,10 +77,10 @@
 @media (min-width: 1440px) {
   .categories-item {
     margin-bottom: 0;
-    padding-top: 75px;
-    padding-left: 50px;
+    padding-top: 40px;
+    padding-left: 52px;
     padding-right: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 61px;
 
     background-color: #f2f2f2;
   }
@@ -91,13 +91,14 @@
 
   .categories-item__title {
     margin-bottom: 0;
-    padding-left: 165px;
-    padding-bottom: 80px;
+    padding-left: 162px;
+    padding-bottom: 74px;
   }
 
   .categories-item__about {
-    margin-bottom: 35px;
+    margin-bottom: 31px;
     padding-bottom: 0;
+
     font-size: $basicFontSize;
     line-height: $mediumLineHeight;
     border-bottom: none;

@@ -54,8 +54,17 @@
 }
 
 @media (min-width: 1440px) {
+  .main-menu__list {
+    padding-top: 0;
+    padding-right: 0;
+    flex-basis: 480px;
+    width: 480px;
+  }
+
   .main-menu__link {
     color: #ffffff;
+    font-size: $lowFontSize;
+    line-height: 24px;
   }
 
   .main-menu__link--no-promo {

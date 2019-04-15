@@ -30,7 +30,7 @@
 }
 
 @media (min-width: 768px) {
-  .page-header {
+  .page-header__container {
     display: flex;
     justify-content: space-between;
     width: $mediumDeviceWidth;
@@ -56,6 +56,7 @@
     min-height: 696px;
   }
 
+
   .page-header--no-promo {
     min-height: 0;
     background: transparent;
@@ -67,7 +68,9 @@
   }
 
   .page-header__main-menu {
+    flex-grow: 1;
+    max-width: 480px;
     padding-right: 110px;
-    padding-top: 75px;
+    padding-top: 52px;
   }
 }

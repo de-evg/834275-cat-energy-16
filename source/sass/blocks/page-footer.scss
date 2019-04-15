@@ -44,6 +44,7 @@
 
   .page-footer__inner {
     box-sizing: border-box;
+    padding-top: 7px;
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
@@ -74,7 +75,7 @@
 @media (min-width: 1440px) {
   .page-footer {
     width: 100%;
-    padding-top: 55px;
+    padding-top: 50px;
     padding-bottom: 55px;
   }
 
@@ -92,6 +93,4 @@
   .page-footer__site-title-link {
     margin-bottom: 0;
   }
-
-
 }
