@@ -1,65 +1,71 @@
 .extra-bonus {
   padding-top: 39px;
+  padding-right: 20px;
   padding-bottom: 35px;
   padding-left: 20px;
-  padding-right: 20px;
 }
 
 .extra-bonus__wrapper {
   position: relative;
 
+  padding-top: 190px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+
   background-color: #70b447;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 190px;
-  padding-bottom: 40px;
 
   &::before {
     position: absolute;
-    content: "";
-    width: 55px;
-    height: 60px;
     // background-image: url("../img/icon-gift.svg");
     top: 65px;
     left: 113px;
+
+    width: 55px;
+    height: 60px;
+
+    content: "";
   }
 }
 
 .extra-bonus__content {
-  margin: 0;
-
   font-family: "Arial", sans-serif;
   font-size: $basicFontSize;
   line-height: 20px;
-  color: #ffffff;
+
+  margin: 0;
+
   text-align: center;
+
+  color: #ffffff;
 }
 
 @media (min-width: 768px) {
   .extra-bonus {
-    padding-left: 30px;
     padding-right: 30px;
+    padding-left: 30px;
   }
 
   .extra-bonus__wrapper {
     box-sizing: border-box;
-    padding: 0;
-    background-color: #70b447;
-    padding-left: 420px;
-    padding-top: 65px;
-
     //временные стили
     width: 708px;
     height: 200px;
+    padding: 0;
+    padding-top: 65px;
+    padding-left: 420px;
+
+    background-color: #70b447;
     background-image: none;
   }
 
   .extra-bonus__content {
-    text-align: left;
     padding: 0;
     padding-right: 100px;
+
+    text-align: left;
   }
 }
 
@@ -69,18 +75,19 @@
   }
 
   .extra-bonus__wrapper {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 185px;
-
     //временные стили
     width: 245px;
     height: 288px;
+    padding-top: 185px;
+    padding-right: 40px;
+    padding-left: 40px;
+
     background-image: none;
   }
 
   .extra-bonus__content {
-    text-align: center;
     padding: 0;
+
+    text-align: center;
   }
 }

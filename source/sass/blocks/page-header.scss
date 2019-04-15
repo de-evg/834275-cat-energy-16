@@ -1,76 +1,89 @@
 .page-header {
-  box-sizing: border-box;
-  margin: 0 auto;
   font-family: "Oswald Medium", "Arial", sans-serif;
-  text-transform: uppercase;
+
+  box-sizing: border-box;
   width: $smallDeviceWidth;
+  margin: 0 auto;
+
+  text-transform: uppercase;
+
   background-color: #ffffff;
 }
 
 .page-header__wrapper {
+  font-family: "Oswald Medium", "Arial", sans-serif;
+
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   box-sizing: border-box;
   padding-top: 14px;
+  padding-right: 20px;
   padding-bottom: 13px;
   padding-left: 20px;
-  padding-right: 20px;
+
+  text-transform: uppercase;
 
   border-bottom: 1px solid #e6e6e6;
 
-  font-family: "Oswald Medium", "Arial", sans-serif;
-  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-header__logo-image {
-  word-wrap: break-word;
   width: 191px;
+
+  word-wrap: break-word;
 }
 
 @media (min-width: 768px) {
   .page-header__container {
     display: flex;
-    justify-content: space-between;
+
     width: $mediumDeviceWidth;
     padding: 0 30px;
+
+    justify-content: space-between;
   }
 
   .page-header__wrapper {
     display: inline-block;
-    padding-left: 0;
+
     padding-right: 0;
+    padding-left: 0;
+
     border: none;
   }
 }
 
 @media (min-width: 1440px) {
   .page-header {
-    padding: 0;
     width: $largeDeviceWidth;
+    min-height: 696px;
+    padding: 0;
+
     background: linear-gradient(to right, #ffffff 0, #ffffff 50%, #65a93c 50%, #65a93c 100%);
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 100%;
-    min-height: 696px;
   }
 
 
   .page-header--no-promo {
     min-height: 0;
+
     background: transparent;
   }
 
   .page-header__wrapper {
-    padding-left: 110px;
     padding-top: 75px;
+    padding-left: 110px;
   }
 
   .page-header__main-menu {
-    flex-grow: 1;
     max-width: 480px;
-    padding-right: 110px;
     padding-top: 52px;
+    padding-right: 110px;
+
+    flex-grow: 1;
   }
 }

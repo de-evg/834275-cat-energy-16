@@ -2,6 +2,7 @@
   font-family: "Arial", sans-serif;
   font-size: $tinyFontSize;
   line-height: $basicLineHeight;
+
   color: $thirdFontColor;
 }
 
@@ -10,19 +11,22 @@
 }
 
 .table-properties__value {
-  text-align: right;
   height: 5px;
+
+  text-align: right;
 }
 
 @media (min-width: 768px) {
   .table-properties {
-    margin-bottom: 33px;
     font-size: $basicFontSize;
+
+    margin-bottom: 33px;
   }
 
   .table-properties__property {
-    text-align: left;
     height: 26px;
+
+    text-align: left;
   }
 
   .table-properties__row {

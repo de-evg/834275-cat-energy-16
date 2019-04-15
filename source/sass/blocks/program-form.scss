@@ -1,18 +1,21 @@
 .program-form__description {
-  margin-bottom: 35px;
-  padding-left: 20px;
-  padding-right: 20px;
-
   font-family: $oswaldRegular;
   font-size: $smallFontSize;
   line-height: 18px;
+
+  margin-bottom: 35px;
+  padding-right: 20px;
+  padding-left: 20px;
+
   text-transform: uppercase;
+
   color: $basicFontColor;
 }
 
 .program-form__item {
   box-sizing: border-box;
   margin-bottom: 20px;
+
   border: none;
 }
 
@@ -24,6 +27,7 @@
   font-family: $oswaldRegular;
   font-size: $mediumFontSize;
   line-height: $mediumLineHeight;
+
   color: $basicFontColor;
 }
 
@@ -31,37 +35,40 @@
   font-family: $oswaldRegular;
   font-size: $basicFontSize;
   line-height: 18px;
-  color: $basicFontColor;
+
   text-transform: uppercase;
+
+  color: $basicFontColor;
 }
 
 .program-form__about-cat {
-  margin-bottom: 20px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .program-form__purpose {
-  margin-bottom: 20px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .program-form__contacts {
-  margin-bottom: 20px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .program-form__comment {
-  margin-bottom: 20px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .program-form__optionally {
-  margin-bottom: 20px;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .program-form__button-submit {
   width: $smallDeviceWidth;
+
   border: none;
 }
 
@@ -69,17 +76,19 @@
   font-family: "Arial", sans-serif;
   font-size: $smallFontSize;
   line-height: $basicLineHeight;
-  color: $thirdFontColor;
+
   text-align: center;
+
+  color: $thirdFontColor;
 }
 
 @media (min-width: 768px) {
   .program-form__description {
-    padding-left: 71px;
-    padding-right: 355px;
-
     font-size: $lowFontSize;
     line-height: 30px;
+
+    padding-right: 355px;
+    padding-left: 71px;
   }
 
   .program-form__item--border {
@@ -87,9 +96,11 @@
   }
 
   .program-form__button-wrapper {
-    margin: 0 auto;
-    width: $mediumDeviceWidth;
     display: flex;
+
+    width: $mediumDeviceWidth;
+    margin: 0 auto;
+
     justify-content: space-between;
   }
 
@@ -99,41 +110,46 @@
   }
 
   .program-form__text {
-    flex-basis: 344px;
     width: 344px;
+
     text-align: left;
+
+    flex-basis: 344px;
   }
 }
 
 @media (min-width: 1440px) {
   .program-form__description {
-    padding-left: 110px;
     padding-right: 950px;
+    padding-left: 110px;
   }
 
   .program-form__container {
-    margin: 0 auto;
-    width: $largeDeviceWidth;
-
     display: flex;
+
+    width: $largeDeviceWidth;
+    margin: 0 auto;
+
     justify-content: space-between;
   }
 
   .program-form__about-cat {
-    flex-basis: 610px;
     width: 610px;
+
+    flex-basis: 610px;
   }
 
   .program-form__purpose {
-    flex-basis: 610px;
     width: 610px;
+
+    flex-basis: 610px;
   }
 
   .program-form__button-wrapper {
-    margin: 0 auto;
     width: $largeDeviceWidth;
-    padding-left: 110px;
+    margin: 0 auto;
     padding-right: 110px;
+    padding-left: 110px;
   }
 
   .program-form__button-submit {
@@ -142,8 +158,10 @@
   }
 
   .program-form__text {
-    flex-basis: 570px;
     width: 570px;
+
     text-align: left;
+
+    flex-basis: 570px;
   }
 }

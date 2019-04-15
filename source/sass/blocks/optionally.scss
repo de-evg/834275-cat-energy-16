@@ -6,18 +6,19 @@
 }
 
 .optionally__inner {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+
+  box-sizing: border-box;
   width: $smallDeviceWidth;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 .optionally__title {
   margin-bottom: 20px;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 .optionally__wrapper {
@@ -26,24 +27,28 @@
 
 .optionally__checkbox-label {
   position: relative;
+
   padding-left: 46px;
 
   &::before {
     position: absolute;
-    content: "";
+    top: -6px;
+    left: 0;
+
     width: 28px;
     height: 28px;
+
+    content: "";
+
     border: 1px solid #cecece;
-    left: 0;
-    top: -6px;
   }
 }
 
 .optionally__checkbox:checked + .optionally__checkbox-label::before {
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
-  background-size: 21px 16px;
   background-position: 50%;
+  background-size: 21px 16px;
 }
 
 .optionally__checkbox:disabled + .optionally__checkbox-label,
@@ -53,13 +58,14 @@
 
 @media (min-width: 768px) {
   .optionally__inner {
-
-    padding-left: 71px;
-    padding-right: 0;
-    width: $mediumDeviceWidth;
     flex-direction: row;
-    flex-wrap: wrap;
+
+    width: $mediumDeviceWidth;
     height: 112px;
+    padding-right: 0;
+    padding-left: 71px;
+
+    flex-wrap: wrap;
   }
 
   .optionally__title {
@@ -67,8 +73,9 @@
   }
 
   .optionally__wrapper {
-    flex-basis: 344px;
     width: 344px;
+
+    flex-basis: 344px;
   }
 
   .optionally__checkbox-label {
@@ -77,19 +84,22 @@
   }
 
   .optionally__checkbox-label::before {
+    top: -6px;
+    left: 0;
+
     width: 38px;
     height: 38px;
-    left: 0;
-    top: -6px;
   }
 }
 
 @media (min-width: 1440px) {
   .optionally__inner {
-    padding-left: 110px;
-    padding-right: 110px;
-    width: $largeDeviceWidth;
     flex-direction: row;
+
+    width: $largeDeviceWidth;
+    padding-right: 110px;
+    padding-left: 110px;
+
     justify-content: space-between;
   }
 
@@ -98,7 +108,8 @@
   }
 
   .optionally__wrapper {
-    flex-basis: auto;
     width: auto;
+
+    flex-basis: auto;
   }
 }

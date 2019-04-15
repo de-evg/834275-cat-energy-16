@@ -6,46 +6,56 @@
 
   &::before {
     position: absolute;
-    content: "";
+    top: 40px;
+    left: 50%;
+
     width: 30px;
     height: 2px;
-    background-color: #d3d3d3;
-    left: 50%;
+
+    content: "";
     transform: translateX(-50%);
-    top: 40px;
+
+    background-color: #d3d3d3;
   }
 
   &::after {
     position: absolute;
-    content: "";
+    top: 26px;
+    left: 50%;
+
     width: 2px;
     height: 30px;
-    background-color: #d3d3d3;
-    left: 50%;
+
+    content: "";
     transform: translateX(-50%);
-    top: 26px;
+
+    background-color: #d3d3d3;
   }
 }
 
 .more-product__description {
-  margin: 0;
-  margin-bottom: 7px;
-
   font-family: $oswaldRegular;
   font-size: $basicFontSize;
   line-height: 20px;
-  text-transform: uppercase;
+
+  margin: 0;
+  margin-bottom: 7px;
+
   text-align: center;
+  text-transform: uppercase;
+
   color: $basicFontColor;
 }
 
 .more-product__text {
-  margin: 0;
-
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+
+  margin: 0;
+
   text-align: center;
+
   color: $thirdFontColor;
 }
 
@@ -57,35 +67,40 @@
   .more-product__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     background-color: #ffffff;
+
+    justify-content: space-between;
   }
 
   .more-product__content {
     padding-top: 160px;
 
     &::before {
-      width: 60px;
       top: 78px;
+
+      width: 60px;
     }
 
     &::after {
-      height: 60px;
       top: 49px;
+
+      height: 60px;
     }
   }
 
   .more-product__description {
     font-size: $lowFontSize;
-    padding-left: 50px;
+
     padding-right: 50px;
+    padding-left: 50px;
   }
 
   .more-product__text {
     font-size: $basicFontSize;
-    padding-left: 40px;
+
     padding-right: 40px;
+    padding-left: 40px;
   }
 }
 
@@ -97,12 +112,12 @@
 
   .more-product__description {
     margin-bottom: 30px;
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
   }
 
   .more-product__text {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 }

@@ -15,41 +15,49 @@
 }
 
 .contacts__wrapper {
+  display: flex;
+
   box-sizing: border-box;
   width: $smallDeviceWidth;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 28px;
+  padding-right: 20px;
   padding-bottom: 26px;
+  padding-left: 20px;
 
-  display: flex;
   justify-content: space-between;
 }
 
 .contacts__slogan {
-  margin: 0;
-  flex-basis: 140px;
-  width: 140px;
-
   font-size: $basicFontSize;
+
+  width: 140px;
+  margin: 0;
+
   text-transform: uppercase;
+
   color: $basicFontColor;
+
+  flex-basis: 140px;
 }
 
 .contacts__content {
-  margin: 0;
-  flex-basis: 140px;
-  width: 140px;
   font-family: "Arial", sans-serif;
+
+  width: 140px;
+  margin: 0;
+
   color: $thirdFontColor;
+
+  flex-basis: 140px;
 }
 
 .contacts__map {
   width: 100%;
   height: 362px;
-  border: none;
 
   vertical-align: top;
+
+  border: none;
 }
 
 @media (min-width: 768px) {
@@ -64,34 +72,38 @@
   }
 
   .contacts__wrapper {
+    width: $mediumDeviceWidth;
     padding-top: 65px;
+    padding-right: 70px;
     padding-bottom: 55px;
     padding-left: 30px;
-    padding-right: 70px;
 
-    width: $mediumDeviceWidth;
     justify-content: space-between;
   }
 
   .contacts__slogan {
-    padding-left: 40px;
     font-size: $lowFontSize;
     line-height: 25px;
-    flex-basis: 140px;
+
     width: 140px;
+    padding-left: 40px;
+
+    flex-basis: 140px;
   }
 
   .contacts__content {
-    padding-right: 0;
     font-size: $basicFontSize;
     line-height: 18px;
-    text-align: right;
-
-    flex-basis: 160px;
-    width: 160px;
 
     display: flex;
     flex-direction: column;
+
+    width: 160px;
+    padding-right: 0;
+
+    text-align: right;
+
+    flex-basis: 160px;
     justify-content: space-between;
   }
 
@@ -106,23 +118,27 @@
   }
 
   .contacts__inner {
-    margin: 0;
-    background-color: transparent;
-    height: 0;
-    order: 1;
     z-index: 1;
+
+    height: 0;
+    margin: 0;
+
+    background-color: transparent;
+
+    order: 1;
   }
 
   .contacts__wrapper {
-    margin-top: -304px;
-    margin-left: 210px;
-    padding-left: 35px;
-    padding-right: 85px;
+    top: 95px;
+    left: 13%;
 
     width: 570px;
     height: 200px;
-    top: 95px;
-    left: 13%;
+    margin-top: -304px;
+    margin-left: 210px;
+    padding-right: 85px;
+    padding-left: 35px;
+
     background-color: #ffffff;
   }
 
@@ -131,8 +147,10 @@
   }
 
   .contacts__map {
-    height: 400px;
     z-index: 0;
+
+    height: 400px;
+
     order: 0;
   }
 }

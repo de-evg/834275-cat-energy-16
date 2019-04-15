@@ -2,9 +2,9 @@
   box-sizing: border-box;
   width: 320px;
   padding-top: 37px;
+  padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
-  padding-right: 20px;
 
   text-align: center;
 
@@ -13,20 +13,25 @@
 
 .page-footer__site-title-link {
   display: inline-block;
-  vertical-align: middle;
+
   margin-bottom: 32px;
+
+  vertical-align: middle;
 }
 
 .page-footer__social {
-  margin-bottom: 18px;
-  padding-left: 73px;
-  padding-right: 82px;
   display: flex;
+
+  margin-bottom: 18px;
+  padding-right: 82px;
+  padding-left: 73px;
+
   justify-content: space-between;
 }
 
 .page-footer__copyright {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
 }
@@ -37,19 +42,21 @@
     width: 100%;
     min-width: 768px;
     padding-top: 55px;
+    padding-right: 0;
     padding-bottom: 55px;
     padding-left: 0;
-    padding-right: 0;
   }
 
   .page-footer__inner {
-    box-sizing: border-box;
-    padding-top: 7px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 0 auto;
-    width: 768px;
     display: flex;
+
+    box-sizing: border-box;
+    width: 768px;
+    margin: 0 auto;
+    padding-top: 7px;
+    padding-right: 30px;
+    padding-left: 30px;
+
     justify-content: space-between;
     align-items: center;
   }
@@ -59,10 +66,12 @@
   }
 
   .page-footer__social {
+    display: flex;
+
+    width: 124px;
     margin-bottom: 0;
     padding-left: 99px;
-    width: 124px;
-    display: flex;
+
     justify-content: space-between;
     align-items: center;
   }
@@ -80,12 +89,14 @@
   }
 
   .page-footer__inner {
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding-left: 110px;
-    padding-right: 110px;
-    width: 1440px;
     display: flex;
+
+    box-sizing: border-box;
+    width: 1440px;
+    margin: 0 auto;
+    padding-right: 110px;
+    padding-left: 110px;
+
     justify-content: space-between;
     align-items: center;
   }

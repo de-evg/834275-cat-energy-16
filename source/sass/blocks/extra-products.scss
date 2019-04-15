@@ -1,19 +1,19 @@
 .extra-products__title {
-  display: block;
-
   font-family: $oswaldRegular;
   font-size: $mediumFontSize;
   font-weight: 400;
   line-height: $mediumLineHeight;
-  color: $basicFontColor;
 
-  vertical-align: middle;
+  display: block;
 
   margin: 0;
   padding-top: 29px;
   padding-bottom: 34px;
   padding-left: 20px;
 
+  vertical-align: middle;
+
+  color: $basicFontColor;
   border-bottom: $borderGrayTypeThree;
 }
 
@@ -21,17 +21,21 @@
 @media (min-width: 768px) {
   .extra-products {
     position: relative;
-    padding: 0;
     z-index: 1;
+
+    padding: 0;
 
     &::before {
       position: absolute;
-      content: "";
+      z-index: -1;
+      top: 43px;
+
       width: 100%;
       height: 5px;
+
+      content: "";
+
       background: #68b738;
-      top: 43px;
-      z-index: -1;
     }
   }
 }

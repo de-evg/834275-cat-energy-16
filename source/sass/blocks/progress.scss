@@ -1,57 +1,61 @@
 .progress__value {
-  position: relative;
-
-  margin: 0;
-  padding-top: 16px;
-  padding-bottom: 14px;
-  flex-basis: 122px;
-  width: 122px;
-
-
-  border: $borderGrayTypeThree;
-  border-radius: 2px;
-
   font-family: $oswaldRegular;
   font-size: $mediumFontSize;
   line-height: $mediumLineHeight;
-  text-transform: uppercase;
-  color: $basicFontColor;
+
+  position: relative;
+
+  width: 122px;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 14px;
+
   text-align: center;
+  text-transform: uppercase;
+
+  color: $basicFontColor;
+  border: $borderGrayTypeThree;
+  border-radius: 2px;
+
+  flex-basis: 122px;
 }
 
 .progress__type {
-  position: absolute;
-  padding: 0 8px;
-
-  width: auto;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 65%);
-
-
   font-family: "Arial", sans-serif;
   font-size: $tinyFontSize;
   line-height: 12px;
-  text-transform: none;
-  color: $thirdFontColor;
 
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  width: auto;
+  padding: 0 8px;
+
+  transform: translate(-50%, 65%);
+  text-transform: none;
+
+  color: $thirdFontColor;
   background-color: $bgColorSecondary;
 }
 
 @media (min-width: 768px) {
   .progress__value {
-    margin-right: 42px;
-    flex-basis: 160px;
-    width: 160px;
-    padding-bottom: 17px;
     font-size: 30px;
     line-height: 37px;
+
+    width: 160px;
+    margin-right: 42px;
+    padding-bottom: 17px;
+
+    flex-basis: 160px;
   }
 
   .progress__type {
-    width: 114px;
     font-size: $smallFontSize;
     line-height: $smallLineHeight;
+
+    width: 114px;
 
     transform: translate(-50%, 50%);
 

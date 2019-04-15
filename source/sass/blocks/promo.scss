@@ -1,36 +1,38 @@
 .promo {
+  font-family: $oswaldRegular;
+
+  min-height: 450px;
+  padding-top: 26px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  text-align: center;
+
+  color: $fourthFontColor;
   background: linear-gradient(to bottom, #65a93c 0, #65a93c 305px, #ffffff 305px, #ffffff 100%);
   background-image: url("../img/index-background-mobile@1x.jpg");
-  background-size: 320px 305px;
   background-repeat: no-repeat;
-
-  padding-top: 26px;
-  padding-left: 20px;
-  padding-right: 20px;
-  min-height: 450px;
-
-
-  font-family: $oswaldRegular;
-  color: $fourthFontColor;
-  text-align: center;
+  background-size: 320px 305px;
 }
 
 .promo__title {
+  font-size: $largeFontSize;
+  font-weight: 400;
+  line-height: 36px;
+
   margin: 0;
   margin-bottom: 23px;
-
-  font-size: $largeFontSize;
-  line-height: 36px;
-  font-weight: 400;
 }
 
 .promo__slogan {
-  display: inline-block;
-  margin-bottom: 30px;
-
   font-size: $smallFontSize;
   font-weight: 600;
   line-height: $smallLineHeight;
+
+  display: inline-block;
+
+  margin-bottom: 30px;
+
   text-transform: uppercase;
 }
 
@@ -45,45 +47,46 @@
 
 @media (min-width: 768px) {
   .promo {
-    padding-left: 118px;
     padding-right: 30px;
+    padding-left: 118px;
 
-    background-image: none;
-    background-color: #ffffff;
+    text-align: left;
 
     color: $basicFontColor;
-    text-align: left;
+    background-color: #ffffff;
+    background-image: none;
   }
 
   .promo__title {
-    margin-bottom: 40px;
-    padding-top: 25px;
-    padding-left: 0;
     font-size: $bigFontSize;
     font-weight: 600;
     line-height: $largeLineHeight;
 
+    margin-bottom: 40px;
+    padding-top: 25px;
     padding-right: 195px;
+    padding-left: 0;
   }
 
   .promo__slogan {
-    margin-bottom: 15px;
-    padding-left: 0;
     font-size: $lowFontSize;
     line-height: $lowLineHeight;
+
+    margin-bottom: 15px;
+    padding-left: 0;
   }
 
   .promo__button {
+    font-size: $lowFontSize;
+    line-height: $lowLineHeight;
+
+    min-width: 195px;
     margin-top: -576px;
     margin-bottom: 507px;
     padding-top: 15px;
+    padding-right: 25px;
     padding-bottom: 17px;
     padding-left: 25px;
-    padding-right: 25px;
-    min-width: 195px;
-
-    font-size: $lowFontSize;
-    line-height: $lowLineHeight;
   }
 
   .promo__image {
@@ -93,16 +96,16 @@
 
 @media (min-width: 1440px) {
   .promo {
-    padding-left: 190px;
-    padding-right: 110px;
-    padding-top: 0;
     height: 0;
     min-height: 0;
+    padding-top: 0;
+    padding-right: 110px;
+    padding-left: 190px;
   }
 
   .promo__title {
-    padding-right: 720px;
     margin-top: -500px;
+    padding-right: 720px;
   }
 
   .promo__image {

@@ -1,21 +1,27 @@
 .categories-button {
-  position: relative;
-  padding-right: 35px;
-
   font-family: $oswaldRegular;
   font-size: $basicFontSize;
   line-height: 16px;
+
+  position: relative;
+
+  padding-right: 35px;
+
   text-transform: uppercase;
+
   color: $basicFontColor;
 
   &::after {
     position: absolute;
-    content: "";
-    width: 24px;
-    height: 11px;
     right: 0;
     bottom: 50%;
+
+    width: 24px;
+    height: 11px;
+
+    content: "";
     transform: translateY(50%);
+
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
@@ -23,8 +29,9 @@
 
 @media (min-width: 768px) {
   .categories-button {
-    padding-right: 50px;
     font-size: $lowFontSize;
     line-height: $lowLineHeight;
+
+    padding-right: 50px;
   }
 }

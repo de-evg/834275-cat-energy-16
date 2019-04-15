@@ -1,12 +1,12 @@
 .copyright {
-  padding-top: 20px;
-
-  border-top: $borderGrayTypeFour;
-
   font-family: "Arial", sans-serif;
   font-size: $basicFontSize;
   line-height: 16px;
+
+  padding-top: 20px;
+
   color: $thirdFontColor;
+  border-top: $borderGrayTypeFour;
 }
 
 @media (min-width: 768px) {

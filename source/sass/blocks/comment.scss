@@ -6,25 +6,29 @@
 }
 
 .comment__inner {
-  box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
+
+  box-sizing: border-box;
   width: $smallDeviceWidth;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
+
+  flex-wrap: wrap;
 }
 
 .comment__title {
   display: block;
+
   margin-bottom: 20px;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 .comment__text {
   box-sizing: border-box;
-  padding: 14px 16px;
   width: 100%;
+  padding: 14px 16px;
+
   border: $borderGrayTypeOne;
 }
 
@@ -37,8 +41,8 @@
   .comment__inner {
     width: $mediumDeviceWidth;
     height: 174px;
-    padding-left: 71px;
     padding-right: 71px;
+    padding-left: 71px;
   }
 }
 
@@ -50,8 +54,7 @@
 
   .comment__inner {
     width: $largeDeviceWidth;
-
-    padding-left: 110px;
     padding-right: 110px;
+    padding-left: 110px;
   }
 }
