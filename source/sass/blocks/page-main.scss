@@ -91,6 +91,7 @@
   }
 
   .page-main__product {
+    display: flex;
     width: 324px;
     min-height: 571px;
     margin-top: 0;
@@ -103,11 +104,10 @@
   }
 
   .page-main__more-product {
+    box-sizing: border-box;
     display: flex;
 
     width: 322px;
-    align-self: flex-end;
-    align-items: stretch;
 
     flex-basis: 322px;
   }
@@ -136,6 +136,7 @@
     width: $largeDeviceWidth;
     padding-right: 110px;
     padding-left: 110px;
+    padding-top: 60px;
   }
 
   .page-main__example {
@@ -171,5 +172,9 @@
     width: 245px;
 
     flex-basis: 245px;
+  }
+
+    .page-main__product--alt-height {
+    min-height: 572px;
   }
 }

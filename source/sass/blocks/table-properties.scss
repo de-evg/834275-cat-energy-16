@@ -42,3 +42,21 @@
     width: 87px;
   }
 }
+
+
+@media (min-width: 1440px) {
+  .table-properties {
+    font-size: $basicFontSize;
+
+    margin-bottom: 31px;
+  }
+
+  .table-properties__property--align {
+    text-align: left;
+    width: 87px;
+  }
+
+  .table-properties__value--align {
+    width: 87px;
+  }
+}

@@ -60,18 +60,16 @@
 
 @media (min-width: 768px) {
   .more-product {
-    border: $borderGrayTypeOne;
     background-color: #ffffff;
   }
 
   .more-product__wrapper {
-    padding-bottom: 37px;
     display: flex;
     flex-direction: column;
 
     background-color: #ffffff;
 
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 
   .more-product__content {
@@ -112,7 +110,6 @@
 
 
   .more-product__description {
-    margin-bottom: 30px;
     padding-right: 10px;
     padding-left: 10px;
   }
