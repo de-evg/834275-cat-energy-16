@@ -1,12 +1,13 @@
 .table-properties {
   font-family: "Arial", sans-serif;
   font-size: $tinyFontSize;
-  line-height: $basicLineHeight;
+  line-height: 15px;
 
   color: $thirdFontColor;
 }
 
 .table-properties__property {
+  text-align: left;
   height: 5px;
 }
 
@@ -20,16 +21,24 @@
   .table-properties {
     font-size: $basicFontSize;
 
-    margin-bottom: 33px;
+    margin-bottom: 31px;
   }
 
   .table-properties__property {
-    height: 26px;
+    height: 29px;
 
     text-align: left;
   }
 
+  .table-properties__property--align {
+    text-align: right;
+  }
+
   .table-properties__row {
     border-bottom: $borderGrayTypeThree;
+  }
+
+  .table-properties__value--align {
+    width: 87px;
   }
 }

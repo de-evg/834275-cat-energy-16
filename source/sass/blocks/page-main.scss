@@ -52,7 +52,8 @@
 
     width: $mediumDeviceWidth;
     margin: 0 auto;
-    padding-top: 30px;
+    margin-bottom: 1px;
+    padding-top: 50px;
     padding-right: 30px;
     padding-bottom: 25px;
     padding-left: 30px;
@@ -91,29 +92,29 @@
 
   .page-main__product {
     width: 324px;
-    margin-top: 55px;
+    min-height: 571px;
+    margin-top: 0;
 
     flex-basis: 324px;
   }
 
-  .page-main__product--no-margin {
-    margin-bottom: 0;
+  .page-main__product--alt-height {
+    min-height: 430px;
   }
 
   .page-main__more-product {
     display: flex;
 
+    width: 322px;
+    align-self: flex-end;
     align-items: stretch;
+
+    flex-basis: 322px;
   }
 
   .page-main__extra-products {
     box-sizing: border-box;
     width: 100%;
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
-  .page-main__extra-product {
     padding-right: 30px;
     padding-left: 30px;
   }

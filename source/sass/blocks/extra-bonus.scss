@@ -8,10 +8,10 @@
 .extra-bonus__wrapper {
   position: relative;
 
-  padding-top: 190px;
-  padding-right: 60px;
-  padding-bottom: 40px;
-  padding-left: 60px;
+  padding-top: 187px;
+  padding-right: 55px;
+  padding-bottom: 42px;
+  padding-left: 55px;
 
   background-color: #70b447;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
@@ -19,7 +19,7 @@
 
   &::before {
     position: absolute;
-    // background-image: url("../img/icon-gift.svg");
+    background-image: url("../img/icon-gift.svg");
     top: 65px;
     left: 113px;
 
@@ -44,21 +44,28 @@
 
 @media (min-width: 768px) {
   .extra-bonus {
+    padding-top: 69px;
     padding-right: 30px;
     padding-left: 30px;
+    padding-bottom: 76px;
   }
 
   .extra-bonus__wrapper {
     box-sizing: border-box;
-    //временные стили
-    width: 708px;
-    height: 200px;
+    min-height: 200px;
     padding: 0;
-    padding-top: 65px;
-    padding-left: 420px;
+    padding-top: 73px;
+    padding-left: 423px;
 
     background-color: #70b447;
-    background-image: none;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .extra-bonus__wrapper {
+    &::before {
+      top: 65px;
+      left: 91px;
+    }
   }
 
   .extra-bonus__content {

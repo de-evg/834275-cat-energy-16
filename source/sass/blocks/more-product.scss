@@ -13,7 +13,7 @@
     height: 2px;
 
     content: "";
-    transform: translateX(-50%);
+    transform: translateX(-49%);
 
     background-color: #d3d3d3;
   }
@@ -27,7 +27,6 @@
     height: 30px;
 
     content: "";
-    transform: translateX(-50%);
 
     background-color: #d3d3d3;
   }
@@ -62,9 +61,11 @@
 @media (min-width: 768px) {
   .more-product {
     border: $borderGrayTypeOne;
+    background-color: #ffffff;
   }
 
   .more-product__wrapper {
+    padding-bottom: 37px;
     display: flex;
     flex-direction: column;
 
@@ -74,16 +75,16 @@
   }
 
   .more-product__content {
-    padding-top: 160px;
+    padding-top: 110px;
 
     &::before {
-      top: 78px;
-
+      top: 29px;
+      transform: translateX(-49%);
       width: 60px;
     }
 
     &::after {
-      top: 49px;
+      top: 0;
 
       height: 60px;
     }
@@ -91,16 +92,16 @@
 
   .more-product__description {
     font-size: $lowFontSize;
-
+    margin-bottom: 25px;
     padding-right: 50px;
     padding-left: 50px;
   }
 
   .more-product__text {
     font-size: $basicFontSize;
-
-    padding-right: 40px;
-    padding-left: 40px;
+    line-height: 19px;
+    padding-right: 25px;
+    padding-left: 25px;
   }
 }
 
