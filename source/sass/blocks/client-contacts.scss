@@ -76,69 +76,76 @@
   border: $borderGrayTypeOne;
 
   flex-grow: 1;
+
 }
 
-.client-contacts__label-email {
-  position: relative;
+.client-contacts__input-email {
+ background-image: url("../img/icon-mail.svg");
+ background-repeat: no-repeat;
+ background-position: 93% 50%;
+ background-size: 18px 14px;
+}
 
-  &::after {
-    position: absolute;
-    top: 50%;
-    right: -215px;
+.client-contacts__input-phone {
+ background-image: url("../img/icon-phone.svg");
+ background-repeat: no-repeat;
+ background-position: 93% 50%;
+ background-size: 20px 20px;
+}
 
-    width: 17px;
-    height: 13px;
-
-    content: "";
-    transform: translateY(-50%);
-
-    background-image: url("../img/icon-mail.svg");
+//Стили для средней ширины
+@media (min-width: $mediumDeviceWidth) {
+  .client-contacts {
+    &::before {
+      background: #68b738;
+      width: 100%;
+      top: 72px;
+    }
   }
-}
 
-.client-contacts__label-phone {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    top: 50%;
-    right: -200px;
-
-    width: 20px;
-    height: 20px;
-
-    content: "";
-    transform: translateY(-50%);
-
-    background-image: url("../img/icon-phone.svg");
-  }
-}
-
-@media (min-width: 768px) {
   .client-contacts__inner {
     flex-direction: column;
-
+    justify-content: space-between;
+    padding-top: 52px;
     width: $mediumDeviceWidth;
-    padding-right: 71px;
+    min-height: 196px;
+    padding-right: 65px;
     padding-left: 71px;
+    padding-bottom: 19px
   }
 
   .client-contacts__title {
-    padding-left: 71px;
+    width: $mediumDeviceWidth;
+    padding: 50px 0 0;
+
+    background: linear-gradient(to right, transparent 0, transparent 30px, #ffffff 30px, #ffffff 623px, transparent 623px, transparent 100%);
+  }
+
+  .client-contacts__title span {
+    display: inline-block;
+
+    width: auto;
+    padding-right: 50px;
+    padding-left: 69px;
   }
 
   .client-contacts__wrapper {
     height: 52px;
-
+    width: 632px;
     flex-basis: 52px;
   }
 
+  .client-contacts__label {
+    margin-left: 15px;
+  }
+
   .client-contacts__input {
-    width: 550px;
+    width: 551px;
   }
 }
 
-@media (min-width: 1440px) {
+//Стили для большой ширины
+@media (min-width: $largeDeviceWidth) {
   .client-contacts__title {
     padding-left: 110px;
   }

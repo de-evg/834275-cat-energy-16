@@ -91,13 +91,24 @@
   color: $thirdFontColor;
 }
 
-@media (min-width: 768px) {
+//Стили для средней ширины
+@media (min-width: $mediumDeviceWidth) {
+  .program-form {
+    padding-top: 30px;
+  }
+
   .program-form__description {
+    margin-bottom: 60px;
     font-size: $lowFontSize;
     line-height: 30px;
 
     padding-right: 355px;
     padding-left: 71px;
+  }
+
+  .program-form__item .program-form__item-title {
+    font-size: $largeFontSize;
+    line-height: 36px;
   }
 
   .program-form__item--border {
@@ -113,6 +124,12 @@
     justify-content: space-between;
   }
 
+  .program-form__item .program-form__label {
+    font-size: $lowFontSize;
+    line-height: 20px;
+  }
+
+
   .program-form__button-submit {
     font-size: $lowFontSize;
     line-height: $lowLineHeight;
@@ -127,7 +144,8 @@
   }
 }
 
-@media (min-width: 1440px) {
+//Стили для большой ширины
+@media (min-width: $largeDeviceWidth) {
   .program-form__description {
     padding-right: 950px;
     padding-left: 110px;

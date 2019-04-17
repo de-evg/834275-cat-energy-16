@@ -49,7 +49,8 @@
   border: $borderGrayTypeOne;
 }
 
-@media (min-width: 768px) {
+//Стили для средней ширины
+@media (min-width: $mediumDeviceWidth) {
   .comment__title {
     margin-bottom: 20px;
     padding-left: 71px;
@@ -63,7 +64,8 @@
   }
 }
 
-@media (min-width: 1440px) {
+//Стили для большой ширины
+@media (min-width: $largeDeviceWidth) {
   .comment__title {
     margin-bottom: 20px;
     padding-left: 110px;
