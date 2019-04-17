@@ -1,8 +1,18 @@
 .comment {
-  margin: 0;
+  position: relative;
+  z-index: 1;
+
   padding: 0;
   padding-top: 23px;
-  padding-bottom: 23px;
+  padding-bottom: 5px;
+
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+
+  &::before {
+    @include title-line();
+    top: 37px;
+  }
 }
 
 .comment__inner {
@@ -19,15 +29,22 @@
 .comment__title {
   display: block;
 
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   padding-right: 20px;
   padding-left: 20px;
+
+  background: linear-gradient(to right, transparent 0, transparent 20px, #ffffff 20px, #ffffff 142px, transparent 142px, transparent 100%);
 }
 
 .comment__text {
+  font-family: $oswaldRegular;
+  font-size: $basicFontSize;
+  line-height: 18px;
+
   box-sizing: border-box;
   width: 100%;
-  padding: 14px 16px;
+  height: 150px;
+  padding: 13px 16px;
 
   border: $borderGrayTypeOne;
 }

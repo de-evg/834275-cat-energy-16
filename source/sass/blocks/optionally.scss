@@ -1,8 +1,17 @@
 .optionally {
-  margin: 0;
+  position: relative;
+  z-index: 1;
+
   padding: 0;
-  padding-top: 23px;
   padding-bottom: 23px;
+
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+
+  &::before {
+    @include title-line();
+    top: 17px;
+  }
 }
 
 .optionally__inner {
@@ -16,13 +25,26 @@
 }
 
 .optionally__title {
-  margin-bottom: 20px;
-  padding-right: 20px;
+  width: $smallDeviceWidth;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  padding: 0;
+  padding-top: 3px;
+
+  background: linear-gradient(to right, transparent 0, transparent 20px, #ffffff 20px, #ffffff 184px, transparent 184px, transparent 100%);
+}
+
+.optionally__title span {
+  display: inline-block;
+
+  width: 185px;
+  padding-right: 50px;
   padding-left: 20px;
 }
 
 .optionally__wrapper {
-  margin-bottom: 25px;
+  margin-bottom: 0;
+  padding: 12px 0;
 }
 
 .optionally__checkbox-label {
@@ -32,7 +54,7 @@
 
   &::before {
     position: absolute;
-    top: -6px;
+    top: -1spx;
     left: 0;
 
     width: 28px;

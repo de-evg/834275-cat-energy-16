@@ -14,7 +14,6 @@
 
 .program-form__item {
   box-sizing: border-box;
-  margin-bottom: 20px;
 
   border: none;
 }
@@ -63,11 +62,19 @@
 
 .program-form__optionally {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
+}
+
+.program-form__button-wrapper {
+  padding: 0 20px 33px;
 }
 
 .program-form__button-submit {
-  width: $smallDeviceWidth;
+  font-size: $basicFontSize;
+  line-height: 18px;
+
+  width: 100%;
+  margin-bottom: 20px;
 
   border: none;
 }
@@ -76,6 +83,8 @@
   font-family: "Arial", sans-serif;
   font-size: $smallFontSize;
   line-height: $basicLineHeight;
+
+  margin: 0;
 
   text-align: center;
 

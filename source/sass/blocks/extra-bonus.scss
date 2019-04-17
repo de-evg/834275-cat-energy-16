@@ -19,7 +19,6 @@
 
   &::before {
     position: absolute;
-    background-image: url("../img/icon-gift.svg");
     top: 65px;
     left: 113px;
 
@@ -27,6 +26,8 @@
     height: 60px;
 
     content: "";
+
+    background-image: url("../img/icon-gift.svg");
   }
 }
 
@@ -46,8 +47,8 @@
   .extra-bonus {
     padding-top: 69px;
     padding-right: 30px;
-    padding-left: 30px;
     padding-bottom: 76px;
+    padding-left: 30px;
   }
 
   .extra-bonus__wrapper {
@@ -59,9 +60,7 @@
 
     background-color: #70b447;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
-  }
 
-  .extra-bonus__wrapper {
     &::before {
       top: 65px;
       left: 91px;

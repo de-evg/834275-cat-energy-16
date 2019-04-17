@@ -92,6 +92,7 @@
 
   .page-main__product {
     display: flex;
+
     width: 324px;
     min-height: 571px;
     margin-top: 0;
@@ -104,9 +105,9 @@
   }
 
   .page-main__more-product {
-    box-sizing: border-box;
     display: flex;
 
+    box-sizing: border-box;
     width: 322px;
 
     flex-basis: 322px;
@@ -134,9 +135,9 @@
     font-size: $bigFontSize;
 
     width: $largeDeviceWidth;
+    padding-top: 60px;
     padding-right: 110px;
     padding-left: 110px;
-    padding-top: 60px;
   }
 
   .page-main__example {
@@ -174,7 +175,7 @@
     flex-basis: 245px;
   }
 
-    .page-main__product--alt-height {
+  .page-main__product--alt-height {
     min-height: 572px;
   }
 }
