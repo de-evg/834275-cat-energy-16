@@ -54,7 +54,7 @@
 
   &::before {
     position: absolute;
-    top: -1spx;
+    top: -1px;
     left: 0;
 
     width: 28px;
@@ -78,23 +78,45 @@
   opacity: 0.3;
 }
 
+//Стили для средней ширины
 @media (min-width: $mediumDeviceWidth) {
+  .optionally {
+    padding-bottom: 17px;
+    &::before {
+      background: #68b738;
+      width: 100%;
+      top: 68px;
+    }
+  }
+
   .optionally__inner {
     flex-direction: row;
 
     width: $mediumDeviceWidth;
-    height: 112px;
     padding-right: 0;
     padding-left: 71px;
 
     flex-wrap: wrap;
   }
 
-  .optionally__title {
-    padding-left: 71px;
+  .optionally__title{
+    margin-bottom: 50px;
+    width: $mediumDeviceWidth;
+    padding: 50px 0 0;
+
+    background: linear-gradient(to right, transparent 0, transparent 30px, #ffffff 30px, #ffffff 322px, transparent 322px, transparent 100%);
+  }
+
+  .optionally__title span {
+    display: inline-block;
+
+    width: auto;
+    padding-right: 50px;
+    padding-left: 69px;
   }
 
   .optionally__wrapper {
+    padding-bottom: 40px;
     width: 344px;
 
     flex-basis: 344px;
@@ -103,10 +125,11 @@
   .optionally__checkbox-label {
     font-size: $lowFontSize;
     line-height: $lowLineHeight;
+    padding-left: 55px;
   }
 
   .optionally__checkbox-label::before {
-    top: -6px;
+    top: -4px;
     left: 0;
 
     width: 38px;
@@ -114,7 +137,15 @@
   }
 }
 
+//Стили для большой ширины
 @media (min-width: $largeDeviceWidth) {
+  .optionally {
+    padding-bottom: 25px;
+    &::before {
+      top: 69px;
+    }
+  }
+
   .optionally__inner {
     flex-direction: row;
 
@@ -126,12 +157,22 @@
   }
 
   .optionally__title {
-    padding-left: 110px;
+    box-sizing: border-box;
+    width: $largeDeviceWidth;
+    margin-bottom: 56px;
+    padding-left: 40px;
+    padding-top: 45px;
+
+    background: linear-gradient(to right, transparent 0, transparent 70px, #ffffff 70px, #ffffff 663px, transparent 663px, transparent 100%);
   }
 
   .optionally__wrapper {
-    width: auto;
+    max-width: 245px;
+    flex-grow: 1;
 
-    flex-basis: auto;
+  }
+
+  .optionally__checkbox-label {
+    padding-left: 58px;
   }
 }

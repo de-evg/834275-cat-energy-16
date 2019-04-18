@@ -95,6 +95,7 @@
 @media (min-width: $mediumDeviceWidth) {
   .program-form {
     padding-top: 30px;
+    padding-bottom: 40px;
   }
 
   .program-form__description {
@@ -115,37 +116,51 @@
     border: none;
   }
 
-  .program-form__button-wrapper {
-    display: flex;
-
-    width: $mediumDeviceWidth;
-    margin: 0 auto;
-
-    justify-content: space-between;
-  }
-
   .program-form__item .program-form__label {
     font-size: $lowFontSize;
     line-height: 20px;
   }
 
+  .program-form__button-wrapper {
+    display: flex;
+
+    width: $mediumDeviceWidth;
+    margin: 0 auto;
+    padding-left: 71px;
+    padding-right: 71px;
+
+    justify-content: space-between;
+  }
 
   .program-form__button-submit {
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
     font-size: $lowFontSize;
     line-height: $lowLineHeight;
+    max-width: 283px;
+    flex-grow: 1;
   }
 
   .program-form__text {
     width: 344px;
+    font-size: $basicFontSize;
+    line-height: 16px;
 
     text-align: left;
 
-    flex-basis: 344px;
+    max-width: 283px;
+    flex-grow: 1;
+    align-self: center;
   }
 }
 
 //Стили для большой ширины
 @media (min-width: $largeDeviceWidth) {
+  .program-form {
+    padding-bottom: 48px;
+  }
+
   .program-form__description {
     padding-right: 950px;
     padding-left: 110px;
@@ -161,15 +176,15 @@
   }
 
   .program-form__about-cat {
-    width: 610px;
+    width: 680px;
 
-    flex-basis: 610px;
+    flex-basis: 680px;
   }
 
   .program-form__purpose {
-    width: 610px;
+    width: 680px;
 
-    flex-basis: 610px;
+    flex-basis: 680px;
   }
 
   .program-form__button-wrapper {
@@ -190,5 +205,17 @@
     text-align: left;
 
     flex-basis: 570px;
+  }
+
+  .program-form__button-wrapper {
+    width: $largeDeviceWidth;
+  }
+
+  .program-form__button-submit {
+    max-width: 570px;
+  }
+
+  .program-form__text {
+    max-width: 570px;
   }
 }

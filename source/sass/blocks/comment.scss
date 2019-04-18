@@ -51,9 +51,21 @@
 
 //Стили для средней ширины
 @media (min-width: $mediumDeviceWidth) {
+  .comment {
+    padding-bottom: 0;
+    &::before {
+      background: #68b738;
+      width: 100%;
+      top: 45px;
+    }
+  }
+
   .comment__title {
-    margin-bottom: 20px;
+    margin-bottom: 75px;
     padding-left: 71px;
+
+    background: linear-gradient(to right, transparent 0, transparent 30px, #ffffff 30px, #ffffff 290px, transparent 290px, transparent 100%);
+
   }
 
   .comment__inner {
@@ -62,13 +74,37 @@
     padding-right: 71px;
     padding-left: 71px;
   }
+
+  .comment__text {
+    font-size: $lowFontSize;
+    line-height: 20px;
+
+    box-sizing: border-box;
+
+    height: 175px;
+    padding: 15px 16px;
+
+    border: $borderGrayTypeOne;
+  }
 }
 
 //Стили для большой ширины
 @media (min-width: $largeDeviceWidth) {
+  .comment {
+    padding-top: 25px;
+    &::before {
+      background: #68b738;
+      width: 100%;
+      top: 48px;
+    }
+  }
+
   .comment__title {
-    margin-bottom: 20px;
+    margin-bottom: 77px;
     padding-left: 110px;
+
+    background: linear-gradient(to right, transparent 0, transparent 71px, #ffffff 71px, #ffffff 330px, transparent 330px, transparent 100%);
+
   }
 
   .comment__inner {

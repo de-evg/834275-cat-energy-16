@@ -118,20 +118,34 @@
 //Стили для большой ширины
 @media (min-width: $largeDeviceWidth) {
   .purpose {
-    padding-top: 0;
+    padding-top: 6px;
     padding-bottom: 0;
   }
 
   .purpose__inner {
-    width: 720px;
-    min-height: 196px;
+    display: flex;
+    max-width: 680px;
     padding-right: 71px;
-    padding-left: 71px;
+    padding-left: 0;
   }
 
   .purpose__wrapper {
+    box-sizing: border-box;
     display: flex;
+    width: 570px;
+    padding-top: 19px;
+    padding-bottom: 22px;
 
     justify-content: space-between;
+  }
+
+  .purpose__radio-label {
+    margin-bottom: 6px;
+    padding-top: 4px;
+
+    &::before {
+      top: 4px;
+      left: -1px;
+    }
   }
 }

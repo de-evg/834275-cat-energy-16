@@ -101,13 +101,13 @@
         <div class="page-main__wrapper">
           <div class="client-contacts__inner">
             <div class="client-contacts__wrapper client-contacts__wrapper--no-margin">
-              <label class="program-form__label client-contacts__label">E-mail:*</label>
-              <input class="client-contacts__input client-contacts__input-email" type="text" name="client-name" placeholder="KUKLACHEV@GMAIL.COM">
+              <label class="program-form__label client-contacts__label client-contacts__label--email-margin" for="input__email">E-mail:*</label>
+              <input class="client-contacts__input client-contacts__input-email" id="input__email" type="text" name="client-name" placeholder="KUKLACHEV@GMAIL.COM">
             </div>
 
             <div class="client-contacts__wrapper">
-              <label class="program-form__label client-contacts__label">Телефон:*</label>
-              <input class="client-contacts__input client-contacts__input-phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
+              <label class="program-form__label client-contacts__label client-contacts__label--phone-margin" for="input__phone">Телефон:*</label>
+              <input class="client-contacts__input client-contacts__input-phone" id="input__phone" type="text" name="phone" placeholder="8 (960) 900-60-90">
             </div>
           </div>
 
@@ -118,7 +118,7 @@
         <div class="page-main__wrapper">
           <label class="comment__title program-form__item-title" for="user-comment">Комментарий</label>
           <div class="comment__inner">
-            <textarea class="comment__text" id="user-comment" rows="6" cols="32" placeholder="РАССКАЖИ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
+            <textarea class="comment__text" id="user-comment" rows="6" cols="32" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
           </div>
         </div>
       </fieldset>
@@ -170,12 +170,12 @@
   </main>
   <footer class="page-footer site-grid__wrapper">
     <div class="page-footer__inner">
-      <a class="page-footer__site-title-link" href="#">
+      <a class="page-footer__site-title-link">
         <img class="page-footer__site-title" src="img/logo-footer.svg" width="128" height="24" alt="Магазин Cat energy">
       </a>
       <div class="page-footer__social social">
         <a class="social__link" href="#" aria-label="Мы в Vkontakte">
-          <span class="social__icon">
+          <span class="social__icon social__icon--vk">
             <svg width="22" height="12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
               <g>
                 <path
@@ -199,7 +199,7 @@
           </span>
         </a>
         <a class="social__link" href="#" aria-label="Мы в Instagram">
-          <span class="social__icon">
+          <span class="social__icon social__icon--inst">
             <svg width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
               <style type="text/css">
                 .st0 {
@@ -214,7 +214,7 @@
             </svg>
           </span>
         </a>
-        <a class="social__link" href="#" aria-label="Мы в Facebook"><span class="social__icon">
+        <a class="social__link" href="#" aria-label="Мы в Facebook"><span class="social__icon social__icon--fb">
           <svg width="10" height="19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
             <g>
               <path

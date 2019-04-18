@@ -126,32 +126,34 @@
     padding-bottom: 0;
   }
 
+  .about-cat__inner {
+    padding-right: 0;
+    padding-left: 110px;
+    max-width: 680px;
+  }
+
+  .about-cat__wrapper {
+    justify-content: space-between;
+  }
+
   .about-cat__wrapper:first-of-type {
     margin-top: 0;
   }
 
-  .about-cat__inner {
-    width: 720px;
-    min-height: 196px;
-    padding-right: 0;
-    padding-left: 110px;
+  .about-cat__input {
+    width: auto;
+    flex-grow: 1;
   }
 
   .about-cat__input-name {
-    width: 475px;
-
-    flex-basis: 475px;
+    max-width: 506px;
   }
 
   .about-cat__input-weight {
-    width: 435px;
-
-    flex-basis: 435px;
+    max-width: 475px;
   }
 
   .about-cat__input-age {
-    width: 495px;
-
-    flex-basis: 495px;
+    max-width: 436px;
   }
 }
