@@ -148,4 +148,13 @@
       left: -1px;
     }
   }
+
+  .purpose__radio:checked + .purpose__radio-label::after {
+    top: 50%;
+    left: 11px;
+    transform: translateY(-43%);
+
+    width: 18px;
+    height: 18px;
+  }
 }
