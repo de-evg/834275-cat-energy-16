@@ -127,9 +127,10 @@
   }
 
   .about-cat__inner {
+    min-height: 196px;
     padding-right: 0;
-    padding-left: 110px;
-    max-width: 680px;
+    padding-left: 0;
+    max-width: 570px;
   }
 
   .about-cat__wrapper {

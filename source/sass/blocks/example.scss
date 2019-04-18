@@ -118,16 +118,25 @@
 @media (min-width: 1440px) {
   .example {
     padding-top: 0;
-    padding-right: 110px;
-    padding-bottom: 36px;
-    padding-left: 110px;
+    padding-bottom: 52px;
 
     background: linear-gradient(to bottom, #ffffff 0, #ffffff 150px, #f2f2f2 150px, #f2f2f2 100%);
   }
 
+  .example__inner {
+    display: flex;
+    width: $largeDeviceWidth;
+    margin: 0 auto;
+  }
+
   .example__wrapper {
     padding-right: 0;
-    padding-left: 100px;
+    padding-left: 110px;
+    width: 610px;
+    margin: 0;
+    padding-top: 15px;
+
+    flex-basis: 610px;
   }
 
   .example__title {
@@ -136,7 +145,7 @@
 
   .example__about {
     margin-bottom: 68px;
-    padding-right: 75px;
+    padding-right: 175px;
   }
 
   .example__progress {
@@ -144,7 +153,8 @@
   }
 
   .example__progress-wrapper {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
 
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -152,7 +162,8 @@
 
   .example__expenses {
     display: flex;
-
+    flex-basis: auto;
+    width: auto;
     max-width: 326px;
 
     flex-grow: 1;

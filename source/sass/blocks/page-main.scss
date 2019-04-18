@@ -128,7 +128,7 @@
   }
 
   .page-main__wrapper--width-reduce {
-    width: 680px;
+    width: 650px;
   }
 
   .page-main__title {
@@ -141,17 +141,15 @@
   }
 
   .page-main__example {
+    box-sizing: border-box;
+    width: 100%;
     display: flex;
 
     border: none;
   }
 
   .page-main__example > .page-main__wrapper {
-    width: 610px;
-    margin: 0;
-    padding-top: 15px;
 
-    flex-basis: 610px;
   }
 
   .page-main__contacts {
