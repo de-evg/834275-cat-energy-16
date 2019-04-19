@@ -11,6 +11,7 @@
 
   &::before {
     @include title-line();
+
     top: 37px;
   }
 }
@@ -44,7 +45,7 @@
   box-sizing: border-box;
   width: 100%;
   height: 150px;
-  padding: 13px 16px;
+  padding: 13px 13px;
 
   border: $borderGrayTypeOne;
 }
@@ -53,6 +54,7 @@
 @media (min-width: $mediumDeviceWidth) {
   .comment {
     padding-bottom: 0;
+
     &::before {
       background: #68b738;
       width: 100%;
@@ -65,7 +67,6 @@
     padding-left: 71px;
 
     background: linear-gradient(to right, transparent 0, transparent 30px, #ffffff 30px, #ffffff 290px, transparent 290px, transparent 100%);
-
   }
 
   .comment__inner {
@@ -92,6 +93,7 @@
 @media (min-width: $largeDeviceWidth) {
   .comment {
     padding-top: 25px;
+
     &::before {
       background: #68b738;
       width: 100%;
@@ -104,7 +106,6 @@
     padding-left: 110px;
 
     background: linear-gradient(to right, transparent 0, transparent 71px, #ffffff 71px, #ffffff 330px, transparent 330px, transparent 100%);
-
   }
 
   .comment__inner {

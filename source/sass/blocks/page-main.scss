@@ -138,18 +138,17 @@
     padding-top: 60px;
     padding-right: 110px;
     padding-left: 110px;
+    padding-bottom: 23px;
+    margin-bottom: 0;
   }
 
   .page-main__example {
-    box-sizing: border-box;
-    width: 100%;
     display: flex;
 
+    box-sizing: border-box;
+    width: 100%;
+
     border: none;
-  }
-
-  .page-main__example > .page-main__wrapper {
-
   }
 
   .page-main__contacts {
@@ -173,7 +172,7 @@
     flex-basis: 245px;
   }
 
-  .page-main__product--alt-height {
-    min-height: 572px;
+  .page-main__product--min-height {
+    min-height: 574px;
   }
 }

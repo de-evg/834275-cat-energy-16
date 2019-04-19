@@ -23,7 +23,24 @@
   border-bottom: $borderGrayTypeOne;
 }
 
-@media (min-width: 768px) {
+// Стили состояний ссылок и кнопок
+.main-menu__item:hover > .main-menu__link {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-menu__item:focus > .main-menu__link {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-menu__item:active > .main-menu__link {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-menu__item--current:hover > .main-menu__link {
+  color: rgba(0, 0, 0, 1);
+}
+
+@media (min-width: $mediumDeviceWidth) {
   .main-menu {
     width: 440px;
 
@@ -64,7 +81,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
   .main-menu__list {
     width: 480px;
     padding-top: 0;
@@ -91,4 +108,37 @@
   .main-menu__item--no-promo.main-menu__item--current::before {
     background-color: #68b738;
   }
+
+// Стили состояний ссылок и кнопок
+.main-menu__item:hover > .main-menu__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-menu__item > .main-menu__link:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-menu__item:active > .main-menu__link {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-menu__item--current:hover > .main-menu__link {
+  color: rgba(255, 255, 255, 1);
+}
+
+.main-menu__item:hover > .main-menu__link--no-promo {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-menu__item > .main-menu__link--no-promo:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-menu__item:active > .main-menu__link--no-promo {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-menu__item--current:hover > .main-menu__link--no-promo {
+  color: rgba(0, 0, 0, 1);
+}
 }

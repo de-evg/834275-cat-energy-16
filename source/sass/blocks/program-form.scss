@@ -99,10 +99,10 @@
   }
 
   .program-form__description {
-    margin-bottom: 60px;
     font-size: $lowFontSize;
     line-height: 30px;
 
+    margin-bottom: 60px;
     padding-right: 355px;
     padding-left: 71px;
   }
@@ -126,30 +126,33 @@
 
     width: $mediumDeviceWidth;
     margin: 0 auto;
-    padding-left: 71px;
     padding-right: 71px;
+    padding-left: 71px;
 
     justify-content: space-between;
   }
 
   .program-form__button-submit {
+    font-size: $lowFontSize;
+    line-height: $lowLineHeight;
+
+    max-width: 283px;
     margin-bottom: 0;
     padding-top: 15px;
     padding-bottom: 17px;
-    font-size: $lowFontSize;
-    line-height: $lowLineHeight;
-    max-width: 283px;
+
     flex-grow: 1;
   }
 
   .program-form__text {
-    width: 344px;
     font-size: $basicFontSize;
     line-height: 16px;
 
+    width: 344px;
+    max-width: 283px;
+
     text-align: left;
 
-    max-width: 283px;
     flex-grow: 1;
     align-self: center;
   }
@@ -158,6 +161,7 @@
 //Стили для большой ширины
 @media (min-width: $largeDeviceWidth) {
   .program-form {
+    padding-top: 33px;
     padding-bottom: 48px;
   }
 
@@ -167,9 +171,9 @@
   }
 
   .program-form__container {
-    box-sizing: border-box;
     display: flex;
 
+    box-sizing: border-box;
     width: 1220px;
     margin: 0 auto;
 
@@ -198,25 +202,16 @@
   .program-form__button-submit {
     font-size: $lowFontSize;
     line-height: $lowLineHeight;
+
+    max-width: 570px;
   }
 
   .program-form__text {
     width: 570px;
+    max-width: 570px;
 
     text-align: left;
 
     flex-basis: 570px;
-  }
-
-  .program-form__button-wrapper {
-    width: $largeDeviceWidth;
-  }
-
-  .program-form__button-submit {
-    max-width: 570px;
-  }
-
-  .program-form__text {
-    max-width: 570px;
   }
 }

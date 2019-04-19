@@ -16,4 +16,19 @@
 
   color: $fourthFontColor;
   background-color: $bgColorBasic;
+
+  &:hover {
+    background-color: $bgColorHover;
+  }
+
+  &:focus {
+    background-color: $bgColorHover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $bgColorHover;
+  }
 }
+
+

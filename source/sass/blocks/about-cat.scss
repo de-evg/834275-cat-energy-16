@@ -70,16 +70,18 @@
   }
 
   .about-cat__inner {
-    justify-content: space-between;
     width: $mediumDeviceWidth;
     padding-right: 67px;
     padding-left: 71px;
+
+    justify-content: space-between;
   }
 
   .about-cat__wrapper {
-    flex-basis: 708px;
     width: 708px;
     height: 57px;
+
+    flex-basis: 708px;
   }
 
   .about-cat__label {
@@ -88,11 +90,11 @@
   }
 
   .about-cat__input {
-    margin-top: 5px;
     font-size: $lowFontSize;
     line-height: 20px;
 
     box-sizing: border-box;
+    margin-top: 5px;
     padding-top: 10px;
     padding-right: 15px;
     padding-bottom: 12px;
@@ -127,10 +129,10 @@
   }
 
   .about-cat__inner {
+    max-width: 570px;
     min-height: 196px;
     padding-right: 0;
     padding-left: 0;
-    max-width: 570px;
   }
 
   .about-cat__wrapper {
@@ -143,6 +145,7 @@
 
   .about-cat__input {
     width: auto;
+
     flex-grow: 1;
   }
 

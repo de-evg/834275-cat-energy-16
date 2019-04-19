@@ -125,16 +125,17 @@
 
   .example__inner {
     display: flex;
+
     width: $largeDeviceWidth;
     margin: 0 auto;
   }
 
   .example__wrapper {
-    padding-right: 0;
-    padding-left: 110px;
     width: 610px;
     margin: 0;
     padding-top: 15px;
+    padding-right: 0;
+    padding-left: 110px;
 
     flex-basis: 610px;
   }
@@ -162,10 +163,11 @@
 
   .example__expenses {
     display: flex;
-    flex-basis: auto;
+
     width: auto;
     max-width: 326px;
 
+    flex-basis: auto;
     flex-grow: 1;
     justify-content: space-between;
   }

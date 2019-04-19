@@ -25,6 +25,30 @@
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
   }
+
+  &:hover::after {
+    right: -9px;
+    width: 33px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:focus::after {
+    right: -9px;
+    width: 33px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    color: $basicFontColorActived;
+  }
+
+  &:active::after {
+    right: -9px;
+    width: 33px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    opacity: 0.3;
+  }
+
 }
 
 @media (min-width: 768px) {

@@ -1,6 +1,6 @@
 .product {
   padding-right: 20px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
   padding-left: 20px;
 
   border-bottom: 1px solid #ededed;
@@ -28,7 +28,7 @@
   line-height: 20px;
 
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   padding-top: 22px;
   padding-right: 50px;
 
@@ -52,10 +52,24 @@
   box-sizing: border-box;
   width: 100%;
   min-width: 100px;
+  padding-bottom: 10px;
 
   &--gray {
     color: $thirdFontColor;
     background-color: #f2f2f2;
+  }
+
+  &--gray:hover {
+    background-color: $bgColorSecondaryHover;
+  }
+
+  &--gray:focus {
+    background-color: $bgColorSecondaryHover;
+  }
+
+  &--gray:active {
+    color: $thirdFontColorActived;
+    background-color: $bgColorSecondaryHover;
   }
 }
 
@@ -68,7 +82,7 @@
     padding-left: 38px;
 
     border-bottom: none;
-    background: linear-gradient(to bottom, #ffffff 0, #ffffff 140px, $bgColorTypeOne 140px, $bgColorTypeOne 100%);
+    background: linear-gradient(to bottom, #ffffff 0, #ffffff 142px, $bgColorTypeOne 142px, $bgColorTypeOne 100%);
   }
 
   .product--no-bg {
@@ -80,29 +94,33 @@
   }
 
   .product__content {
-    min-height: 403px;
     flex-direction: column;
 
     align-items: center;
   }
 
   .product__wrapper {
-    box-sizing: border-box;
-    border: $borderGrayTypeOne;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-basis: 432px;
+
+    box-sizing: border-box;
     height: 432px;
     padding-top: 55px;
-    padding-right: 38px;
-    padding-bottom: 37px;
-    padding-left: 38px;
+    padding-right: 37px;
+    padding-bottom: 39px;
+    padding-left: 37px;
+
+    border: $borderGrayTypeOne;
+
+    justify-content: space-between;
+    flex-basis: 432px;
   }
 
   .product__image-container {
     display: flex;
+
     min-height: 208px;
+
     justify-content: center;
     align-items: flex-end;
   }
@@ -119,12 +137,20 @@
 }
 
 @media (min-width: 1440px) {
+  .product {
+    padding-top: 58px;
+  }
   .product__container {
     width: 169px;
+    margin-bottom: 32px;
   }
 
   .product__title {
     padding-right: 15px;
     padding-left: 15px;
+  }
+
+  .prorduct__table {
+    margin-bottom: 0;
   }
 }

@@ -10,6 +10,7 @@
 
   &::before {
     @include title-line();
+
     top: 17px;
   }
 }
@@ -82,10 +83,13 @@
 @media (min-width: $mediumDeviceWidth) {
   .optionally {
     padding-bottom: 17px;
+
     &::before {
-      background: #68b738;
-      width: 100%;
       top: 68px;
+
+      width: 100%;
+
+      background: #68b738;
     }
   }
 
@@ -99,9 +103,9 @@
     flex-wrap: wrap;
   }
 
-  .optionally__title{
-    margin-bottom: 50px;
+  .optionally__title {
     width: $mediumDeviceWidth;
+    margin-bottom: 50px;
     padding: 50px 0 0;
 
     background: linear-gradient(to right, transparent 0, transparent 30px, #ffffff 30px, #ffffff 322px, transparent 322px, transparent 100%);
@@ -116,8 +120,8 @@
   }
 
   .optionally__wrapper {
-    padding-bottom: 40px;
     width: 344px;
+    padding-bottom: 40px;
 
     flex-basis: 344px;
   }
@@ -125,6 +129,7 @@
   .optionally__checkbox-label {
     font-size: $lowFontSize;
     line-height: $lowLineHeight;
+
     padding-left: 55px;
   }
 
@@ -141,6 +146,7 @@
 @media (min-width: $largeDeviceWidth) {
   .optionally {
     padding-bottom: 25px;
+
     &::before {
       top: 69px;
     }
@@ -160,16 +166,16 @@
     box-sizing: border-box;
     width: $largeDeviceWidth;
     margin-bottom: 56px;
-    padding-left: 40px;
     padding-top: 45px;
+    padding-left: 40px;
 
     background: linear-gradient(to right, transparent 0, transparent 70px, #ffffff 70px, #ffffff 663px, transparent 663px, transparent 100%);
   }
 
   .optionally__wrapper {
     max-width: 245px;
-    flex-grow: 1;
 
+    flex-grow: 1;
   }
 
   .optionally__checkbox-label {

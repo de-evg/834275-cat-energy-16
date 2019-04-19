@@ -88,6 +88,15 @@
   .slider__button {
     font-size: $lowFontSize;
     line-height: $lowLineHeight;
+    border-bottom: 1px dotted #bebebe;
+
+    &:hover  {
+      border-bottom-style: solid;
+    }
+
+    &:active  {
+      border: none;
+    }
   }
 
   .slider__toggle {
@@ -95,7 +104,7 @@
     height: 6px;
 
     border: none;
-    background-color: #dcdcdc;
+    background-color: #cdcdcd;
 
     flex-grow: 1;
 
@@ -128,6 +137,16 @@
       border-radius: 50%;
       background-color: #68b738;
     }
+
+    &:hover::before,
+    &:focus::before {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:hover::after,
+    &:focus::after {
+      display: none;
+    }
   }
 }
 
@@ -141,8 +160,8 @@
   }
 
   .slider__buttons {
+    padding-right: 110px;
     padding-left: 39px;
-    padding-right: 110px
   }
 
   .slider__toggle {

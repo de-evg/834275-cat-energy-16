@@ -106,6 +106,7 @@
 
   .extra-product__title {
     margin-bottom: 0;
+    line-height: 25px;
   }
 
   .extra-product__table {
@@ -116,6 +117,7 @@
   }
 
   .extra-product__table tr {
+    padding-top: 7px;
     display: flex;
 
     border: none;

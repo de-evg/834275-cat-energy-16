@@ -77,8 +77,10 @@
 
     &::before {
       top: 29px;
-      transform: translateX(-49%);
+
       width: 60px;
+
+      transform: translateX(-49%);
     }
 
     &::after {
@@ -90,6 +92,7 @@
 
   .more-product__description {
     font-size: $lowFontSize;
+
     margin-bottom: 25px;
     padding-right: 50px;
     padding-left: 50px;
@@ -98,6 +101,7 @@
   .more-product__text {
     font-size: $basicFontSize;
     line-height: 19px;
+
     padding-right: 25px;
     padding-left: 25px;
   }

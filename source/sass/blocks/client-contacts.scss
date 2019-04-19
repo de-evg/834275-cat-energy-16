@@ -76,43 +76,46 @@
   border: $borderGrayTypeOne;
 
   flex-grow: 1;
-
 }
 
 .client-contacts__input-email {
- background-image: url("../img/icon-mail.svg");
- background-repeat: no-repeat;
- background-position: 93% 50%;
- background-size: 18px 14px;
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: 93% 50%;
+  background-size: 18px 14px;
 }
 
 .client-contacts__input-phone {
- background-image: url("../img/icon-phone.svg");
- background-repeat: no-repeat;
- background-position: 93% 50%;
- background-size: 20px 20px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 93% 50%;
+  background-size: 20px 20px;
 }
 
 //Стили для средней ширины
 @media (min-width: $mediumDeviceWidth) {
   .client-contacts {
     padding-bottom: 23px;
+
     &::before {
-      background: #68b738;
-      width: 100%;
       top: 72px;
+
+      width: 100%;
+
+      background: #68b738;
     }
   }
 
   .client-contacts__inner {
     flex-direction: column;
-    justify-content: space-between;
-    padding-top: 52px;
-    width: $mediumDeviceWidth;
 
+    width: $mediumDeviceWidth;
+    padding-top: 52px;
     padding-right: 65px;
+    padding-bottom: 19px;
     padding-left: 71px;
-    padding-bottom: 19px
+
+    justify-content: space-between;
   }
 
   .client-contacts__title {
@@ -131,9 +134,10 @@
   }
 
   .client-contacts__wrapper {
-    margin-top: 21px;
-    height: 52px;
     width: 632px;
+    height: 52px;
+    margin-top: 21px;
+
     flex-basis: 52px;
   }
 
@@ -156,19 +160,20 @@
   .client-contacts__input {
     font-size: $lowFontSize;
     line-height: 20px;
+
     max-width: 551px;
     padding-left: 19px;
   }
 
   .client-contacts__input-email {
-   background-position: 96% 50%;
-   background-size: 17px 13px;
- }
+    background-position: 96% 50%;
+    background-size: 17px 13px;
+  }
 
- .client-contacts__input-phone {
-   background-position: 97% 50%;
-   background-size: 20px 20px;
- }
+  .client-contacts__input-phone {
+    background-position: 97% 50%;
+    background-size: 20px 20px;
+  }
 }
 
 //Стили для большой ширины
@@ -182,11 +187,10 @@
   .client-contacts__title {
     box-sizing: border-box;
     width: $largeDeviceWidth;
-    padding-left: 40px;
     padding-top: 55px;
+    padding-left: 40px;
 
     background: linear-gradient(to right, transparent 0, transparent 70px, #ffffff 70px, #ffffff 663px, transparent 663px, transparent 100%);
-
   }
 
   .client-contacts__inner {
@@ -200,8 +204,9 @@
   }
 
   .client-contacts__wrapper {
-    margin: 0;
-    flex-grow: 1;
     max-width: 570px;
+    margin: 0;
+
+    flex-grow: 1;
   }
 }
