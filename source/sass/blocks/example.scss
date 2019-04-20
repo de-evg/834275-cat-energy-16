@@ -56,7 +56,7 @@
   color: $basicFontColor;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .example {
     padding-top: 43px;
     padding-bottom: 60px;
@@ -115,7 +115,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
   .example {
     padding-top: 0;
     padding-bottom: 52px;

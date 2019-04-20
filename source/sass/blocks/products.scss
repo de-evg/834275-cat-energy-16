@@ -1,11 +1,11 @@
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .products {
     padding-right: 30px;
     padding-left: 30px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
   .products {
     padding-right: 110px;
     padding-left: 110px;

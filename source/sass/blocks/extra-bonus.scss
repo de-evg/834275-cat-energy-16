@@ -43,7 +43,7 @@
   color: #ffffff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .extra-bonus {
     padding-top: 69px;
     padding-right: 30px;
@@ -75,7 +75,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
   .extra-bonus {
     padding: 0;
   }

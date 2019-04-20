@@ -74,11 +74,6 @@
   background-size: 21px 16px;
 }
 
-.optionally__checkbox:disabled + .optionally__checkbox-label,
-.optionally__checkbox:disabled:checked + .optionally__checkbox-label {
-  opacity: 0.3;
-}
-
 //Стили для средней ширины
 @media (min-width: $mediumDeviceWidth) {
   .optionally {

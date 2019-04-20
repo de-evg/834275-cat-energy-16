@@ -32,7 +32,7 @@
   display: inline-block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .extra-product {
     padding-right: 37px;
     padding-bottom: 27px;
@@ -76,7 +76,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
   .extra-product {
     padding-top: 14px;
     padding-right: 0;

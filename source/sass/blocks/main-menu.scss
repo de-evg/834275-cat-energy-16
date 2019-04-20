@@ -109,36 +109,36 @@
     background-color: #68b738;
   }
 
-// Стили состояний ссылок и кнопок
-.main-menu__item:hover > .main-menu__link {
-  color: rgba(255, 255, 255, 0.6);
-}
+  // Стили состояний ссылок и кнопок
+  .main-menu__item:hover > .main-menu__link {
+    color: rgba(255, 255, 255, 0.6);
+  }
 
-.main-menu__item > .main-menu__link:focus {
-  color: rgba(255, 255, 255, 0.6);
-}
+  .main-menu__item > .main-menu__link:focus {
+    color: rgba(255, 255, 255, 0.6);
+  }
 
-.main-menu__item:active > .main-menu__link {
-  color: rgba(255, 255, 255, 0.3);
-}
+  .main-menu__item:active > .main-menu__link {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
-.main-menu__item--current:hover > .main-menu__link {
-  color: rgba(255, 255, 255, 1);
-}
+  .main-menu__item--current:hover > .main-menu__link {
+    color: rgba(255, 255, 255, 1);
+  }
 
-.main-menu__item:hover > .main-menu__link--no-promo {
-  color: rgba(0, 0, 0, 0.6);
-}
+  .main-menu__item:hover > .main-menu__link--no-promo {
+    color: rgba(0, 0, 0, 0.6);
+  }
 
-.main-menu__item > .main-menu__link--no-promo:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
+  .main-menu__item > .main-menu__link--no-promo:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
 
-.main-menu__item:active > .main-menu__link--no-promo {
-  color: rgba(0, 0, 0, 0.3);
-}
+  .main-menu__item:active > .main-menu__link--no-promo {
+    color: rgba(0, 0, 0, 0.3);
+  }
 
-.main-menu__item--current:hover > .main-menu__link--no-promo {
-  color: rgba(0, 0, 0, 1);
-}
+  .main-menu__item--current:hover > .main-menu__link--no-promo {
+    color: rgba(0, 0, 0, 1);
+  }
 }

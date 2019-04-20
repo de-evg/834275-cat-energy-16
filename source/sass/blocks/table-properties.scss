@@ -18,7 +18,7 @@
   text-align: right;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .table-properties {
     font-size: $basicFontSize;
 
@@ -45,11 +45,11 @@
 }
 
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
   .table-properties {
     font-size: $basicFontSize;
 
-    margin-bottom:0;
+    margin-bottom: 0;
   }
 
   .table-properties__property--align {

@@ -38,7 +38,7 @@
   background: linear-gradient(to right, transparent 0, transparent 20px, #ffffff 20px, #ffffff 267px, transparent 267px, transparent 100%);
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .extra-products {
     &::before {
       top: 89px;
@@ -84,7 +84,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
   .extra-products {
     padding-bottom: 86px;
 

@@ -64,7 +64,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .slider__wrapper {
     width: $mediumDeviceWidth;
   }
@@ -88,13 +88,14 @@
   .slider__button {
     font-size: $lowFontSize;
     line-height: $lowLineHeight;
+
     border-bottom: 1px dotted #bebebe;
 
-    &:hover  {
+    &:hover {
       border-bottom-style: solid;
     }
 
-    &:active  {
+    &:active {
       border: none;
     }
   }
@@ -150,7 +151,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
   .slider__wrapper {
     width: 100%;
   }

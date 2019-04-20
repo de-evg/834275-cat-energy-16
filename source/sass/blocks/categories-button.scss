@@ -28,13 +28,17 @@
 
   &:hover::after {
     right: -9px;
+
     width: 33px;
+
     background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
   &:focus::after {
     right: -9px;
+
     width: 33px;
+
     background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
@@ -44,11 +48,12 @@
 
   &:active::after {
     right: -9px;
-    width: 33px;
-    background-image: url("../img/icon-right-arrow-verylong.svg");
-    opacity: 0.3;
-  }
 
+    width: 33px;
+
+    opacity: 0.3;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
 }
 
 @media (min-width: 768px) {

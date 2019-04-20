@@ -41,7 +41,7 @@
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .page-main__wrapper {
     width: $mediumDeviceWidth;
     margin: 0 auto;
@@ -121,7 +121,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
   .page-main__wrapper {
     width: $largeDeviceWidth;
     margin: 0 auto;

@@ -10,6 +10,10 @@
   display: flex;
 }
 
+.product__image-container {
+  min-width: 140px;
+}
+
 .product__image {
   vertical-align: bottom;
 }
@@ -73,7 +77,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .product {
     box-sizing: border-box;
     padding-top: 55px;
@@ -136,10 +140,11 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
   .product {
     padding-top: 58px;
   }
+
   .product__container {
     width: 169px;
     margin-bottom: 32px;

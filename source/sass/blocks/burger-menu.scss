@@ -50,7 +50,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .burger-menu {
     display: none;
   }

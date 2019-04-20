@@ -58,7 +58,7 @@
   color: $thirdFontColor;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .more-product {
     background-color: #ffffff;
   }
@@ -107,7 +107,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
   .more-product__content {
     width: 169px;
   }

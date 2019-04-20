@@ -19,6 +19,18 @@
   vertical-align: middle;
 }
 
+.page-footer__site-title-link:hover {
+  opacity: 0.8;
+}
+
+.page-footer__site-title-link:focus {
+  opacity: 0.8;
+}
+
+.page-footer__site-title-link:active {
+  opacity: 0.6;
+}
+
 .page-footer__social {
   display: flex;
 
@@ -36,7 +48,7 @@
   align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .page-footer {
     box-sizing: border-box;
     width: 100%;
@@ -81,7 +93,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
   .page-footer {
     width: 100%;
     padding-top: 50px;

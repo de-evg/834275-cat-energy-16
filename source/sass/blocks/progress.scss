@@ -39,7 +39,7 @@
   background-color: $bgColorSecondary;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .progress__value {
     font-size: 30px;
     line-height: 37px;
@@ -67,7 +67,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
   .progress__type {
     background-color: $bgColorTypeOne;
   }

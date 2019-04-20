@@ -28,7 +28,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .categories-pro__image {
     &::before {
       top: 51px;
@@ -54,7 +54,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
   .categories-pro__image {
     &::before {
       top: 7px;

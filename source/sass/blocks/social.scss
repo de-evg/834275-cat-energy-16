@@ -4,7 +4,25 @@
   border-top: 1px solid #d9d9d9;
 }
 
-@media (min-width: 768px) {
+.social__icon--vk:hover g,
+.social__icon--inst:hover .st0,
+.social__icon--fb:hover g {
+  fill: #68b738;
+}
+
+.social__icon--vk:focus g,
+.social__icon--inst:focus .st0,
+.social__icon--fb:focus g {
+  fill: #68b738;
+}
+
+.social__icon--vk:active g,
+.social__icon--inst:active .st0,
+.social__icon--fb:active g {
+  opacity: 0.3;
+}
+
+@media (min-width: $mediumDeviceWidth) {
   .social {
     padding-top: 0;
 
