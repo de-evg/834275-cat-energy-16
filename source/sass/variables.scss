@@ -8,6 +8,9 @@ $borderGrayTypeOne: 1px solid #e6e6e6;
 $borderGrayTypeTwo: 1px solid #ededed;
 $borderGrayTypeThree: 1px solid #cdcdcd;
 $borderGrayTypeFour: 1px solid #d9d9d9;
+$borderGrayTypeFive: 2px solid #444444;
+$borderGrayTypeSix: 2px solid #ff8282;
+
 
 //Fonts
 $oswaldRegular: "Oswald Regular", "Arial", sans-serif;
@@ -22,8 +25,10 @@ $largeFontSize: 36px;
 $bigFontSize: 60px;
 
 $basicFontColor: #111111;
+$basicFontColorActived: rgba(17, 17, 17, 0.3);
 $secondaryFontColor: #222222;
 $thirdFontColor: #444444;
+$thirdFontColorActived: rgba(68, 68, 68, 0.3);
 $fourthFontColor: #ffffff;
 
 $basicLineHeight: 16px;
@@ -35,6 +40,8 @@ $largeLineHeight: 60px;
 //Button
 $bgColorBasic: #68b738;
 $bgColorSecondary: #f2f2f2;
+$bgColorHover: #5eaa2f;
+$bgColorSecondaryHover: #ebebeb;
 
 //Background
 $bgColorTypeOne: #f2f2f2;

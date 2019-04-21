@@ -1,104 +1,179 @@
 .optionally {
-  margin: 0;
+  position: relative;
+  z-index: 1;
+
   padding: 0;
-  padding-top: 23px;
   padding-bottom: 23px;
+
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+
+  &::before {
+    @include title-line();
+
+    top: 17px;
+  }
 }
 
 .optionally__inner {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+
+  box-sizing: border-box;
   width: $smallDeviceWidth;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 }
 
 .optionally__title {
-  margin-bottom: 20px;
+  width: $smallDeviceWidth;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  padding: 0;
+  padding-top: 3px;
+
+  background: linear-gradient(to right, transparent 0, transparent 20px, #ffffff 20px, #ffffff 184px, transparent 184px, transparent 100%);
+}
+
+.optionally__title span {
+  display: inline-block;
+
+  width: 185px;
+  padding-right: 50px;
   padding-left: 20px;
-  padding-right: 20px;
 }
 
 .optionally__wrapper {
-  margin-bottom: 25px;
+  margin-bottom: 0;
+  padding: 12px 0;
 }
 
 .optionally__checkbox-label {
   position: relative;
+
   padding-left: 46px;
 
   &::before {
     position: absolute;
-    content: "";
+    top: -1px;
+    left: 0;
+
     width: 28px;
     height: 28px;
+
+    content: "";
+
     border: 1px solid #cecece;
-    left: 0;
-    top: -6px;
   }
 }
 
 .optionally__checkbox:checked + .optionally__checkbox-label::before {
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
-  background-size: 21px 16px;
   background-position: 50%;
+  background-size: 21px 16px;
 }
 
-.optionally__checkbox:disabled + .optionally__checkbox-label,
-.optionally__checkbox:disabled:checked + .optionally__checkbox-label {
-  opacity: 0.3;
-}
+//Стили для средней ширины
+@media (min-width: $mediumDeviceWidth) {
+  .optionally {
+    padding-bottom: 17px;
 
-@media (min-width: 768px) {
+    &::before {
+      top: 68px;
+
+      width: 100%;
+
+      background: #68b738;
+    }
+  }
+
   .optionally__inner {
-
-    padding-left: 71px;
-    padding-right: 0;
-    width: $mediumDeviceWidth;
     flex-direction: row;
+
+    width: $mediumDeviceWidth;
+    padding-right: 0;
+    padding-left: 71px;
+
     flex-wrap: wrap;
-    height: 112px;
   }
 
   .optionally__title {
-    padding-left: 71px;
+    width: $mediumDeviceWidth;
+    margin-bottom: 50px;
+    padding: 50px 0 0;
+
+    background: linear-gradient(to right, transparent 0, transparent 30px, #ffffff 30px, #ffffff 322px, transparent 322px, transparent 100%);
+  }
+
+  .optionally__title span {
+    display: inline-block;
+
+    width: auto;
+    padding-right: 50px;
+    padding-left: 69px;
   }
 
   .optionally__wrapper {
-    flex-basis: 344px;
     width: 344px;
+    padding-bottom: 40px;
+
+    flex-basis: 344px;
   }
 
   .optionally__checkbox-label {
     font-size: $lowFontSize;
     line-height: $lowLineHeight;
+
+    padding-left: 55px;
   }
 
   .optionally__checkbox-label::before {
+    top: -4px;
+    left: 0;
+
     width: 38px;
     height: 38px;
-    left: 0;
-    top: -6px;
   }
 }
 
-@media (min-width: 1440px) {
+//Стили для большой ширины
+@media (min-width: $largeDeviceWidth) {
+  .optionally {
+    padding-bottom: 25px;
+
+    &::before {
+      top: 69px;
+    }
+  }
+
   .optionally__inner {
-    padding-left: 110px;
-    padding-right: 110px;
-    width: $largeDeviceWidth;
     flex-direction: row;
+
+    width: $largeDeviceWidth;
+    padding-right: 110px;
+    padding-left: 110px;
+
     justify-content: space-between;
   }
 
   .optionally__title {
-    padding-left: 110px;
+    box-sizing: border-box;
+    width: $largeDeviceWidth;
+    margin-bottom: 56px;
+    padding-top: 45px;
+    padding-left: 40px;
+
+    background: linear-gradient(to right, transparent 0, transparent 70px, #ffffff 70px, #ffffff 663px, transparent 663px, transparent 100%);
   }
 
   .optionally__wrapper {
-    flex-basis: auto;
-    width: auto;
+    max-width: 245px;
+
+    flex-grow: 1;
+  }
+
+  .optionally__checkbox-label {
+    padding-left: 58px;
   }
 }

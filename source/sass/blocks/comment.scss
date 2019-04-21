@@ -1,57 +1,116 @@
 .comment {
-  margin: 0;
+  position: relative;
+  z-index: 1;
+
   padding: 0;
   padding-top: 23px;
-  padding-bottom: 23px;
+  padding-bottom: 5px;
+
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+
+  &::before {
+    @include title-line();
+
+    top: 37px;
+  }
 }
 
 .comment__inner {
-  box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
+
+  box-sizing: border-box;
   width: $smallDeviceWidth;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
+
+  flex-wrap: wrap;
 }
 
 .comment__title {
   display: block;
-  margin-bottom: 20px;
-  padding-left: 20px;
+
+  margin-bottom: 35px;
   padding-right: 20px;
+  padding-left: 20px;
+
+  background: linear-gradient(to right, transparent 0, transparent 20px, #ffffff 20px, #ffffff 142px, transparent 142px, transparent 100%);
 }
 
 .comment__text {
+  font-family: $oswaldRegular;
+  font-size: $basicFontSize;
+  line-height: 18px;
+
   box-sizing: border-box;
-  padding: 14px 16px;
   width: 100%;
+  height: 150px;
+  padding: 13px 13px;
+
   border: $borderGrayTypeOne;
 }
 
-@media (min-width: 768px) {
+//Стили для средней ширины
+@media (min-width: $mediumDeviceWidth) {
+  .comment {
+    padding-bottom: 0;
+
+    &::before {
+      background: #68b738;
+      width: 100%;
+      top: 45px;
+    }
+  }
+
   .comment__title {
-    margin-bottom: 20px;
+    margin-bottom: 75px;
     padding-left: 71px;
+
+    background: linear-gradient(to right, transparent 0, transparent 30px, #ffffff 30px, #ffffff 290px, transparent 290px, transparent 100%);
   }
 
   .comment__inner {
     width: $mediumDeviceWidth;
     height: 174px;
-    padding-left: 71px;
     padding-right: 71px;
+    padding-left: 71px;
+  }
+
+  .comment__text {
+    font-size: $lowFontSize;
+    line-height: 20px;
+
+    box-sizing: border-box;
+
+    height: 175px;
+    padding: 15px 16px;
+
+    border: $borderGrayTypeOne;
   }
 }
 
-@media (min-width: 1440px) {
+//Стили для большой ширины
+@media (min-width: $largeDeviceWidth) {
+  .comment {
+    padding-top: 25px;
+
+    &::before {
+      background: #68b738;
+      width: 100%;
+      top: 48px;
+    }
+  }
+
   .comment__title {
-    margin-bottom: 20px;
+    margin-bottom: 77px;
     padding-left: 110px;
+
+    background: linear-gradient(to right, transparent 0, transparent 71px, #ffffff 71px, #ffffff 330px, transparent 330px, transparent 100%);
   }
 
   .comment__inner {
     width: $largeDeviceWidth;
-
-    padding-left: 110px;
     padding-right: 110px;
+    padding-left: 110px;
   }
 }

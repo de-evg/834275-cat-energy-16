@@ -1,29 +1,36 @@
 .burger-menu {
   position: relative;
 
-  background-color: #000000;
   width: 24px;
   height: 2px;
+
   border: none;
+  background-color: #000000;
 
   &::before {
     position: absolute;
-    content: "";
+    top: -6px;
+    left: 0;
+
     width: 24px;
     height: 2px;
+
+    content: "";
+
     background-color: #000000;
-    left: 0;
-    top: -6px;
   }
 
   &::after {
     position: absolute;
-    content: "";
+    top: 6px;
+    left: 0;
+
     width: 24px;
     height: 2px;
+
+    content: "";
+
     background-color: #000000;
-    left: 0;
-    top: 6px;
   }
 
   &--active {
@@ -31,17 +38,19 @@
   }
 
   &--active::before {
-    transform: rotate(-45deg);
     top: 0;
+
+    transform: rotate(-45deg);
   }
 
   &--active::after {
-    transform: rotate(45deg);
     top: 0;
+
+    transform: rotate(45deg);
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .burger-menu {
     display: none;
   }

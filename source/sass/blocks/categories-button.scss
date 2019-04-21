@@ -2,13 +2,65 @@
   font-family: $oswaldRegular;
   font-size: $basicFontSize;
   line-height: 16px;
+
+  position: relative;
+
+  padding-right: 35px;
+
   text-transform: uppercase;
+
   color: $basicFontColor;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+
+    width: 24px;
+    height: 11px;
+
+    content: "";
+    transform: translateY(50%);
+
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    right: -9px;
+
+    width: 33px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:focus::after {
+    right: -9px;
+
+    width: 33px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    color: $basicFontColorActived;
+  }
+
+  &:active::after {
+    right: -9px;
+
+    width: 33px;
+
+    opacity: 0.3;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
 }
 
 @media (min-width: 768px) {
   .categories-button {
     font-size: $lowFontSize;
     line-height: $lowLineHeight;
+
+    padding-right: 50px;
   }
 }

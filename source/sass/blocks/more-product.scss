@@ -6,103 +6,124 @@
 
   &::before {
     position: absolute;
-    content: "";
+    top: 40px;
+    left: 50%;
+
     width: 30px;
     height: 2px;
+
+    content: "";
+    transform: translateX(-49%);
+
     background-color: #d3d3d3;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 40px;
   }
 
   &::after {
     position: absolute;
-    content: "";
+    top: 26px;
+    left: 50%;
+
     width: 2px;
     height: 30px;
+
+    content: "";
+
     background-color: #d3d3d3;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 26px;
   }
 }
 
 .more-product__description {
-  margin: 0;
-  margin-bottom: 7px;
-
   font-family: $oswaldRegular;
   font-size: $basicFontSize;
   line-height: 20px;
-  text-transform: uppercase;
+
+  margin: 0;
+  margin-bottom: 7px;
+
   text-align: center;
+  text-transform: uppercase;
+
   color: $basicFontColor;
 }
 
 .more-product__text {
-  margin: 0;
-
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+
+  margin: 0;
+
   text-align: center;
+
   color: $thirdFontColor;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .more-product {
-    border: $borderGrayTypeOne;
+    background-color: #ffffff;
   }
 
   .more-product__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     background-color: #ffffff;
+
+    justify-content: flex-end;
   }
 
   .more-product__content {
-    padding-top: 160px;
+    box-sizing: border-box;
+    max-width: 250px;
+    padding-top: 110px;
 
     &::before {
+      top: 29px;
+
       width: 60px;
-      top: 78px;
+
+      transform: translateX(-49%);
     }
 
     &::after {
+      top: 0;
+
       height: 60px;
-      top: 49px;
     }
   }
 
   .more-product__description {
+    max-width: 250px;
     font-size: $lowFontSize;
-    padding-left: 50px;
+
+    margin-bottom: 25px;
     padding-right: 50px;
+    padding-left: 50px;
   }
 
   .more-product__text {
+    max-width: 250px;
     font-size: $basicFontSize;
-    padding-left: 40px;
-    padding-right: 40px;
+    line-height: 19px;
+
+    padding-right: 25px;
+    padding-left: 25px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
   .more-product__content {
     width: 169px;
   }
 
 
   .more-product__description {
-    margin-bottom: 30px;
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
   }
 
   .more-product__text {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 }

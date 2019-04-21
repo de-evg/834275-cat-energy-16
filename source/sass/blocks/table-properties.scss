@@ -1,31 +1,66 @@
 .table-properties {
   font-family: "Arial", sans-serif;
   font-size: $tinyFontSize;
-  line-height: $basicLineHeight;
+  line-height: 15px;
+
   color: $thirdFontColor;
 }
 
 .table-properties__property {
   height: 5px;
+
+  text-align: left;
 }
 
 .table-properties__value {
-  text-align: right;
   height: 5px;
+
+  text-align: right;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .table-properties {
-    margin-bottom: 33px;
     font-size: $basicFontSize;
+
+    margin-bottom: 31px;
   }
 
   .table-properties__property {
+
+    height: 29px;
+
     text-align: left;
-    height: 26px;
+  }
+
+  .table-properties__property--align {
+    padding-top: 10px;
+    text-align: right;
   }
 
   .table-properties__row {
     border-bottom: $borderGrayTypeThree;
+  }
+
+  .table-properties__value--align {
+    width: 87px;
+  }
+}
+
+
+@media (min-width: $largeDeviceWidth) {
+  .table-properties {
+    font-size: $basicFontSize;
+
+    margin-bottom: 0;
+  }
+
+  .table-properties__property--align {
+    width: 87px;
+
+    text-align: left;
+  }
+
+  .table-properties__value--align {
+    width: 87px;
   }
 }

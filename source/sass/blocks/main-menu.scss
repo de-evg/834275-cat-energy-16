@@ -1,40 +1,61 @@
 .main-menu__list {
+  width: inherit;
   margin: 0;
   padding: 0;
-  width: inherit;
+
   list-style: none;
+
   text-align: center;
 }
 
 .main-menu__link {
+  font-size: 20px;
+  line-height: 20px;
+
   display: block;
-  word-wrap: break-word;
 
   padding-top: 22px;
   padding-bottom: 23px;
-  border-bottom: $borderGrayTypeOne;
 
-  font-size: 20px;
-  line-height: 20px;
+  word-wrap: break-word;
+
   color: $basicFontColor;
+  border-bottom: $borderGrayTypeOne;
 }
 
-@media (min-width: 768px) {
-  .main-menu {
-    flex-basis: 440px;
-    width: 440px;
-  }
+// Стили состояний ссылок и кнопок
+.main-menu__item:hover > .main-menu__link {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-menu__item:focus > .main-menu__link {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-menu__item:active > .main-menu__link {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-menu__item--current:hover > .main-menu__link {
+  color: rgba(0, 0, 0, 1);
+}
+
+@media (min-width: $mediumDeviceWidth) {
 
   .main-menu__list {
     display: flex;
+
+    padding-top: 20px;
+
     justify-content: space-between;
   }
 
   .main-menu__link {
     font-family: $oswaldRegular;
-    border-bottom: none;
     font-size: 18px;
     line-height: 24px;
+
+    border-bottom: none;
   }
 
   .main-menu__item--current {
@@ -43,17 +64,31 @@
 
   .main-menu__item--current::before {
     position: absolute;
-    content: "";
+    bottom: 13px;
+    left: 0;
+
     width: 100%;
     height: 2px;
-    bottom: 12px;
-    left: 0;
+
+    content: "";
+
     background-color: #68b738;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
+  .main-menu__list {
+    width: 480px;
+    padding-top: 0;
+    padding-right: 0;
+
+    flex-basis: 480px;
+  }
+
   .main-menu__link {
+    font-size: $lowFontSize;
+    line-height: 24px;
+
     color: #ffffff;
   }
 
@@ -67,5 +102,38 @@
 
   .main-menu__item--no-promo.main-menu__item--current::before {
     background-color: #68b738;
+  }
+
+  // Стили состояний ссылок и кнопок
+  .main-menu__item:hover > .main-menu__link {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .main-menu__item > .main-menu__link:focus {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .main-menu__item:active > .main-menu__link {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .main-menu__item--current:hover > .main-menu__link {
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .main-menu__item:hover > .main-menu__link--no-promo {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .main-menu__item > .main-menu__link--no-promo:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .main-menu__item:active > .main-menu__link--no-promo {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .main-menu__item--current:hover > .main-menu__link--no-promo {
+    color: rgba(0, 0, 0, 1);
   }
 }

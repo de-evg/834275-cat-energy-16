@@ -1,24 +1,27 @@
 .about-cat {
   margin: 0;
   padding: 0;
-  padding-bottom: 23px;
+  padding-bottom: 6px;
 }
 
 .about-cat__inner {
-  box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
+
+  box-sizing: border-box;
   width: $smallDeviceWidth;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
+
+  flex-wrap: wrap;
 }
 
 .about-cat__wrapper {
-  margin-top: 14px;
+  display: flex;
+
+  width: inherit;
+  margin-bottom: 15px;
 
   flex-basis: 280px;
-  width: inherit;
-  display: flex;
   justify-content: space-between;
 }
 
@@ -28,83 +31,124 @@
 
 .about-cat__input {
   box-sizing: border-box;
-  border: $borderGrayTypeOne;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
+  font-family: $oswaldRegular;
+  font-size: $basicFontSize;
+  line-height: 23px;
+  height: 45px;
+
   padding-right: 15px;
+  padding-left: 15px;
+
+  border: $borderGrayTypeOne;
 }
 
 .about-cat__input-name {
-  flex-basis: 230px;
-  width: 230px;
+  max-width: 229px;
+  width: 100%;
+
+  flex-basis: 100%;
 }
 
 .about-cat__input-weight {
-  flex-basis: 204px;
-  width: 204px;
+  max-width: 204px;
+  width: 100%;
+
+  flex-basis: 100%;
 }
 
 .about-cat__input-age {
-  flex-basis: 172px;
-  width: 172px;
+  max-width: 172px;
+  width: 100%;
+
+  flex-basis: 100%;
 }
 
-@media (min-width: 768px) {
+//Стили для средней ширины
+@media (min-width: $mediumDeviceWidth) {
+  .about-cat {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 35px;
+  }
+
   .about-cat__inner {
     width: $mediumDeviceWidth;
+    padding-right: 67px;
     padding-left: 71px;
-    padding-right: 71px;
+
+    justify-content: space-between;
   }
 
   .about-cat__wrapper {
+    width: 708px;
+    height: 57px;
+
     flex-basis: 708px;
   }
 
+  .about-cat__label {
+    font-size: $lowFontSize;
+    line-height: 20px;
+  }
+
+  .about-cat__input {
+    font-size: $lowFontSize;
+    line-height: 20px;
+    height: 52px;
+
+    margin-top: 5px;
+    border: $borderGrayTypeOne;
+  }
+
   .about-cat__input-name {
-    flex-basis: 565px;
-    width: 565px;
+    max-width: 567px;
   }
 
   .about-cat__input-weight {
-    flex-basis: 534px;
-    width: 534px;
+    max-width: 536px;
   }
 
   .about-cat__input-age {
-    flex-basis: 495px;
-    width: 495px;
+    max-width: 497px;
   }
 }
 
-@media (min-width: 1440px) {
+//Стили для большой ширины
+@media (min-width: $largeDeviceWidth) {
   .about-cat {
     padding-bottom: 0;
+  }
+
+  .about-cat__inner {
+    max-width: 570px;
+    min-height: 196px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .about-cat__wrapper {
+    justify-content: space-between;
   }
 
   .about-cat__wrapper:first-of-type {
     margin-top: 0;
   }
 
-  .about-cat__inner {
-    width: 720px;
-    min-height: 196px;
-    padding-left: 110px;
-    padding-right: 0;
+  .about-cat__input {
+    width: auto;
+
+    flex-grow: 1;
   }
 
   .about-cat__input-name {
-    flex-basis: 475px;
-    width: 475px;
+    max-width: 506px;
   }
 
   .about-cat__input-weight {
-    flex-basis: 435px;
-    width: 435px;
+    max-width: 475px;
   }
 
   .about-cat__input-age {
-    flex-basis: 495px;
-    width: 495px;
+    max-width: 436px;
   }
 }

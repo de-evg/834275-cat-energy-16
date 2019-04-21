@@ -1,18 +1,32 @@
 .button {
-  min-width: 220px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  padding-left: 30px;
-  padding-right: 30px;
-
   font-family: $oswaldRegular;
   font-size: $smallFontSize;
-  line-height: 18px;
   font-weight: 400;
-  text-transform: uppercase;
+  line-height: 18px;
+
+  min-width: 220px;
+  padding-top: 11px;
+  padding-right: 30px;
+  padding-bottom: 11px;
+  padding-left: 30px;
+
   text-align: center;
   vertical-align: middle;
-  color: $fourthFontColor;
+  text-transform: uppercase;
 
+  color: $fourthFontColor;
   background-color: $bgColorBasic;
+
+  &:hover {
+    background-color: $bgColorHover;
+  }
+
+  &:focus {
+    background-color: $bgColorHover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $bgColorHover;
+  }
 }
