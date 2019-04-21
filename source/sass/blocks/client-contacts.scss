@@ -64,12 +64,12 @@
 .client-contacts__input {
   font-family: $oswaldRegular;
   font-size: $basicFontSize;
-  line-height: 18px;
+  line-height: 23px;
+  height: 45px;
+  min-height: 45px;
 
   box-sizing: border-box;
-  padding-top: 12px;
   padding-right: 40px;
-  padding-bottom: 13px;
   padding-left: 15px;
 
   color: $thirdFontColor;
@@ -78,14 +78,26 @@
   flex-grow: 1;
 }
 
+.client-contacts__input-email {
+  max-width: 219px;
+  width: 100%;
+  flex-basis: 100%;
+}
+
+.client-contacts__input-phone {
+  max-width: 204px;
+  width: 100%;
+  flex-basis: 100%;
+}
+
 .client-contacts__wrapper--mail {
   position: relative;
 }
 
-.client-contacts__input-email--icon {
+.client-contacts__email-icon {
   position: absolute;
   top: 50%;
-  right: 16px;
+  right: 17px;
 
   width: 17px;
   height: 13px;
@@ -97,7 +109,7 @@
   position: relative;
 }
 
-.client-contacts__input-phone--icon {
+.client-contacts__phone-icon {
   position: absolute;
   top: 50%;
   right: 13px;
@@ -136,10 +148,10 @@
     width: $mediumDeviceWidth;
     padding-top: 52px;
     padding-right: 65px;
-    padding-bottom: 19px;
     padding-left: 71px;
+    padding-bottom: 19px;
 
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .client-contacts__title {
@@ -158,9 +170,11 @@
   }
 
   .client-contacts__wrapper {
-    width: 632px;
+    margin-top: 20px;
+    width: 100%;
+
     height: 52px;
-    margin-top: 21px;
+    min-height: 52px;
 
     flex-basis: 52px;
   }
@@ -170,6 +184,7 @@
   }
 
   .client-contacts__label {
+
     margin-right: 16px;
   }
 
@@ -184,19 +199,28 @@
   .client-contacts__input {
     font-size: $lowFontSize;
     line-height: 20px;
+    height: 52px;
+    flex-basis: 52px;
 
     max-width: 551px;
     padding-left: 19px;
   }
 
   .client-contacts__input-email {
-    background-position: 96% 50%;
-    background-size: 17px 13px;
+    max-width: 551px;
   }
 
   .client-contacts__input-phone {
-    background-position: 97% 50%;
-    background-size: 20px 20px;
+    max-width: 535px;
+  }
+
+  .client-contacts__email-icon {
+    right: 21px;
+  }
+
+
+  .client-contacts__phone-icon {
+    right: 19px;
   }
 }
 

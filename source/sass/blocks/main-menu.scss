@@ -41,11 +41,6 @@
 }
 
 @media (min-width: $mediumDeviceWidth) {
-  .main-menu {
-    width: 440px;
-
-    flex-basis: 440px;
-  }
 
   .main-menu__list {
     display: flex;

@@ -58,13 +58,14 @@
   }
 
   .promo__title {
+    max-width: 460px;
     font-size: $bigFontSize;
     font-weight: 600;
     line-height: $largeLineHeight;
 
     margin-bottom: 40px;
     padding-top: 25px;
-    padding-right: 195px;
+    padding-right: 180px;
     padding-left: 0;
   }
 
@@ -104,6 +105,7 @@
   }
 
   .promo__title {
+    max-width: 450px;
     margin-top: -500px;
     padding-right: 700px;
   }

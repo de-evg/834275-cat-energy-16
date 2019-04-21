@@ -136,19 +136,14 @@
     font-size: $basicFontSize;
     line-height: $mediumLineHeight;
 
-    box-sizing: border-box;
-    width: 324px;
+    width: 234px;
     margin-bottom: 88px;
     padding-top: 112px;
     padding-right: 90px;
     padding-bottom: 45px;
     padding-left: 0;
 
-    flex-basis: 324px;
-  }
-
-  .advantages-list__item:last-of-type {
-    padding-right: 30px;
+    flex-basis: 234px;
   }
 
   .advantages-list__item--no-margin {

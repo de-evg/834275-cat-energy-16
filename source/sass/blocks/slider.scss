@@ -153,7 +153,7 @@
 
 @media (min-width: $largeDeviceWidth) {
   .slider__wrapper {
-    width: 100%;
+    width: 720px;
   }
 
   .slider__images {
@@ -163,9 +163,12 @@
   .slider__buttons {
     padding-right: 110px;
     padding-left: 39px;
+    justify-content: flex-start;
   }
 
   .slider__toggle {
     width: 428px;
+    margin-left: 21px;
+    margin-right: 21px;
   }
 }

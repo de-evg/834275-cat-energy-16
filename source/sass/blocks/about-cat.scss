@@ -1,7 +1,7 @@
 .about-cat {
   margin: 0;
   padding: 0;
-  padding-bottom: 7px;
+  padding-bottom: 6px;
 }
 
 .about-cat__inner {
@@ -30,35 +30,37 @@
 }
 
 .about-cat__input {
+  box-sizing: border-box;
   font-family: $oswaldRegular;
   font-size: $basicFontSize;
-  line-height: 18px;
+  line-height: 23px;
+  height: 45px;
 
-  box-sizing: border-box;
-  padding-top: 12px;
   padding-right: 15px;
-  padding-bottom: 13px;
   padding-left: 15px;
 
   border: $borderGrayTypeOne;
 }
 
 .about-cat__input-name {
-  width: 230px;
+  max-width: 229px;
+  width: 100%;
 
-  flex-basis: 230px;
+  flex-basis: 100%;
 }
 
 .about-cat__input-weight {
-  width: 204px;
+  max-width: 204px;
+  width: 100%;
 
-  flex-basis: 204px;
+  flex-basis: 100%;
 }
 
 .about-cat__input-age {
-  width: 172px;
+  max-width: 172px;
+  width: 100%;
 
-  flex-basis: 172px;
+  flex-basis: 100%;
 }
 
 //Стили для средней ширины
@@ -92,33 +94,22 @@
   .about-cat__input {
     font-size: $lowFontSize;
     line-height: 20px;
+    height: 52px;
 
-    box-sizing: border-box;
     margin-top: 5px;
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 12px;
-    padding-left: 15px;
-
     border: $borderGrayTypeOne;
   }
 
   .about-cat__input-name {
-    width: 567px;
-
-    flex-basis: 567px;
+    max-width: 567px;
   }
 
   .about-cat__input-weight {
-    width: 536px;
-
-    flex-basis: 536px;
+    max-width: 536px;
   }
 
   .about-cat__input-age {
-    width: 497px;
-
-    flex-basis: 497px;
+    max-width: 497px;
   }
 }
 

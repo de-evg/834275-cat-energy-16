@@ -73,6 +73,8 @@
   }
 
   .more-product__content {
+    box-sizing: border-box;
+    max-width: 250px;
     padding-top: 110px;
 
     &::before {
@@ -91,6 +93,7 @@
   }
 
   .more-product__description {
+    max-width: 250px;
     font-size: $lowFontSize;
 
     margin-bottom: 25px;
@@ -99,6 +102,7 @@
   }
 
   .more-product__text {
+    max-width: 250px;
     font-size: $basicFontSize;
     line-height: 19px;
 

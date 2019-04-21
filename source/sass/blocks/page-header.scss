@@ -65,6 +65,12 @@
 
     border: none;
   }
+
+  .page-header__main-menu {
+    width: 440px;
+
+    flex-basis: 440px;
+  }
 }
 
 @media (min-width: $largeDeviceWidth) {
@@ -93,6 +99,9 @@
 
   .page-header__main-menu {
     max-width: 480px;
+    width: 480px;
+
+    flex-basis: 480px;
     padding-top: 52px;
     padding-right: 110px;
 
