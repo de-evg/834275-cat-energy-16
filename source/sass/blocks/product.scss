@@ -15,7 +15,7 @@
 }
 
 .product__image {
-  width: 100%;
+
   vertical-align: bottom;
 }
 
@@ -126,7 +126,7 @@
   }
 
   .product__table {
-    width: auto;
+    width: 100%;
 
     border-collapse: collapse;
   }
@@ -150,17 +150,10 @@
   .product__image-container {
     display: flex;
 
-    min-height: 208px;
+    height: 208px;
 
     justify-content: flex-end;
     align-items: flex-end;
-  }
-
-  .product__image {
-    width: 324px;
-    max-height: 208px;
-
-    vertical-align: bottom;
   }
 
   .product__button {
@@ -174,6 +167,7 @@
   }
 
   .product__container {
+    width: 169px;
     margin-bottom: 32px;
   }
 
@@ -187,7 +181,7 @@
   }
 
   .product__table {
-    width: auto;
+    width: 100%;
     margin-bottom: 0;
   }
 
