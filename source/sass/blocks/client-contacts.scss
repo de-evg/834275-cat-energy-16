@@ -257,4 +257,20 @@
 
     flex-grow: 1;
   }
+
+  .client-contacts__input-email {
+    max-width: 486px;
+  }
+
+  .client-contacts__input-phone {
+    max-width: 472px;
+  }
+
+  .client-contacts__email-icon {
+    right: 20px;
+  }
+
+  .client-contacts__phone-icon {
+    right: 18px;
+  }
 }

@@ -1,5 +1,5 @@
 .example {
-  padding-top: 15px;
+  padding-top: 17px;
   padding-bottom: 30px;
 
   background-color: #f2f2f2;
@@ -25,6 +25,7 @@
 
 .example__about {
   font-family: "Arial", sans-serif;
+  font-weight: 400;
   font-size: $smallFontSize;
   line-height: 18px;
 
@@ -45,6 +46,7 @@
 
 .example__expenses {
   font-family: $oswaldRegular;
+  font-weight: 400;
   font-size: $smallFontSize;
   line-height: 20px;
 
@@ -59,13 +61,13 @@
 @media (min-width: $mediumDeviceWidth) {
   .example {
     padding-top: 43px;
-    padding-bottom: 60px;
+    padding-bottom: 58px;
 
-    background: linear-gradient(to bottom, #ffffff 0, #ffffff 620px, #f2f2f2 620px, #f2f2f2 100%);
+    background: linear-gradient(to bottom, #ffffff 0, #ffffff 619px, #f2f2f2 619px, #f2f2f2 100%);
   }
 
   .example__wrapper {
-    margin-bottom: 15px;
+    margin-bottom: 33px;
     padding-right: 30px;
     padding-bottom: 20px;
     padding-left: 30px;
@@ -118,9 +120,9 @@
 @media (min-width: $largeDeviceWidth) {
   .example {
     padding-top: 0;
-    padding-bottom: 52px;
+    padding-bottom: 51px;
 
-    background: linear-gradient(to bottom, #ffffff 0, #ffffff 150px, #f2f2f2 150px, #f2f2f2 100%);
+    background: linear-gradient(to bottom, #ffffff 0, #ffffff 190px, #f2f2f2 190px, #f2f2f2 100%);
   }
 
   .example__inner {
@@ -133,7 +135,7 @@
   .example__wrapper {
     width: 610px;
     margin: 0;
-    padding-top: 15px;
+    padding-top: 55px;
     padding-right: 0;
     padding-left: 110px;
 

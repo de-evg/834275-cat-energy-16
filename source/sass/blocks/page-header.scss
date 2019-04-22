@@ -1,5 +1,6 @@
 .page-header {
-  font-family: "Oswald Medium", "Arial", sans-serif;
+  font-family: $oswaldRegular;
+  font-weight: 600;
 
   box-sizing: border-box;
   width: $smallDeviceWidth;
@@ -11,14 +12,15 @@
 }
 
 .page-header__wrapper {
-  font-family: "Oswald Medium", "Arial", sans-serif;
+  font-family: $oswaldRegular;
+  font-weight: 600;
 
   display: flex;
 
   box-sizing: border-box;
-  padding-top: 14px;
+  padding-top: 11px;
   padding-right: 20px;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
   padding-left: 20px;
 
   text-transform: uppercase;
@@ -62,8 +64,15 @@
 
     padding-right: 0;
     padding-left: 0;
+    padding-top: 24px;
+    padding-bottom: 0;
 
     border: none;
+  }
+
+  .page-header__logo-image {
+    width: 173px;
+    height: 58px;
   }
 
   .page-header__main-menu {
@@ -76,6 +85,7 @@
 @media (min-width: $largeDeviceWidth) {
   .page-header {
     width: $largeDeviceWidth;
+    font-weight: 400;
     min-height: 696px;
     padding: 0;
 
@@ -93,9 +103,15 @@
   }
 
   .page-header__wrapper {
-    padding-top: 75px;
+    padding-top: 54px;
     padding-left: 110px;
   }
+
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
+  }
+
 
   .page-header__main-menu {
     max-width: 480px;

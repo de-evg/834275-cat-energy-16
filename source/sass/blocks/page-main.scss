@@ -1,5 +1,6 @@
 .page-main {
-  font-family: $oswaldMedium;
+  font-family: $oswaldRegular;
+  font-weight: 600;
 
   box-sizing: border-box;
 
@@ -18,6 +19,7 @@
 
 .page-main__title {
   font-family: $oswaldRegular;
+  font-weight: 400;
   font-size: $largeFontSize;
   line-height: $largeLineHeight;
 
@@ -135,7 +137,7 @@
     font-size: $bigFontSize;
 
     width: $largeDeviceWidth;
-    padding-top: 60px;
+    padding-top: 66px;
     padding-right: 110px;
     padding-left: 110px;
     padding-bottom: 23px;
