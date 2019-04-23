@@ -13,6 +13,10 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 320px 305px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .promo__title {
@@ -21,7 +25,7 @@
   line-height: 36px;
 
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .promo__slogan {
@@ -31,24 +35,25 @@
 
   display: inline-block;
 
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   text-transform: uppercase;
 }
 
 .promo__image {
-  background-image: url("../img/index-can-mobile@1x.png");
-  background-repeat: no-repeat;
+  width: 280px;
+  height: 271px;
 }
 
 .promo__button {
+  margin-top: 2px;
   display: inline-block;
 }
 
 @media (min-width: $mediumDeviceWidth) {
   .promo {
     padding-right: 30px;
-    padding-left: 118px;
+    padding-left: 110px;
 
     text-align: left;
 
@@ -66,15 +71,22 @@
     margin-bottom: 40px;
     padding-top: 25px;
     padding-right: 180px;
-    padding-left: 0;
+    padding-left: 8px;
   }
 
   .promo__slogan {
     font-size: $lowFontSize;
+    font-weight: 400;
     line-height: $lowLineHeight;
 
-    margin-bottom: 15px;
-    padding-left: 0;
+    margin-bottom: 20px;
+    padding-left: 8px;
+  }
+
+  .promo__image {
+    vertical-align: bottom;
+    width: 709px;
+    height: 609px;
   }
 
   .promo__button {
@@ -82,16 +94,13 @@
     line-height: $lowLineHeight;
 
     min-width: 195px;
-    margin-top: -576px;
+    margin-top: -580px;
     margin-bottom: 507px;
+    margin-left: 9px;
     padding-top: 15px;
     padding-right: 25px;
     padding-bottom: 17px;
     padding-left: 25px;
-  }
-
-  .promo__image {
-    min-height: 610px;
   }
 }
 
@@ -108,15 +117,24 @@
     max-width: 450px;
     margin-top: -500px;
     padding-right: 700px;
+    padding-left: 0;
+  }
+
+  .promo__slogan {
+    margin-bottom: 16px;
+    padding-left: 0;
   }
 
   .promo__image {
+    width: 552px;
+    height: 499px;
     position: relative;
-    bottom: 276px;
-    left: 460px;
+    bottom: 275px;
+    left: 370px;
   }
 
   .promo__button {
-    margin-top: -569px;
+    margin-top: -460px;
+    margin-left: 0;
   }
 }

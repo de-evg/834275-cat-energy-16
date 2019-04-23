@@ -7,6 +7,8 @@
 .slider__images {
   margin-bottom: 30px;
 
+  width: 320px;
+
   text-align: center;
 }
 
@@ -70,13 +72,21 @@
   }
 
   .slider__images {
-    display: flex;
+    margin: 0 auto;
 
-    min-height: 510px;
-    margin-bottom: 33px;
+    width: 708px;
+
+    margin-bottom: 10px;
 
     justify-content: center;
     align-items: center;
+  }
+
+  .slider__image {
+    position: relative;
+    left: 7px;
+    width: 680px;
+    height: 515px;
   }
 
   .slider__buttons {
@@ -158,6 +168,12 @@
 
   .slider__images {
     margin: 0;
+    margin-bottom: 32px;
+  }
+
+  .slider__image {
+    width: 685px;
+    left: -51px;
   }
 
   .slider__buttons {

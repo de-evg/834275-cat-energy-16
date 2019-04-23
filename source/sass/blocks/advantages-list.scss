@@ -1,6 +1,7 @@
 .advantages-list {
   margin: 0;
   padding: 0;
+  font-weight: 400;
 
   list-style: none;
 }
@@ -48,6 +49,11 @@
 
   background-image: url("../img/advantage-leaf@1x.png");
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-leaf@2x.png");
+    background-size: 50px auto;
+  }
 }
 
 .advantages-list__second-item-img::before {
@@ -75,6 +81,11 @@
 
   background-image: url("../img/advantage-powder@1x.png");
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-powder@2x.png");
+    background-size: 50px auto;
+  }
 }
 
 .advantages-list__third-item-img::before {
@@ -102,6 +113,11 @@
 
   background-image: url("../img/advantage-dining@1x.png");
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-dining@2x.png");
+    background-size: 50px auto;
+  }
 }
 
 .advantages-list__fourth-item-img::before {
@@ -129,6 +145,11 @@
 
   background-image: url("../img/advantage-clock@1x.png");
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-clock@2x.png");
+    background-size: 50px auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -136,14 +157,14 @@
     font-size: $basicFontSize;
     line-height: $mediumLineHeight;
 
-    width: 234px;
+    width: 254px;
     margin-bottom: 88px;
     padding-top: 112px;
-    padding-right: 90px;
+    padding-right: 70px;
     padding-bottom: 45px;
     padding-left: 0;
 
-    flex-basis: 234px;
+    flex-basis: 254px;
   }
 
   .advantages-list__item--no-margin {
@@ -224,7 +245,7 @@
 
     position: absolute;
     z-index: -1;
-    bottom: -14px;
+    top: -39px;
     left: 118px;
 
     content: "1";
@@ -244,7 +265,7 @@
 
     position: absolute;
     z-index: -1;
-    bottom: -14px;
+    top: -39px;
     left: 110px;
 
     content: "2";
@@ -264,7 +285,7 @@
 
     position: absolute;
     z-index: -1;
-    bottom: -14px;
+    top: -39px;
     left: 113px;
 
     content: "3";
@@ -284,7 +305,7 @@
 
     position: absolute;
     z-index: -1;
-    bottom: -14px;
+    top: -39px;
     left: 112px;
 
     content: "4";

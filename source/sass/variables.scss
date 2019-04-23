@@ -3,6 +3,10 @@ $smallDeviceWidth: 320px;
 $mediumDeviceWidth: 768px;
 $largeDeviceWidth: 1440px;
 
+//Diveice dpi/dppx
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
 //Border
 $borderGrayTypeOne: 1px solid #e6e6e6;
 $borderGrayTypeTwo: 1px solid #ededed;
@@ -13,8 +17,8 @@ $borderGrayTypeSix: 2px solid #ff8282;
 
 
 //Fonts
-$oswaldRegular: "Oswald Regular", "Arial", sans-serif;
-$oswaldMedium: "Oswald Medium", "Arial", sans-serif;
+$oswaldRegular: "Oswald", "Arial", sans-serif;
+
 
 $basicFontSize: 16px;
 $tinyFontSize: 12px;
