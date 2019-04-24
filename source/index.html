@@ -86,9 +86,9 @@
           <img class="page-header__logo-image"  src="img/logo-mobile.svg" width="191" height="38" alt="Логотип магазина Cat energy">
         </picture>
       </a>
-      <button class="burger-menu burger-menu--active" aria-label="Главное меню"></button>
+      <button class="burger-menu burger-menu--closed burger-menu--no-js" aria-label="Главное меню"></button>
     </div>
-    <nav class="page-header__main-menu main-menu ">
+    <nav class="page-header__main-menu main-menu main-menu--closed main-menu--no-js">
       <ul class="main-menu__list">
         <li class="main-menu__item main-menu__item--current"><a class="main-menu__link">Главная</a></li>
         <li class="main-menu__item "><a class="main-menu__link" href="catalog.html">Каталог продукции</a></li>
@@ -229,8 +229,8 @@
             </div>
             <div class="slider__wrapper">
               <div class="slider__buttons">
-                <button class="slider__button">Было</button>
-                <div class="slider__toggle"></div>
+                <button class="slider__button slider__button--current">Было</button>
+                <div class="slider__toggle"><span class="slider__toggle-item slider__toggle-item--left"></span></div>
                 <button class="slider__button">Стало</button>
               </div>
             </div>
@@ -287,5 +287,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
