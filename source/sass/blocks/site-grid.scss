@@ -20,8 +20,12 @@
 
 @media (min-width: $largeDeviceWidth) {
   .site-grid__wrapper--background-header {
-    background: linear-gradient(to bottom, #65a93c 0, #65a93c 305px, #ffffff 305px, #ffffff 100%);
+    background: linear-gradient(to left, #65a93c 0, #65a93c 50%, #ffffff 50%, #ffffff 100%);
+  }
+
+  .site-grid__wrapper--background-img-header {
     background-image: url("../img/index-background-desktop@1x.jpg");
+    background-size: 50% 100%;
     background-repeat: no-repeat;
     background-position: 100%;
 
