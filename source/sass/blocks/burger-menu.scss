@@ -75,38 +75,6 @@
   }
 }
 
-.burger-menu--no-js {
-  background-color: transparent;
-
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 24px;
-    height: 2px;
-
-    content: "";
-    transform: rotate(-45deg);
-
-    background-color: #000000;
-  }
-
-  &::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 24px;
-    height: 2px;
-
-    content: "";
-    transform: rotate(45deg);
-
-    background-color: #000000;
-  }
-}
-
 @media (min-width: $mediumDeviceWidth) {
   .burger-menu {
     display: none;

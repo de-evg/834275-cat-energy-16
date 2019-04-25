@@ -122,8 +122,10 @@
     &:active {
       border: none;
     }
+  }
 
-  }  .slider__toggle {
+
+  .slider__toggle {
     max-width: 428px;
     height: 6px;
 
@@ -148,12 +150,11 @@
     background-color: #ffffff;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
-
     &::after {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
 
       width: 8px;
       height: 8px;
@@ -168,13 +169,13 @@
     &:focus {
       box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
+
     &:active {
       border-width: 2px;
       border-color: #68b738;
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
     }
   }
-
 }
 
 @media (min-width: $largeDeviceWidth) {

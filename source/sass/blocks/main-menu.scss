@@ -57,9 +57,9 @@
 }
 
 @media (min-width: $mediumDeviceWidth) {
-.main-menu {
-  display: block;
-}
+  .main-menu {
+    display: block;
+  }
 
   .main-menu__list {
     display: flex;
