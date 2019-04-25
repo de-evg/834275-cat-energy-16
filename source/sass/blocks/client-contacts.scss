@@ -8,8 +8,7 @@
 
   &::before {
     @include title-line();
-
-    margin-top: 44px;
+    margin-top: -57px;
   }
 }
 
@@ -137,7 +136,7 @@
     padding-bottom: 23px;
 
     &::before {
-      margin-top: 72px;
+      margin-top: -37px;
 
       width: 100%;
 
@@ -228,12 +227,6 @@
 
 //Стили для большой ширины
 @media (min-width: $largeDeviceWidth) {
-  .client-contacts {
-    &::before {
-      margin-top: 77px;
-    }
-  }
-
   .client-contacts__title {
     box-sizing: border-box;
     width: $largeDeviceWidth;

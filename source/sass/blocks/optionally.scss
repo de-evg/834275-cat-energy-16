@@ -10,8 +10,8 @@
 
   &::before {
     @include title-line();
+    margin-top: -37px;
 
-    margin-top: 18px;
   }
 }
 
@@ -82,7 +82,7 @@
     padding-bottom: 17px;
 
     &::before {
-      margin-top: 69px;
+      margin-top: -68px;
 
       width: 100%;
 

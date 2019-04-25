@@ -25,7 +25,8 @@
 
   .site-grid__wrapper--background-img-header {
     background-image: url("../img/index-background-desktop@1x.jpg");
-    background-size: 50% 100%;
+    background-size: 50% auto;
+    object-fit: contain;
     background-repeat: no-repeat;
     background-position: 100%;
 
