@@ -9,7 +9,10 @@
   text-align: center;
 
   color: $fourthFontColor;
-  background: linear-gradient(to bottom, #65a93c 0, #65a93c 305px, #ffffff 305px, #ffffff 100%);
+
+}
+
+.promo--background {
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 320px 305px;
@@ -52,9 +55,6 @@
 
 @media (min-width: $mediumDeviceWidth) {
   .promo {
-    // padding-right: 30px;
-    // padding-left: 110px;
-
     text-align: left;
 
     color: $basicFontColor;

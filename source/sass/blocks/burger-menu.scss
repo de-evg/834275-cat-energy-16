@@ -5,6 +5,10 @@
   background-color: #000000;
 }
 
+.burger-menu--no-js {
+  display: none;
+}
+
 .burger-menu--closed {
   width: 24px;
   height: 2px;

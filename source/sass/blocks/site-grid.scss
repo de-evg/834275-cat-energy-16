@@ -7,3 +7,29 @@
 .site-grid__wrapper {
   margin: 0 auto;
 }
+
+.site-grid__wrapper--background-promo {
+ background: linear-gradient(to bottom, #65a93c 0, #65a93c 305px, #ffffff 305px, #ffffff 100%);
+}
+
+@media (min-width: $mediumDeviceWidth) {
+  .site-grid__wrapper--background-promo {
+    background: none;
+  }
+}
+
+@media (min-width: $largeDeviceWidth) {
+  .site-grid__wrapper--background-header {
+    background: linear-gradient(to bottom, #65a93c 0, #65a93c 305px, #ffffff 305px, #ffffff 100%);
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: 100%;
+      background-size: 50%;
+    }
+  }
+}
