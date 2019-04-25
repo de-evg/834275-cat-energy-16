@@ -10,7 +10,8 @@
 
   &::before {
     @include title-line();
-    transform: translateY(18px);
+
+    margin-top: 18px;
   }
 }
 
@@ -81,7 +82,7 @@
     padding-bottom: 17px;
 
     &::before {
-      transform: translateY(69px);
+      margin-top: 69px;
 
       width: 100%;
 
@@ -142,10 +143,6 @@
 @media (min-width: $largeDeviceWidth) {
   .optionally {
     padding-bottom: 25px;
-
-    &::before {
-      transform: translateY(69px);
-    }
   }
 
   .optionally__inner {

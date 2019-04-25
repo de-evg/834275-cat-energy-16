@@ -12,7 +12,7 @@
   &::before {
     @include title-line();
 
-    transform: translateY(38px);
+    margin-top: 38px;
   }
 }
 
@@ -61,7 +61,7 @@
     &::before {
       background: #68b738;
       width: 100%;
-      transform: translateY(46px);
+      margin-top: 46px;
     }
   }
 
@@ -101,7 +101,7 @@
     &::before {
       background: #68b738;
       width: 100%;
-      transform: translateY(48px);
+      margin-top: 48px;
     }
   }
 

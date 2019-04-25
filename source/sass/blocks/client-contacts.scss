@@ -9,7 +9,7 @@
   &::before {
     @include title-line();
 
-    transform: translateY(44px);
+    margin-top: 44px;
   }
 }
 
@@ -137,7 +137,7 @@
     padding-bottom: 23px;
 
     &::before {
-      transform: translateY(72px);
+      margin-top: 72px;
 
       width: 100%;
 
@@ -230,7 +230,7 @@
 @media (min-width: $largeDeviceWidth) {
   .client-contacts {
     &::before {
-      transform: translateY(77px);
+      margin-top: 77px;
     }
   }
 
