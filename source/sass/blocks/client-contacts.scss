@@ -1,7 +1,6 @@
 .client-contacts {
   position: relative;
   z-index: 1;
-
   margin: 0;
   padding: 0;
   padding-top: 23px;
@@ -9,6 +8,7 @@
 
   &::before {
     @include title-line();
+    margin-top: -57px;
   }
 }
 
@@ -25,6 +25,8 @@
 }
 
 .client-contacts__title {
+  position: relative;
+  z-index: 1;
   width: $smallDeviceWidth;
   margin: 0 auto;
   padding: 30px 0 0 0;
@@ -35,7 +37,7 @@
 .client-contacts__title span {
   display: inline-block;
 
-  width: 185px;
+  width: 200px;
   padding-right: 50px;
   padding-left: 20px;
 }
@@ -134,7 +136,7 @@
     padding-bottom: 23px;
 
     &::before {
-      top: 72px;
+      margin-top: -37px;
 
       width: 100%;
 
@@ -225,12 +227,6 @@
 
 //Стили для большой ширины
 @media (min-width: $largeDeviceWidth) {
-  .client-contacts {
-    &::before {
-      top: 77px;
-    }
-  }
-
   .client-contacts__title {
     box-sizing: border-box;
     width: $largeDeviceWidth;

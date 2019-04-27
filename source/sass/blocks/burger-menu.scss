@@ -1,15 +1,22 @@
 .burger-menu {
   position: relative;
 
-  width: 24px;
-  height: 2px;
-
   border: none;
   background-color: #000000;
+}
+
+.burger-menu--no-js {
+  display: none;
+}
+
+.burger-menu--closed {
+  width: 24px;
+  height: 2px;
+  margin-top: 4px;
 
   &::before {
     position: absolute;
-    top: -6px;
+    top: -8px;
     left: 0;
 
     width: 24px;
@@ -22,7 +29,7 @@
 
   &::after {
     position: absolute;
-    top: 6px;
+    top: 8px;
     left: 0;
 
     width: 24px;
@@ -32,21 +39,39 @@
 
     background-color: #000000;
   }
+}
 
-  &--active {
-    background-color: transparent;
-  }
+.burger-menu--opened {
+  background-color: transparent;
+  width: 24px;
+  height: 2px;
 
-  &--active::before {
+  &::before {
+    position: absolute;
     top: 0;
+    left: 0;
 
+    width: 26px;
+    height: 2px;
+
+    content: "";
     transform: rotate(-45deg);
+
+    background-color: #000000;
   }
 
-  &--active::after {
+  &::after {
+    position: absolute;
     top: 0;
+    left: 0;
 
+    width: 26px;
+    height: 2px;
+
+    content: "";
     transform: rotate(45deg);
+
+    background-color: #000000;
   }
 }
 

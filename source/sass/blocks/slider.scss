@@ -12,6 +12,14 @@
   text-align: center;
 }
 
+.slider__image {
+  display: none;
+}
+
+.slider__image--current {
+  display: inline;
+}
+
 .slider__buttons {
   display: flex;
 
@@ -49,21 +57,27 @@
 
   flex-basis: 82px;
   align-self: center;
+}
 
-  &::before {
-    position: absolute;
-    top: 50%;
-    left: 5px;
+.slider__toggle-item {
+  position: absolute;
 
-    width: 35px;
-    height: 6px;
+  border: none;
+  top: 50%;
+  left: 5px;
 
-    content: "";
-    transform: translateY(-50%);
+  width: 35px;
+  height: 6px;
 
-    border-radius: 10px;
-    background-color: #68b738;
-  }
+  content: "";
+  transform: translateY(-50%);
+
+  border-radius: 10px;
+  background-color: #68b738;
+}
+
+.slider__toggle-item--right {
+  transform: translate(100%, -50%);
 }
 
 @media (min-width: $mediumDeviceWidth) {
@@ -110,6 +124,7 @@
     }
   }
 
+
   .slider__toggle {
     max-width: 428px;
     height: 6px;
@@ -118,45 +133,47 @@
     background-color: #cdcdcd;
 
     flex-grow: 1;
+  }
 
-    &::before {
-      top: 50%;
-      left: 50%;
+  .slider__toggle-item {
+    padding: 0;
+    top: 50%;
+    left: 50%;
 
-      width: 32px;
-      height: 32px;
+    width: 32px;
+    height: 32px;
 
-      transform: translate(-45%, -50%);
+    transform: translate(-50%, -50%);
 
-      border: $borderGrayTypeThree;
-      border-radius: 50%;
-      background-color: #ffffff;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-    }
+    border: $borderGrayTypeThree;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
     &::after {
       position: absolute;
       top: 50%;
       left: 50%;
+      transform: translate(-50%, -50%);
 
       width: 8px;
       height: 8px;
 
       content: "";
-      transform: translate(-25%, -50%);
 
       border-radius: 50%;
       background-color: #68b738;
     }
 
-    &:hover::before,
-    &:focus::before {
+    &:hover,
+    &:focus {
       box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
 
-    &:hover::after,
-    &:focus::after {
-      display: none;
+    &:active {
+      border-width: 2px;
+      border-color: #68b738;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
     }
   }
 }

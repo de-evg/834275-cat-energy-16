@@ -9,7 +9,9 @@
   text-align: center;
 
   color: $fourthFontColor;
-  background: linear-gradient(to bottom, #65a93c 0, #65a93c 305px, #ffffff 305px, #ffffff 100%);
+}
+
+.promo--background {
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 320px 305px;
@@ -30,7 +32,7 @@
 
 .promo__slogan {
   font-size: $smallFontSize;
-  font-weight: 600;
+  font-weight: 400;
   line-height: $smallLineHeight;
 
   display: inline-block;
@@ -52,9 +54,6 @@
 
 @media (min-width: $mediumDeviceWidth) {
   .promo {
-    padding-right: 30px;
-    padding-left: 110px;
-
     text-align: left;
 
     color: $basicFontColor;
@@ -65,13 +64,13 @@
   .promo__title {
     max-width: 460px;
     font-size: $bigFontSize;
-    font-weight: 600;
+    font-weight: 400;
     line-height: $largeLineHeight;
 
     margin-bottom: 40px;
     padding-top: 25px;
     padding-right: 180px;
-    padding-left: 8px;
+    padding-left: 97px;
   }
 
   .promo__slogan {
@@ -80,13 +79,16 @@
     line-height: $lowLineHeight;
 
     margin-bottom: 20px;
-    padding-left: 8px;
+    padding-left: 97px;
   }
 
   .promo__image {
     vertical-align: bottom;
     width: 709px;
     height: 609px;
+    position: relative;
+    bottom: 0;
+    left: 9px;
   }
 
   .promo__button {
@@ -96,11 +98,13 @@
     min-width: 195px;
     margin-top: -580px;
     margin-bottom: 507px;
-    margin-left: 9px;
+    margin-left: 99px;
     padding-top: 15px;
     padding-right: 25px;
     padding-bottom: 17px;
     padding-left: 25px;
+
+    z-index: 1;
   }
 }
 
@@ -128,7 +132,6 @@
   .promo__image {
     width: 552px;
     height: 499px;
-    position: relative;
     bottom: 275px;
     left: 370px;
   }

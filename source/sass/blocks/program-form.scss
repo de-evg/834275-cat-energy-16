@@ -79,12 +79,12 @@
   outline: $borderGrayTypeFive;
 }
 
-.program-form__input--error {
+.program-form__input--error:focus {
   border-color: transparent;
   outline: $borderGrayTypeSix;
 }
 
-.program-form__input--error + svg path {
+.program-form__input--error:focus + svg .program-form__input-icon {
   fill: #ff8282;
 }
 

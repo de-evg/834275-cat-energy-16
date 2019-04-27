@@ -1,3 +1,19 @@
+.main-menu {
+  display: none;
+}
+
+.main-menu--closed {
+  display: none;
+}
+
+.main-menu--opened {
+  display: block;
+}
+
+.main-menu--no-js {
+  display: block;
+}
+
 .main-menu__list {
   width: inherit;
   margin: 0;
@@ -41,6 +57,10 @@
 }
 
 @media (min-width: $mediumDeviceWidth) {
+  .main-menu {
+    display: block;
+  }
+
   .main-menu__list {
     display: flex;
 
@@ -51,6 +71,7 @@
 
   .main-menu__link {
     font-family: $oswaldRegular;
+    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
 

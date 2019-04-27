@@ -11,7 +11,7 @@
   &::before {
     @include title-line();
 
-    top: 17px;
+    margin-top: -37px;
   }
 }
 
@@ -26,6 +26,8 @@
 }
 
 .optionally__title {
+  position: relative;
+  z-index: 1;
   width: $smallDeviceWidth;
   margin: 0 auto;
   margin-bottom: 28px;
@@ -80,7 +82,7 @@
     padding-bottom: 17px;
 
     &::before {
-      top: 68px;
+      margin-top: -68px;
 
       width: 100%;
 
@@ -141,10 +143,6 @@
 @media (min-width: $largeDeviceWidth) {
   .optionally {
     padding-bottom: 25px;
-
-    &::before {
-      top: 69px;
-    }
   }
 
   .optionally__inner {
@@ -164,7 +162,7 @@
     padding-top: 45px;
     padding-left: 40px;
 
-    background: linear-gradient(to right, transparent 0, transparent 70px, #ffffff 70px, #ffffff 663px, transparent 663px, transparent 100%);
+    background: linear-gradient(to right, transparent 0, transparent 70px, #ffffff 70px, #ffffff 363px, transparent 363px, transparent 100%);
   }
 
   .optionally__wrapper {
