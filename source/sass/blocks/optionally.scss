@@ -143,6 +143,11 @@
 @media (min-width: $largeDeviceWidth) {
   .optionally {
     padding-bottom: 25px;
+
+    &::before {
+      top: 0;
+      margin-top: 69px;
+    }
   }
 
   .optionally__inner {

@@ -1,16 +1,12 @@
 .burger-menu {
+  padding: 0;
   position: relative;
 
   border: none;
   background-color: #000000;
-}
 
-.burger-menu--no-js {
-  display: none;
-}
-
-.burger-menu--closed {
   width: 24px;
+  flex-basis: 24px;
   height: 2px;
   margin-top: 4px;
 
@@ -39,6 +35,10 @@
 
     background-color: #000000;
   }
+}
+
+.burger-menu--no-js {
+  display: none;
 }
 
 .burger-menu--opened {

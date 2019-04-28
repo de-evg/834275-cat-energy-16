@@ -227,6 +227,15 @@
 
 //Стили для большой ширины
 @media (min-width: $largeDeviceWidth) {
+  .client-contacts {
+    padding-bottom: 23px;
+
+    &::before {
+      top: 0;
+      margin-top: 77px;
+    }
+  }
+
   .client-contacts__title {
     box-sizing: border-box;
     width: $largeDeviceWidth;
@@ -247,18 +256,9 @@
   }
 
   .client-contacts__wrapper {
-    max-width: 570px;
+    flex-basis: 570px;
+    width: 570px;
     margin: 0;
-
-    flex-grow: 1;
-  }
-
-  .client-contacts__input-email {
-    max-width: 486px;
-  }
-
-  .client-contacts__input-phone {
-    max-width: 472px;
   }
 
   .client-contacts__email-icon {

@@ -128,6 +128,7 @@
   .extra-product__table td {
     width: 142px;
     height: 100%;
+    padding-top: 10px;
 
     flex-grow: 1;
   }
@@ -136,6 +137,7 @@
   .extra-product__table td:nth-of-type(2) {
     text-align: right;
     line-height: 100%;
+    padding-top: 0;
   }
 
   .extra-product__button {

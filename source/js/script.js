@@ -7,21 +7,8 @@ if (document.querySelector(".main-menu") !== null) {
   navToggle.classList.remove("burger-menu--no-js");
 
   navToggle.addEventListener("click", function() {
-    if (navToggle.classList.contains("burger-menu--closed")) {
-      navToggle.classList.remove("burger-menu--closed");
-      navToggle.classList.add("burger-menu--opened");
-    } else {
-      navToggle.classList.add("burger-menu--closed");
-      navToggle.classList.remove("burger-menu--opened");
-    }
-
-    if (navMain.classList.contains("main-menu--closed")) {
-      navMain.classList.remove("main-menu--closed");
-      navMain.classList.add("main-menu--opened");
-    } else {
-      navMain.classList.add("main-menu--closed");
-      navMain.classList.remove("main-menu--opened");
-    }
+    navToggle.classList.toggle("burger-menu--opened");
+    navMain.classList.toggle("main-menu--opened");
   });
 }
 
@@ -57,16 +44,18 @@ if (document.querySelector(".slider") !== null) {
 }
 
 // Ошибка при незаполненной форме заполнении формы
-var formSubmit = document.querySelector(".program-form__button-submit");
-var requiredInput = document.querySelectorAll("[required]");
+if (document.querySelector(".program-form") !== null) {
+  var formSubmit = document.querySelector(".program-form__button-submit");
+  var requiredInput = document.querySelectorAll("[required]");
 
-formSubmit.addEventListener("click", function() {
-  for (var i = 0; i < requiredInput.length; i++) {
-    if (requiredInput[i].value == "") {
-      requiredInput[i].classList.add("program-form__input--error");
-      requiredInput[i].focus();
-    } else {
-      requiredInput[i].classList.remove("program-form__input--error");
+  formSubmit.addEventListener("click", function () {
+    for (var i = 0; i < requiredInput.length; i++) {
+      if (requiredInput[i].value == "") {
+        requiredInput[i].classList.add("program-form__input--error");
+        requiredInput[i].focus();
+      } else {
+        requiredInput[i].classList.remove("program-form__input--error");
+      }
     }
-  }
-})
+  })
+}
