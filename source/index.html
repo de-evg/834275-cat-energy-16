@@ -5,10 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat energy. Функционаьлное питание для котов.</title>
   <link href="css/style.min.css" rel="preload" as="style">
-  <link href="fonts/oswaldmedium.woff2" rel="preload" as="font">
-  <link href="fonts/oswaldmedium.woff" rel="preload" as="font">
-  <link href="fonts/oswaldregular.woff2" rel="preload" as="font">
-  <link href="fonts/oswaldregular.woff" rel="preload" as="font">
   <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
   <!-- Pixel Glass -->
@@ -43,6 +39,7 @@
   </script>
   <script src="js/picturefill.min.js" async></script>
   <script src="js/script.js" async></script>
+  <script src="js/objectFitPolyfill.min.js" async></script>
 </head>
 <body class="site-grid">
   <div class="site-grid__wrapper site-grid__wrapper--background-header">
@@ -171,10 +168,12 @@
                     srcset="img/before-tablet@1x.png 1x,
                     img/before-tablet@2x.png 2x"/>
 
-                    <img class="slider__image slider__image--before slider__image--current"
+                    <img class="slider__image slider__image-before--poly slider__image--before slider__image--current"
                     src="img/before-mobile@1x.png"
                     srcset="img/before-mobile@2x.png 2x"
-                    alt="Кот до правильного питания">
+                    alt="Кот до правильного питания"
+                    data-object-fit="cover"
+                    data-object-position="-10px">
                   </picture>
                 </div>
                 <div class="slider__images-container">
@@ -199,10 +198,12 @@
                     srcset="img/after-tablet@1x.png 1x,
                     img/after-tablet@2x.png 2x"/>
 
-                    <img class="slider__image slider__image--after"
+                    <img class="slider__image slider__image-after--poly slider__image--after"
                     src="img/after-mobile@1x.png"
                     srcset="img/after-mobile@2x.png 2x"
-                    alt="Кот после правильного питания">
+                    alt="Кот после правильного питания"
+                    data-object-fit="cover"
+                    data-object-position="100%">
                   </picture>
                 </div>
               </div>
@@ -269,5 +270,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/objectFitPolyfill.min.js" async></script>
 </body>
 </html>
