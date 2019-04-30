@@ -11,7 +11,7 @@
   &::before {
     @include title-line();
 
-    margin-top: -37px;
+    margin-top: 17px;
   }
 }
 
@@ -26,6 +26,7 @@
 }
 
 .optionally__title {
+  font-weight: 400;
   position: relative;
   z-index: 1;
   width: $smallDeviceWidth;
@@ -82,7 +83,8 @@
     padding-bottom: 17px;
 
     &::before {
-      margin-top: -68px;
+      top: 0;
+      margin-top: 22px;
 
       width: 100%;
 
@@ -102,8 +104,8 @@
 
   .optionally__title {
     width: $mediumDeviceWidth;
-    margin-bottom: 50px;
-    padding: 50px 0 0;
+    margin-bottom: 55px;
+    padding: 0 0 0;
 
     background: linear-gradient(to right, transparent 0, transparent 30px, #ffffff 30px, #ffffff 322px, transparent 322px, transparent 100%);
   }
@@ -146,7 +148,7 @@
 
     &::before {
       top: 0;
-      margin-top: 69px;
+      margin-top: 22px;
     }
   }
 
@@ -154,6 +156,7 @@
     flex-direction: row;
 
     width: $largeDeviceWidth;
+    padding-top: 54px;
     padding-right: 110px;
     padding-left: 110px;
 
@@ -163,8 +166,8 @@
   .optionally__title {
     box-sizing: border-box;
     width: $largeDeviceWidth;
-    margin-bottom: 56px;
-    padding-top: 45px;
+    margin-bottom: 0;
+    padding-top: 0;
     padding-left: 40px;
 
     background: linear-gradient(to right, transparent 0, transparent 70px, #ffffff 70px, #ffffff 363px, transparent 363px, transparent 100%);

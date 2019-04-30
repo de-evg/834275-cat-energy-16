@@ -3,7 +3,7 @@
   z-index: 1;
 
   padding: 0;
-  padding-top: 23px;
+  padding-top: 0;
   padding-bottom: 5px;
 
   margin-inline-start: 0;
@@ -12,7 +12,7 @@
   &::before {
     @include title-line();
 
-    margin-top: 15px;
+    margin-top: 14px;
   }
 }
 
@@ -28,6 +28,7 @@
 }
 
 .comment__title {
+  font-weight: 400;
   display: block;
 
   margin-bottom: 35px;
@@ -61,7 +62,7 @@
     &::before {
       background: #68b738;
       width: 100%;
-      margin-top: 23px;
+      margin-top: 22px;
     }
   }
 
@@ -74,9 +75,10 @@
 
   .comment__inner {
     width: $mediumDeviceWidth;
-    height: 174px;
+    min-height: 174px;
     padding-right: 71px;
     padding-left: 71px;
+    padding-bottom: 45px;
   }
 
   .comment__text {
@@ -115,5 +117,6 @@
     width: $largeDeviceWidth;
     padding-right: 110px;
     padding-left: 110px;
+    padding-bottom: 45px;
   }
 }

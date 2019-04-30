@@ -12,12 +12,13 @@
     document.createElement( "picture" );
   </script>
   <script src="js/picturefill.min.js" async></script>
-  <script src="js/script.js" async></script>
   <script src="js/objectFitPolyfill.min.js" async></script>
+  <script defer src="js/svgxuse.min.js"></script>
+  <script src="js/script.js" async></script>
 </head>
 <body class="site-grid">
   <div class="site-grid__wrapper site-grid__wrapper--background-header">
-    <div class="site-grid__wrapper--background-img-header">
+    <div class="site-grid__background-img-header">
       <header class="page-header page-header__container site-grid__wrapper">
         <div class="page-header__wrapper">
           <a class="page-header__logo-link">
@@ -142,7 +143,7 @@
                     srcset="img/before-tablet@1x.png 1x,
                     img/before-tablet@2x.png 2x"/>
 
-                    <img class="slider__image slider__image-before--poly slider__image--before slider__image--current"
+                    <img class="slider__image slider__image-before-poly slider__image--before slider__image--current"
                     src="img/before-mobile@1x.png"
                     srcset="img/before-mobile@2x.png 2x"
                     alt="Кот до правильного питания"
@@ -172,7 +173,7 @@
                     srcset="img/after-tablet@1x.png 1x,
                     img/after-tablet@2x.png 2x"/>
 
-                    <img class="slider__image slider__image-after--poly slider__image--after"
+                    <img class="slider__image slider__image-after-poly slider__image--after"
                     src="img/after-mobile@1x.png"
                     srcset="img/after-mobile@2x.png 2x"
                     alt="Кот после правильного питания"
