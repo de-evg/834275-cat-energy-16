@@ -6,6 +6,32 @@
   <title>Cat energy. Функционаьлное питание для котов.</title>
   <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      /* По умолчанию показывается мобильный макет */
+      background-image: url("img/pixelGlass/cat-energy-index-mobile.jpg");
+    }
+    /* Планшет */
+    @media (min-width: 768px) {
+      HTML {
+        /* Планшетный макет */
+        background-image: url("img/pixelGlass/cat-energy-index-tablet.jpg");
+      }
+    }
+    /* Десктоп */
+    @media (min-width: 1440px) {
+      HTML {
+        /* Десктопный макет */
+        background-image: url("img/pixelGlass/cat-energy-index-desktop.jpg");
+      }
+    }
+  </style>
+  <link href="pixel-glass/styles.css" rel="stylesheet">
+  <script src="pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
   <script>
     // Picture element HTML5 shiv
     document.createElement( "picture" );
@@ -100,8 +126,8 @@
       </section>
     </div>
 
-    <section class="page-main__example example">
-      <div class="example__slider-background">
+    <section class="example">
+      <div class="page-main__example">
         <div class="page-main__wrapper">
           <div class="example__inner">
             <div class="example__wrapper">
@@ -118,125 +144,71 @@
 
             <div class="example__slider slider">
               <div class="slider__images">
-                <!--              <div class="slider__images-container">-->
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1440px)"
-                    srcset="img/before-desktop@1x.webp 1x,
-                    img/before-desktop@2x.webp 2x"/>
-
-                    <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/before-tablet@1x.webp 1x,
-                    img/before-tablet@2x.webp 2x"/>
-
-                    <source type="image/webp"
-                    srcset="img/before-mobile@1x.webp 1x,
-                    img/before-mobile@2x.webp 2x"/>
-
-                    <source media="(min-width: 1440px)"
-                    srcset="img/before-desktop@1x.png 1x,
-                    img/before-desktop@2x.png 2x"/>
-
-                    <source media="(min-width: 768px)"
-                    srcset="img/before-tablet@1x.png 1x,
-                    img/before-tablet@2x.png 2x"/>
-
-                    <img class="slider__image slider__image--before slider__image--current"
-                    src="img/before-mobile@1x.png"
-                    srcset="img/before-mobile@2x.png 2x"
-                    alt="Кот до правильного питания">
-                  </picture>
-                  <!--              </div>-->
-                  <!--              <div class="slider__images-container">-->
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1440px)"
-                      srcset="img/after-desktop@1x.webp 1x,
-                      img/after-desktop@2x.webp 2x"/>
-
-                      <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/after-tablet@1x.webp 1x,
-                      img/after-tablet@2x.webp 2x"/>
-
-                      <source type="image/webp"
-                      srcset="img/after-mobile@1x.webp 1x,
-                      img/after-mobile@2x.webp 2x"/>
-
-                      <source media="(min-width: 1440px)"
-                      srcset="img/after-desktop@1x.png 1x,
-                      img/after-desktop@2x.png 2x"/>
-
-                      <source media="(min-width: 768px)"
-                      srcset="img/after-tablet@1x.png 1x,
-                      img/after-tablet@2x.png 2x"/>
-
-                      <img class="slider__image slider__image--after"
-                      src="img/after-mobile@1x.png"
-                      srcset="img/after-mobile@2x.png 2x"
-                      alt="Кот после правильного питания">
-                    </picture>
-                    <!--              </div>-->
+                <div class="slider__images-container slider__images-container--current"></div>
+                <div class="slider__images-container"></div>
+              </div>
+              <div class="slider__wrapper">
+                <div class="slider__buttons">
+                  <button class="slider__button slider__button--current">Было</button>
+                  <div class="slider__toggle">
+                    <button class="slider__toggle-item"></button>
                   </div>
-                  <div class="slider__wrapper">
-                    <div class="slider__buttons">
-                      <button class="slider__button slider__button--current">Было</button>
-                      <div class="slider__toggle">
-                        <button class="slider__toggle-item"></button>
-                      </div>
-                      <button class="slider__button">Стало</button>
-                    </div>
-                  </div>
+                  <button class="slider__button">Стало</button>
                 </div>
               </div>
             </div>
-      </div>
-        </section>
-
-        <section class="page-main__contacts contacts">
-          <h2 class="contacts__title visually-hidden">Контакты</h2>
-          <div class="contacts__wrapper">
-            <p class="contacts__slogan">приглашаем к&nbsp;сотрудничеству дилеров!</p>
-            <p class="contacts__content"><span>ул. Большая Конюшенная, д. 19/8</span> <span>Санкт-Петербург</span></p>
-          </div>
-          <div class="contacts__map">
-            <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5703b919d7dfa13d1f6baa09ab5b9e7aab6a17f0cfa657cffe8abed4aefb7455&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
-          </div>
-        </section>
-      </main>
-      <footer class="page-footer site-grid__wrapper">
-        <div class="page-footer__inner">
-          <a class="page-footer__site-title-link">
-            <img class="page-footer__site-title" src="img/logo-footer.svg" width="128" height="24" alt="Перейти на главную страницу">
-          </a>
-          <div class="page-footer__social social">
-            <a class="social__link" href="#" aria-label="Мы в Vkontakte">
-              <span class="social__icon">
-                <svg class="social__icon-vk" width="22" height="12">
-                  <use xlink:href="img/sprite.svg#icon-vk-mobile"/>
-                </svg>
-              </span>
-            </a>
-            <a class="social__link" href="#" aria-label="Мы в Instagram">
-              <span class="social__icon ">
-                <svg class="social__icon-inst" width="16" height="16">
-                  <use xlink:href="img/sprite.svg#icon-insta-mobile"/>
-                </svg>
-              </span>
-            </a>
-            <a class="social__link" href="#" aria-label="Мы в Facebook">
-              <span class="social__icon">
-                <svg class="social__icon-fb" width="10" height="19">
-                  <use xlink:href="img/sprite.svg#icon-fb-mobile"/>
-                </svg>
-              </span>
-            </a>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <a class="copyright__company" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-              <svg class="copyright__logo" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="10 10 40 40">
-                <path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
-              </svg>
-            </a>
           </div>
         </div>
-      </footer>
-    </body>
-    </html>
+      </div>
+    </section>
+
+    <section class="page-main__contacts contacts">
+      <h2 class="contacts__title visually-hidden">Контакты</h2>
+      <div class="contacts__wrapper">
+        <p class="contacts__slogan">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+        <p class="contacts__content"><span>ул. Большая Конюшенная, д. 19/8</span> <span>Санкт-Петербург</span></p>
+      </div>
+      <div class="contacts__map">
+        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5703b919d7dfa13d1f6baa09ab5b9e7aab6a17f0cfa657cffe8abed4aefb7455&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=false"></script>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer site-grid__wrapper">
+    <div class="page-footer__inner">
+      <a class="page-footer__site-title-link">
+        <img class="page-footer__site-title" src="img/logo-footer.svg" width="128" height="24" alt="Перейти на главную страницу">
+      </a>
+      <div class="page-footer__social social">
+        <a class="social__link" href="#" aria-label="Мы в Vkontakte">
+          <span class="social__icon">
+            <svg class="social__icon-vk" width="22" height="12">
+              <use xlink:href="img/sprite.svg#icon-vk-mobile"/>
+            </svg>
+          </span>
+        </a>
+        <a class="social__link" href="#" aria-label="Мы в Instagram">
+          <span class="social__icon ">
+            <svg class="social__icon-inst" width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-insta-mobile"/>
+            </svg>
+          </span>
+        </a>
+        <a class="social__link" href="#" aria-label="Мы в Facebook">
+          <span class="social__icon">
+            <svg class="social__icon-fb" width="10" height="19">
+              <use xlink:href="img/sprite.svg#icon-fb-mobile"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__company" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+          <svg class="copyright__logo" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="10 10 40 40">
+            <path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

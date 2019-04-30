@@ -12,12 +12,36 @@
   text-align: center;
 }
 
-.slider__image {
+.slider__images-container:first-of-type {
+  width: 320px;
+  height: 240px;
+  background-image: url("../img/before-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 320px 240px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/before-mobile@2x.png");
+  }
+}
+
+.slider__images-container:last-of-type {
+  width: 320px;
+  height: 240px;
+  background-image: url("../img/after-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 320px 240px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/after-mobile@2x.png");
+  }
+}
+
+.slider__images-container {
   display: none;
 }
 
-.slider__image--current {
-  display: inline;
+.slider__images-container--current {
+  display: block;
 }
 
 .slider__buttons {
@@ -81,12 +105,15 @@
 }
 
 @media (min-width: $mediumDeviceWidth) {
+  .slider__images-container {
+    display: block;
+  }
+
   .slider__wrapper {
     width: $mediumDeviceWidth;
   }
 
   .slider__images {
-    position: relative;
     display: flex;
 
     margin: 0 auto;
@@ -100,53 +127,43 @@
     align-items: center;
   }
 
-//  .slider__images-container:first-of-type {
-//    overflow: hidden;
-//    display: flex;
-//    justify-content: flex-end;
-//    width: 50%;
-//    flex-grow: 1;
-//    flex-shrink: 1;
-//}
-//
-//  .slider__images-container:last-of-type {
-//    overflow: hidden;
-//    display: flex;
-//    justify-content: flex-start;
-//    width: 0;
-//    flex-grow: 1;
-//    flex-shrink: 1;
-//}
-
-  .slider__image {
-    display: inline-block;
+  .slider__images-container:first-of-type {
     object-fit: cover;
-    position: absolute;
     width: 680px;
     height: 515px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    right: 10px;
+    background-image: url("../img/before-tablet@1x.png");
+    background-position-x: 16px;
+    background-repeat: no-repeat;
+    background-size: 680px 515px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/before-tablet@2x.png");
+      width: 680px;
+      height: 515px;
+    }
   }
 
-  .slider__image--before {
-    z-index: 10;
-    left: 20px;
-    top: 0;
-  }
+  .slider__images-container:last-of-type {
+    object-fit: cover;
+    width: 680px;
+    height: 515px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    left: 10px;
+    background-image: url("../img/after-tablet@1x.png");
+    background-position-x: -338px;
+    background-repeat: no-repeat;
+    background-size: 680px 515px;
 
-  .slider__image--after {
-    z-index: 0;
-    left: 20px;
-    top: 0;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/after-tablet@2x.png");
+      width: 680px;
+      height: 515px;
+    }
   }
-
-  //.slider__images-container:first-of-type .slider__image {
-  //  z-index: 10;
-  //  right: 10px;
-  //}
-  //
-  //.slider__images-container:last-of-type .slider__image {
-  //  z-index: 0;
-  //  left: 10px;
-  //}
 
   .slider__buttons {
     height: 40px;
@@ -228,24 +245,56 @@
   }
 
   .slider__images {
+    min-height: 325px;
     margin: 0;
     margin-bottom: 32px;
   }
 
-  .slider__image {
-    width: 685px;
-    left: -37px;
-  }
-
   .slider__buttons {
     padding-right: 110px;
-    padding-left: 39px;
+    padding-left: 40px;
     justify-content: flex-start;
   }
 
   .slider__toggle {
     width: 428px;
-    margin-left: 21px;
+    margin-left: 25px;
     margin-right: 21px;
+  }
+
+  .slider__images-container:first-of-type {
+    margin-top: -190px;
+    margin-left: -55px;
+    object-fit: cover;
+
+    width: 680px;
+    height: 515px;
+
+    background-image: url("../img/before-desktop@1x.png");
+    background-position-x: 16px;
+    background-repeat: no-repeat;
+    background-size: 680px 515px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/before-desktop@2x.png");
+
+    }
+  }
+
+  .slider__images-container:last-of-type {
+    margin-top: -190px;
+    margin-right: 3px;
+
+    width: 680px;
+    height: 515px;
+
+    background-image: url("../img/after-desktop@1x.png");
+    background-position-x: -364px;
+    background-repeat: no-repeat;
+    background-size: 680px 515px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/after-desktop@2x.png");
+    }
   }
 }

@@ -77,7 +77,8 @@
   }
 
   .page-main__example {
-    border-top: $borderGrayTypeOne;
+    background: linear-gradient(to bottom, #ffffff 0, #ffffff 619px, transparent 619px, transparent 100%);
+
   }
 
   .page-main__products {
@@ -145,6 +146,7 @@
   }
 
   .page-main__example {
+    background: linear-gradient(to top, transparent 0, transparent 463px, #ffffff 463px, #ffffff 100%);
     display: flex;
 
     box-sizing: border-box;
