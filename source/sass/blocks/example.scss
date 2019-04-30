@@ -18,7 +18,6 @@
   line-height: 60px;
 
   width: 280px;
-
   margin: 0 auto;
   margin-bottom: 23px;
 
@@ -27,8 +26,8 @@
 
 .example__about {
   font-family: "Arial", sans-serif;
-  font-weight: 400;
   font-size: $smallFontSize;
+  font-weight: 400;
   line-height: 18px;
 
   margin: 0;
@@ -48,8 +47,8 @@
 
 .example__expenses {
   font-family: $oswaldRegular;
-  font-weight: 400;
   font-size: $smallFontSize;
+  font-weight: 400;
   line-height: 20px;
 
   margin: 0;
@@ -62,10 +61,10 @@
 
 @media (min-width: $mediumDeviceWidth) {
   .example {
-    border-top: $borderGrayTypeOne;
     padding-top: 0;
     padding-bottom: 58px;
 
+    border-top: $borderGrayTypeOne;
     background: linear-gradient(to right, #f2f2f2 0, #f2f2f2 50%, #eaeaea 50%, #eaeaea 100%);
   }
 
@@ -81,16 +80,15 @@
   }
 
   .example__title {
-    padding-top: 43px;
-    background-color: #ffffff;
     font-size: $bigFontSize;
     line-height: $largeLineHeight;
 
     width: 708px;
-
-
     margin: 0 auto;
     margin-bottom: 64px;
+    padding-top: 43px;
+
+    background-color: #ffffff;
   }
 
   .example__about {
@@ -127,10 +125,10 @@
 
 @media (min-width: $largeDeviceWidth) {
   .example {
-    border-top: none;
     padding-top: 0;
     padding-bottom: 0;
 
+    border-top: none;
     background: linear-gradient(to right, #f2f2f2 0, #f2f2f2 60%, #eaeaea 60%, #eaeaea 100%);
   }
 
@@ -145,8 +143,8 @@
     width: 610px;
     margin: 0;
     padding-top: 55px;
-    padding-bottom: 72px;
     padding-right: 0;
+    padding-bottom: 72px;
     padding-left: 110px;
 
     flex-basis: 610px;
@@ -154,9 +152,9 @@
 
   .example__title {
     width: 1220px;
-    padding-top: 0;
     margin: 0 auto;
     margin-bottom: 146px;
+    padding-top: 0;
   }
 
   .example__about {
@@ -188,12 +186,13 @@
   }
 
   .example__slider {
-    padding-bottom: 51px;
-    align-self: flex-end;
-    background: linear-gradient(to right, #f2f2f2 0, #f2f2f2 45%, #eaeaea 45%, #eaeaea 100%);
-
     width: 610px;
     height: 411px;
+    padding-bottom: 51px;
+
+    background: linear-gradient(to right, #f2f2f2 0, #f2f2f2 45%, #eaeaea 45%, #eaeaea 100%);
+
+    align-self: flex-end;
     flex-basis: 600px;
     flex-grow: 1;
   }

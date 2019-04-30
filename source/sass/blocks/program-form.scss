@@ -140,8 +140,8 @@
 
 .program-form__text {
   font-family: "Arial", sans-serif;
-  font-weight: 400;
   font-size: $smallFontSize;
+  font-weight: 400;
   line-height: $basicLineHeight;
 
   margin: 0;
@@ -178,12 +178,12 @@
 
   .program-form__radio-input:focus + .program-form__radio-btn {
     border-color: transparent;
-    box-shadow: 0 0 0 1px #ffffff,  0 0 0 3px #444444;
+    box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #444444;
   }
 
   .program-form__checkbox-input:focus + .program-form__checkbox-btn {
     border-color: transparent;
-    box-shadow: 0 0 0 9px #ffffff,  0 0 0 11px #444444;
+    box-shadow: 0 0 0 9px #ffffff, 0 0 0 11px #444444;
   }
 
   .program-form__item .program-form__label {
@@ -288,6 +288,6 @@
 
   .program-form__radio-input:focus + .program-form__radio-btn {
     border-color: transparent;
-    box-shadow: 0 0 0 4px #ffffff,  0 0 0 6px #444444;
+    box-shadow: 0 0 0 4px #ffffff, 0 0 0 6px #444444;
   }
 }

@@ -10,9 +10,9 @@
   margin-inline-end: 0;
 
   &::before {
-    @include title-line();
-
     margin-top: 14px;
+
+    @include title-line();
   }
 }
 
@@ -29,6 +29,7 @@
 
 .comment__title {
   font-weight: 400;
+
   display: block;
 
   margin-bottom: 35px;
@@ -60,9 +61,10 @@
     padding-bottom: 0;
 
     &::before {
-      background: #68b738;
       width: 100%;
       margin-top: 22px;
+
+      background: #68b738;
     }
   }
 
@@ -77,21 +79,20 @@
     width: $mediumDeviceWidth;
     min-height: 174px;
     padding-right: 71px;
-    padding-left: 71px;
     padding-bottom: 45px;
+    padding-left: 71px;
   }
 
   .comment__text {
-    border-width: 1px;
     font-size: $lowFontSize;
     line-height: 20px;
 
     box-sizing: border-box;
-
     height: 175px;
     padding: 15px 16px;
 
     border: $borderGrayTypeOne;
+    border-width: 1px;
   }
 }
 
@@ -101,8 +102,9 @@
     padding-top: 25px;
 
     &::before {
-      background: #68b738;
       width: 100%;
+
+      background: #68b738;
     }
   }
 
@@ -116,7 +118,7 @@
   .comment__inner {
     width: $largeDeviceWidth;
     padding-right: 110px;
-    padding-left: 110px;
     padding-bottom: 45px;
+    padding-left: 110px;
   }
 }

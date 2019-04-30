@@ -19,8 +19,8 @@
 
 .page-main__title {
   font-family: $oswaldRegular;
-  font-weight: 400;
   font-size: $largeFontSize;
+  font-weight: 400;
   line-height: $largeLineHeight;
 
   box-sizing: border-box;
@@ -78,7 +78,6 @@
 
   .page-main__example {
     background: linear-gradient(to bottom, #ffffff 0, #ffffff 619px, transparent 619px, transparent 100%);
-
   }
 
   .page-main__products {
@@ -138,33 +137,35 @@
     font-size: $bigFontSize;
 
     width: $largeDeviceWidth;
+    margin-bottom: 0;
     padding-top: 66px;
     padding-right: 110px;
-    padding-left: 110px;
     padding-bottom: 23px;
-    margin-bottom: 0;
+    padding-left: 110px;
   }
 
   .page-main__example {
-    background: linear-gradient(to top, transparent 0, transparent 463px, #ffffff 463px, #ffffff 100%);
     display: flex;
 
     box-sizing: border-box;
     width: 100%;
 
     border: none;
+    background: linear-gradient(to top, transparent 0, transparent 463px, #ffffff 463px, #ffffff 100%);
   }
 
   .page-main__contacts {
-    padding: 0;
     display: flex;
     flex-direction: column;
+
+    padding: 0;
   }
 
   .page-main__categories {
+    display: flex;
+
     box-sizing: content-box;
     width: 1220px;
-    display: flex;
 
     justify-content: space-between;
   }

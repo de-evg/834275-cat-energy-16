@@ -1,7 +1,7 @@
 .contacts {
   font-family: $oswaldRegular;
-  font-weight: 400;
   font-size: $smallFontSize;
+  font-weight: 400;
   line-height: 20px;
 
   &--background-gray {
@@ -10,11 +10,11 @@
 }
 
 .contacts__wrapper {
-  margin: 0 auto;
   display: flex;
 
   box-sizing: border-box;
   width: $smallDeviceWidth;
+  margin: 0 auto;
   padding-top: 28px;
   padding-right: 20px;
   padding-bottom: 26px;
@@ -111,21 +111,20 @@
 @media (min-width: $largeDeviceWidth) {
   .contacts {
     position: relative;
+
     background-color: #ffffff;
   }
 
   .contacts__wrapper {
     position: absolute;
     z-index: 1;
-
-    left: 110px;
     top: 95px;
-
-    padding-right: 85px;
-    padding-left: 35px;
+    left: 110px;
 
     width: 570px;
     height: 200px;
+    padding-right: 85px;
+    padding-left: 35px;
 
     background-color: #ffffff;
   }
