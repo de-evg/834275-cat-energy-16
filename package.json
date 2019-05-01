@@ -11,6 +11,7 @@
     "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^5.0.3",
+    "gulp-minify": "^3.1.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-posthtml": "^3.0.4",
@@ -30,7 +31,7 @@
     "test": "npm run editorconfig && npm run stylelint",
     "imagemin": "gulp images",
     "webp": "gulp webp",
-    "build": "gulp clean && gulp copy && gulp css && gulp normalize && gulp sprite && gulp html",
+    "build": "gulp clean && gulp copy && gulp css && gulp normalize && gulp compress && gulp sprite && gulp html && gulp htmlmin",
     "start": "gulp start"
   },
   "browserslist": [
@@ -50,6 +51,7 @@
     "node": "8.15"
   },
   "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
     "object-fit-images": "^3.2.4",
     "objectFitPolyfill": "^2.2.0",
     "svgxuse": "^1.2.6"
