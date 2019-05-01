@@ -2,10 +2,6 @@
   display: none;
 }
 
-.main-menu--closed {
-  display: none;
-}
-
 .main-menu--opened {
   display: block;
 }
@@ -71,8 +67,8 @@
 
   .main-menu__link {
     font-family: $oswaldRegular;
-    font-weight: 400;
     font-size: 18px;
+    font-weight: 400;
     line-height: 24px;
 
     border-bottom: none;
@@ -98,11 +94,11 @@
 
 @media (min-width: $largeDeviceWidth) {
   .main-menu__list {
-    flex-wrap: wrap;
     width: 480px;
     padding-top: 0;
     padding-right: 0;
 
+    flex-wrap: wrap;
     flex-basis: 480px;
   }
 

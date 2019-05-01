@@ -1,7 +1,7 @@
 .table-properties {
   font-family: "Arial", sans-serif;
-  font-weight: 400;
   font-size: $tinyFontSize;
+  font-weight: 400;
   line-height: 15px;
 
   color: $thirdFontColor;
@@ -27,7 +27,6 @@
   }
 
   .table-properties__property {
-
     height: 29px;
 
     text-align: left;
@@ -35,6 +34,7 @@
 
   .table-properties__property--align {
     padding-top: 10px;
+
     text-align: right;
   }
 
@@ -43,8 +43,8 @@
   }
 
   .table-properties__value--align {
-    padding-top: 10px;
     width: 87px;
+    padding-top: 10px;
   }
 }
 

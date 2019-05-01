@@ -1,6 +1,6 @@
 .page-header {
   font-family: $oswaldRegular;
-  font-weight: 600;
+  font-weight: 500;
 
   box-sizing: border-box;
   width: $smallDeviceWidth;
@@ -13,7 +13,7 @@
 
 .page-header__wrapper {
   font-family: $oswaldRegular;
-  font-weight: 600;
+  font-weight: 500;
 
   display: flex;
 
@@ -62,10 +62,10 @@
   .page-header__wrapper {
     display: inline-block;
 
-    padding-right: 0;
-    padding-left: 0;
     padding-top: 24px;
+    padding-right: 0;
     padding-bottom: 0;
+    padding-left: 0;
 
     border: none;
   }
@@ -84,8 +84,9 @@
 
 @media (min-width: $largeDeviceWidth) {
   .page-header {
-    width: $largeDeviceWidth;
     font-weight: 400;
+
+    width: $largeDeviceWidth;
     min-height: 696px;
     padding: 0;
 
@@ -111,13 +112,12 @@
 
 
   .page-header__main-menu {
-    max-width: 480px;
     width: 480px;
-
-    flex-basis: 480px;
+    max-width: 480px;
     padding-top: 52px;
     padding-right: 110px;
 
+    flex-basis: 480px;
     flex-grow: 1;
   }
 }

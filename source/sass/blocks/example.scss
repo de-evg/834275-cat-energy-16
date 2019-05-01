@@ -17,7 +17,8 @@
   font-weight: 400;
   line-height: 60px;
 
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 23px;
 
   color: $basicFontColor;
@@ -25,8 +26,8 @@
 
 .example__about {
   font-family: "Arial", sans-serif;
-  font-weight: 400;
   font-size: $smallFontSize;
+  font-weight: 400;
   line-height: 18px;
 
   margin: 0;
@@ -46,8 +47,8 @@
 
 .example__expenses {
   font-family: $oswaldRegular;
-  font-weight: 400;
   font-size: $smallFontSize;
+  font-weight: 400;
   line-height: 20px;
 
   margin: 0;
@@ -60,11 +61,16 @@
 
 @media (min-width: $mediumDeviceWidth) {
   .example {
-    padding-top: 43px;
+    padding-top: 0;
     padding-bottom: 58px;
 
-    background: linear-gradient(to bottom, #ffffff 0, #ffffff 619px, #f2f2f2 619px, #f2f2f2 100%);
+    border-top: $borderGrayTypeOne;
+    background: linear-gradient(to right, #f2f2f2 0, #f2f2f2 50%, #eaeaea 50%, #eaeaea 100%);
   }
+
+  // .example__slider-background {
+  //   background: linear-gradient(to right, transparent 0, transparent 50%, #eaeaea 50%, #eaeaea 100%);
+  // }
 
   .example__wrapper {
     margin-bottom: 33px;
@@ -77,8 +83,12 @@
     font-size: $bigFontSize;
     line-height: $largeLineHeight;
 
-    width: inherit;
+    width: 708px;
+    margin: 0 auto;
     margin-bottom: 64px;
+    padding-top: 43px;
+
+    background-color: #ffffff;
   }
 
   .example__about {
@@ -111,18 +121,15 @@
 
     flex-basis: 180px;
   }
-
-  .slider__images {
-    text-align: center;
-  }
 }
 
 @media (min-width: $largeDeviceWidth) {
   .example {
     padding-top: 0;
-    padding-bottom: 51px;
+    padding-bottom: 0;
 
-    background: linear-gradient(to bottom, #ffffff 0, #ffffff 190px, #f2f2f2 190px, #f2f2f2 100%);
+    border-top: none;
+    background: linear-gradient(to right, #f2f2f2 0, #f2f2f2 60%, #eaeaea 60%, #eaeaea 100%);
   }
 
   .example__inner {
@@ -137,13 +144,17 @@
     margin: 0;
     padding-top: 55px;
     padding-right: 0;
+    padding-bottom: 72px;
     padding-left: 110px;
 
     flex-basis: 610px;
   }
 
   .example__title {
+    width: 1220px;
+    margin: 0 auto;
     margin-bottom: 146px;
+    padding-top: 0;
   }
 
   .example__about {
@@ -176,8 +187,13 @@
 
   .example__slider {
     width: 610px;
+    height: 411px;
+    padding-bottom: 51px;
 
-    flex-basis: 610px;
+    background: linear-gradient(to right, #f2f2f2 0, #f2f2f2 45%, #eaeaea 45%, #eaeaea 100%);
+
+    align-self: flex-end;
+    flex-basis: 600px;
     flex-grow: 1;
   }
 }

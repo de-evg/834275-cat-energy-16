@@ -30,12 +30,12 @@
 }
 
 .about-cat__input {
-  box-sizing: border-box;
   font-family: $oswaldRegular;
   font-size: $basicFontSize;
   line-height: 23px;
-  height: 45px;
 
+  box-sizing: border-box;
+  height: 45px;
   padding-right: 15px;
   padding-left: 15px;
 
@@ -43,22 +43,22 @@
 }
 
 .about-cat__input-name {
-  max-width: 229px;
   width: 100%;
+  max-width: 229px;
 
   flex-basis: 100%;
 }
 
 .about-cat__input-weight {
-  max-width: 204px;
   width: 100%;
+  max-width: 204px;
 
   flex-basis: 100%;
 }
 
 .about-cat__input-age {
-  max-width: 172px;
   width: 100%;
+  max-width: 172px;
 
   flex-basis: 100%;
 }
@@ -94,9 +94,10 @@
   .about-cat__input {
     font-size: $lowFontSize;
     line-height: 20px;
-    height: 52px;
 
+    height: 52px;
     margin-top: 5px;
+
     border: $borderGrayTypeOne;
   }
 
