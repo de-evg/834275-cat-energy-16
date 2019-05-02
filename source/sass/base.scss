@@ -1,6 +1,6 @@
 body {
-  margin: 0 auto;
   min-width: 320px;
+  width: 100%;
 }
 
 main {
@@ -15,4 +15,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: 1300px) {
+  html {
+    min-width: 1300px;
+  }
 }

@@ -221,6 +221,10 @@
     margin-bottom: 32px;
   }
 
+  .slider__image {
+    width: 650px;
+  }
+
   .slider__buttons {
     padding-right: 40px;
     padding-left: 40px;
@@ -237,9 +241,9 @@
   .slider__images-container:first-of-type {
     position: relative;
     top: -190px;
-    left: 0px;
+    left: 0;
 
-    width: 680px;
+    width: 650px;
     height: 515px;
 
     object-fit: cover;
@@ -248,9 +252,9 @@
   .slider__images-container:last-of-type {
     position: relative;
     top: -190px;
-    left: 0px;
+    left: 0;
 
-    width: 680px;
+    width: 650px;
     height: 515px;
   }
 
@@ -263,11 +267,13 @@
   }
 
   .slider__image-before-poly {
+    width: 325px;
     object-fit: cover;
     object-position: -40px;
   }
 
   .slider__image-after-poly {
+    width: 325px;
     object-fit: cover;
     object-position: 100%;
   }
