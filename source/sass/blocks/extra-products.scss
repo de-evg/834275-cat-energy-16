@@ -96,18 +96,18 @@
   .extra-products__title {
     margin-bottom: 44px;
     padding-top: 77px;
-    padding-left: 109px;
+    padding-left: 40px;
 
     border-bottom: none;
-    background: linear-gradient(to right, transparent 0, transparent 70px, #ffffff 70px, #ffffff 483px, transparent 483px, transparent 100%);
+    background: linear-gradient(to right, transparent 0, transparent 0px, #ffffff 0px, #ffffff 413px, transparent 413px, transparent 100%);
   }
 
   .extra-products__inner {
     display: flex;
     flex-direction: row;
 
-    padding-right: 110px;
-    padding-left: 110px;
+    padding-right: 40px;
+    padding-left: 40px;
 
     justify-content: space-between;
   }

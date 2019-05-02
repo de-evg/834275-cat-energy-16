@@ -57,7 +57,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .categories-button {
     font-size: $lowFontSize;
     line-height: $lowLineHeight;

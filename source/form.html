@@ -11,13 +11,39 @@
   <link href="fonts/oswaldregular.woff" rel="preload" as="font">
   <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* Mobile layout by default */
+      background-image: url( "img/320.jpg" );
+    }
+    /* Tablet */
+    @media ( min-width: 760px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url( "img/pixelGlass/cat-energy-index-desktop.png" );
+      }
+    }
+    /* Desktop */
+    @media ( min-width: 1300px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url("img/pixelGlass/cat-energy-form-desktop.jpg" );
+      }
+    }
+  </style>
+  <link href="pixel-glass/styles.css" rel="stylesheet">
+  <script src="pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 <body class="site-grid site-grid__wrapper">
   <header class="page-header page-header--no-promo page-header__container site-grid__wrapper">
     <div class="page-header__wrapper">
       <a class="page-header__logo-link" href="index.html">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg"/>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg"/>
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg"/>
           <img class="page-header__logo-image"  src="img/logo-mobile.svg" width="191" height="38" alt="Перейти на главную страницу">
         </picture>

@@ -17,7 +17,7 @@
   color: $basicFontColor;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $mediumDeviceWidth) {
   .advantages {
     padding-top: 46px;
     padding-right: 30px;
@@ -40,12 +40,12 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $largeDeviceWidth) {
   .advantages {
     padding-top: 74px;
-    padding-right: 110px;
+    padding-right: 40px;
     padding-bottom: 26px;
-    padding-left: 110px;
+    padding-left: 40px;
   }
 
   .advantages__list {

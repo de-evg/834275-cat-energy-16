@@ -26,16 +26,16 @@
   .site-grid__background-img-header {
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 100%;
-    background-size: 50% auto;
+    background-position: 111%;
+    background-size: 55%;
 
-    object-fit: contain;
+    object-fit: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
       background-repeat: no-repeat;
-      background-position: 100%;
-      background-size: 50%;
+      background-position: 111%;
+      background-size: 55%;
     }
   }
 }

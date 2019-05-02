@@ -160,8 +160,8 @@
 
     width: $largeDeviceWidth;
     padding-top: 54px;
-    padding-right: 110px;
-    padding-left: 110px;
+    padding-right: 40px;
+    padding-left: 40px;
 
     justify-content: space-between;
   }
@@ -173,7 +173,11 @@
     padding-top: 0;
     padding-left: 40px;
 
-    background: linear-gradient(to right, transparent 0, transparent 70px, #ffffff 70px, #ffffff 363px, transparent 363px, transparent 100%);
+    background: linear-gradient(to right, transparent 0, transparent 0px, #ffffff 0px, #ffffff 290px, transparent 290px, transparent 100%);
+  }
+
+  .optionally__title span {
+    padding-left: 0;
   }
 
   .optionally__wrapper {
