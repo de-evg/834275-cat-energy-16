@@ -162,6 +162,7 @@
 
   .page-main__categories {
     display: flex;
+    flex-wrap: wrap;
 
     box-sizing: content-box;
     width: 1220px;
@@ -171,13 +172,21 @@
 
   .page-main__products {
     width: $largeDeviceWidth;
+    justify-content: flex-start;
   }
 
   .page-main__product {
+    margin-right: 80px;
+
     width: 245px;
 
     flex-basis: 245px;
   }
+
+  .page-main__product--last-item {
+    margin-right: 0;
+  }
+
 
   .page-main__product--min-height {
     min-height: 574px;

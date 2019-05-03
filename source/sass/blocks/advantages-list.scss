@@ -317,14 +317,21 @@
 
 @media (min-width: $largeDeviceWidth) {
   .advantages-list__item {
+    letter-spacing: -0.1px;
     box-sizing: border-box;
     width: 245px;
+    margin-top: 20px;
+    margin-right: 80px;
     margin-bottom: 0;
     padding-top: 112px;
     padding-right: 0;
     padding-left: 0;
 
     flex-basis: 245px;
+  }
+
+  .advantages-list__item--last-item {
+    margin-right: 0;
   }
 
   .advantages-list__second-item-img::before,

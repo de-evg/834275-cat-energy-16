@@ -86,13 +86,15 @@
   .page-header {
     font-weight: 400;
 
-    width: $largeDeviceWidth;
     min-height: 696px;
     padding: 0;
 
     background: none;
   }
 
+  .page-header__container {
+    width: $largeDeviceWidth;
+  }
 
   .page-header--no-promo {
     min-height: 0;

@@ -17,20 +17,20 @@
       background-repeat: no-repeat;
       background-position:  50% 0;
       /* Mobile layout by default */
-      background-image: url( "img/320.jpg" );
+      background-image: url("img/pixelGlass/cat-energy-catalog-mobile.jpg");
     }
     /* Tablet */
-    @media ( min-width: 760px ) {
+    @media ( min-width: 768px ) {
       HTML {
         /* Tablet layout */
-        background-image: url( "img/pixelGlass/cat-energy-index-desktop.png" );
+        background-image: url("img/pixelGlass/cat-energy-catalog-tablet.jpg");
       }
     }
     /* Desktop */
     @media ( min-width: 1300px ) {
       HTML {
         /* Desktop layout */
-        background-image: url("img/pixelGlass/cat-energy-catalog-desktop.jpg" );
+        background-image: url("img/pixelGlass/cat-energy-catalog-desktop.jpg");
       }
     }
   </style>
@@ -117,7 +117,7 @@
           </section>
         </div>
 
-        <div class="page-main__product">
+        <div class="page-main__product ">
           <section class="product">
             <div class="product__content">
               <div class="product__image-container">
@@ -227,7 +227,7 @@
           </section>
         </div>
 
-        <div class="page-main__product">
+        <div class="page-main__product page-main__product--last-item">
           <section class="product">
             <div class="product__content">
               <div class="product__image-container">
@@ -447,7 +447,7 @@
           </section>
         </div>
 
-        <div class="page-main__product page-main__product--min-height page-main__more-product more-product">
+        <div class="page-main__product page-main__product--last-item page-main__product--min-height page-main__more-product more-product">
           <div class="product product--no-padding product--no-bg more-product__wrapper">
             <div class="product__wrapper">
               <div class="more-product__content">
@@ -578,7 +578,7 @@
             </svg>
           </span>
         </a>
-        <a class="social__link" href="#" aria-label="Мы в Facebook">
+        <a class="social__link social__link--last-item" href="#" aria-label="Мы в Facebook">
           <span class="social__icon">
             <svg class="social__icon-fb" width="10" height="19">
               <use xlink:href="img/sprite.svg#icon-fb-mobile"/>
