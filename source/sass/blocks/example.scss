@@ -131,13 +131,12 @@
   .example__inner {
     display: flex;
 
-    width: $largeDeviceWidth;
+    width: 100%;
     margin: 0 auto;
   }
 
   .example__wrapper {
     width: 610px;
-    max-width: 610px;
     margin: 0;
     padding-top: 55px;
     padding-right: 0;
@@ -145,6 +144,7 @@
     padding-left: 40px;
 
     flex-basis: 610px;
+    flex-grow: 1;
   }
 
   .example__title {

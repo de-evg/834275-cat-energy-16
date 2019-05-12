@@ -11,6 +11,32 @@
   <link href="fonts/oswaldregular.woff" rel="preload" as="font">
   <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
+  <!-- Pixel Glass -->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* Mobile layout by default */
+      background-image: url( "img/pixelGlass/320.png" );
+    }
+    /* Tablet */
+    @media ( min-width: 760px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url( "img/760.png" );
+      }
+    }
+    /* Desktop */
+    @media ( min-width: 1300px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url( "img/pixelGlass/cat-energy-index-desktop.jpg" );
+      }
+    }
+  </style>
+  <link href="../pixel-glass/styles.css" rel="stylesheet">
+  <script src="../pixel-glass/script.js"></script>
+  <!-- // Pixel Glass -->
 </head>
 <body class="site-grid">
   <div class="site-grid__wrapper site-grid__wrapper--background-header">

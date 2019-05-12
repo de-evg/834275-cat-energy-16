@@ -20,10 +20,17 @@
   }
 
   .categories__item {
+    flex-grow: 1;
     box-sizing: border-box;
     margin-top: 40px;
+    margin-right: 80px;
     width: 570px;
 
     flex-basis: 570px;
+  }
+
+
+  .categories__item:last-of-type {
+    margin-right: 0;
   }
 }

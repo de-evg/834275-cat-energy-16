@@ -93,7 +93,7 @@
   }
 
   .page-header__container {
-    width: $largeDeviceWidth;
+    width: 100%;
   }
 
   .page-header--no-promo {
@@ -103,6 +103,7 @@
   }
 
   .page-header__wrapper {
+    width: 19%;
     padding-top: 54px;
     padding-left: 40px;
   }
@@ -113,12 +114,12 @@
   }
 
   .page-header__main-menu {
-    width: 480px;
-    max-width: 480px;
+    width: 37%;
+    max-width: 37%;
     padding-top: 52px;
     padding-right: 40px;
 
-    flex-basis: 480px;
+    flex-basis: 37%;
     flex-grow: 1;
   }
 }

@@ -125,7 +125,7 @@
 
 @media (min-width: $largeDeviceWidth) {
   .page-main__wrapper {
-    width: $largeDeviceWidth;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -165,7 +165,7 @@
     flex-wrap: wrap;
 
     box-sizing: content-box;
-    width: 1220px;
+
 
     justify-content: space-between;
   }
