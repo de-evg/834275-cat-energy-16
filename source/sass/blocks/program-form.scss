@@ -258,9 +258,11 @@
     display: flex;
 
     box-sizing: border-box;
-    width: 1220px;
+    width: auto;
     margin: 0 auto;
     padding-bottom: 55px;
+    padding-left: 40px;
+    padding-right: 40px;
 
     justify-content: space-between;
   }
@@ -269,12 +271,14 @@
     width: 570px;
 
     flex-basis: 570px;
+    flex-grow: 1;
   }
 
   .program-form__purpose {
     width: 570px;
 
     flex-basis: 570px;
+    flex-grow: 1;
   }
 
   .program-form__button-wrapper {

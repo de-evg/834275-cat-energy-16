@@ -109,8 +109,12 @@
   }
 
   .comment__title {
+    width: 1260px;
     margin-bottom: 77px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 40px;
+    padding-right: 0;
 
     background: linear-gradient(to right, transparent 0, transparent 0, #ffffff 0, #ffffff 260px, transparent 260px, transparent 100%);
   }

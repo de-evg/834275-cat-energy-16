@@ -217,12 +217,11 @@
   .slider__images {
     width: 650px;
     min-height: 325px;
-    margin: 0;
-    margin-bottom: 32px;
+    margin: 0 auto 32px;
   }
 
   .slider__image {
-    width: 650px;
+    width: auto;
   }
 
   .slider__buttons {
@@ -241,7 +240,6 @@
   .slider__images-container:first-of-type {
     position: relative;
     top: -190px;
-    left: 0;
 
     width: 650px;
     height: 515px;
@@ -252,7 +250,6 @@
   .slider__images-container:last-of-type {
     position: relative;
     top: -190px;
-    left: 0;
 
     width: 650px;
     height: 515px;
